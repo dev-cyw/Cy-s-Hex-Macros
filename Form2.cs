@@ -117,5 +117,15 @@ namespace Cy_s_Hex_Macros
             Shiny.Close();
             MessageBox.Show("The hex has been changed!");
         }
+
+        private void KadabEverstone_Click(object sender, EventArgs e)
+        {
+            BinaryWriter Trainer = new BinaryWriter(File.Open(binPath, FileMode.Open, FileAccess.ReadWrite));
+            int offset = 0x76BFE;
+            Trainer.BaseStream.Seek(offset, SeekOrigin.Begin);
+            Trainer.Write(0x00);
+            Trainer.Close();
+            MessageBox.Show("The hex has been changed!");
+        }
     }
 }
