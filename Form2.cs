@@ -18,22 +18,25 @@ namespace Cy_s_Hex_Macros
         {
             InitializeComponent();
         }
-        public string binPath = Game_Option.binPath;
-        byte[] newData;
         public Form RefToMenu { get; set; }
+        public string arm9 = Game_Option.arm9;
+        string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
+        bool close = true;
+
 
         private void PlatinumHex_Load(object sender, EventArgs e)
         {
-            if (System.IO.Path.GetFileName(binPath) == "arm9.bin")
-            {
-                Overlay16Tab.Enabled = false;
-            }
-            if(System.IO.Path.GetFileName(binPath) == "overlay_0016.bin")
-            {
-                arm9Tab.Enabled = false;
-                CritRefresh();
-            }
+            CritRefresh();
         }
+
+        private void HexEdit(int offset, byte[] newData, string path)
+        {
+            BinaryWriter binaryWriter = new BinaryWriter(File.Open(path, FileMode.Open, FileAccess.ReadWrite));
+            binaryWriter.BaseStream.Seek(offset, SeekOrigin.Begin);
+            binaryWriter.Write(newData);
+            binaryWriter.Close();
+        }
+
         private void CritRefresh()
         {
             string[] CritRate = { "Gen 6: 1/16", "Gen 7: 1/24"};
@@ -43,89 +46,65 @@ namespace Cy_s_Hex_Macros
             }
         }
 
-        private void ApplyCrits_Click(object sender, EventArgs e)
-        {
-
-            if (critRate.SelectedIndex == 0)
-            {
-                Crit16();
-            }
-            if (critRate.SelectedIndex == 1)
-            {
-                Crit24();
-            }
-            if (critRate.Text == "Crit Rate")
-            {
-                MessageBox.Show("You have not Selected an option!");
-            }
-        }
-        private void Crit24()
-        {
-            BinaryWriter Crit = new BinaryWriter(File.Open(binPath, FileMode.Open, FileAccess.ReadWrite));
-            int offset = 0x33A60;
-            byte[] newData = new byte[] { 0x18, 0x08, 0x02, 0x01, 0x01 }; // 1/24
-            Crit.BaseStream.Seek(offset, SeekOrigin.Begin);
-            Crit.Write(newData);
-            Crit.Close();
-            MessageBox.Show("The hex has been changed!"); //Lhea in #Research-Chamber
-        }
-        private void Crit16()
-        {
-            BinaryWriter Crit = new BinaryWriter(File.Open(binPath, FileMode.Open, FileAccess.ReadWrite));
-            int offset = 0x33A60;
-            byte[] newData = new byte[] { 0x10, 0x08, 0x02, 0x01, 0x01 }; // 1/16
-            Crit.BaseStream.Seek(offset, SeekOrigin.Begin);
-            Crit.Write(newData);
-            Crit.Close();
-            MessageBox.Show("The hex has been changed!"); //Lhea in #Research-Chamber
-        }
-
-
         private void NewFile_Click(object sender, EventArgs e)
         {         
             DialogResult dialogResult =  MessageBox.Show("Are you sure", "Do you want to open a new file?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                this.Close();
+                close = false;
                 this.RefToMenu.Show();
+                this.Close();
             }
         }
 
         private void Trainer_Names_Click(object sender, EventArgs e)
         {
-            BinaryWriter Trainer = new BinaryWriter(File.Open(binPath, FileMode.Open, FileAccess.ReadWrite));
-            int offset = 0x791DE;
-            Trainer.BaseStream.Seek(offset, SeekOrigin.Begin);
-            Trainer.Write(0x0C);
-            Trainer.Close();
-            MessageBox.Show("The hex has been changed!");
+            byte[] DSPRE = new byte[] { 0x0C };
+            HexEdit(0x791DE, DSPRE, arm9);
+            MessageBox.Show("The hex has been changed!"); // Mikelan
         }
 
         private void PlatinumHex_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.RefToMenu.Close();
+            if (close == true)
+            {
+                this.RefToMenu.Close();
+            }
         }
 
         private void ShinyApply_Click(object sender, EventArgs e)
         {
-
-            BinaryWriter Shiny = new BinaryWriter(File.Open(binPath, FileMode.Open, FileAccess.ReadWrite));
             byte[] ShinyOdds = new byte[] { Convert.ToByte(ShinyNumBox.Value) };
-            int offset = 0x79E50;
-            Shiny.BaseStream.Seek(offset, SeekOrigin.Begin);
-            Shiny.Write(ShinyOdds);
-            Shiny.Close();
-            MessageBox.Show("The hex has been changed!");
+            HexEdit(0x79E50, ShinyOdds, arm9);
+            MessageBox.Show("The hex has been changed!"); //
         }
 
         private void KadabEverstone_Click(object sender, EventArgs e)
         {
-            BinaryWriter Trainer = new BinaryWriter(File.Open(binPath, FileMode.Open, FileAccess.ReadWrite));
-            int offset = 0x76BFE;
-            Trainer.BaseStream.Seek(offset, SeekOrigin.Begin);
-            Trainer.Write(0x00);
-            Trainer.Close();
-            MessageBox.Show("The hex has been changed!");
+            byte[] Kadabra = new byte[] { 0x00 };
+            HexEdit(0x76BFE, Kadabra, arm9);
+            MessageBox.Show("The hex has been changed!"); // Chritchy
+        }
+
+        private void ApplyCrits_Click(object sender, EventArgs e)
+        {
+
+            if (critRate.SelectedIndex == 0)
+            {
+                byte[] newData = new byte[] { 0x10, 0x08, 0x02, 0x01, 0x01 };// 1/16
+                HexEdit(0x33A60, newData, overlay + "016.bin");
+                MessageBox.Show("The hex has been changed!"); //Lhea in #Research-Chamber
+            }
+            if (critRate.SelectedIndex == 1)
+            {
+                byte[] newData = new byte[] { 0x18, 0x08, 0x02, 0x01, 0x01 }; // 1/24
+                HexEdit(0x33A60, newData, overlay + "016.bin");
+                MessageBox.Show("The hex has been changed!"); //Lhea in #Research-Chamber
+            }
+            if (critRate.Text == "Crit Rate")
+            {
+                MessageBox.Show("You have not Selected an option!");
+            }
         }
     }
 }

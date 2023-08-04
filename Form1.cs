@@ -17,7 +17,7 @@ namespace Cy_s_Hex_Macros
             InitializeComponent();
         }
 
-        public static string binPath;
+        public static string arm9;
         int gameIndex;
 
         private void Game_Option_Load(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace Cy_s_Hex_Macros
             openFileDialog.FileName = "";
             openFileDialog.Filter = "Binary Files (*.bin)|*.bin";
             openFileDialog.ShowDialog(this);
-            binPath = openFileDialog.FileName;
+            arm9 = openFileDialog.FileName;
 
             switch(gameIndex){
                 case 0:

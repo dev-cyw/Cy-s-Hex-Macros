@@ -31,20 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.Trainer_Names = new System.Windows.Forms.Button();
             this.PlatTabs = new System.Windows.Forms.TabControl();
-            this.arm9Tab = new System.Windows.Forms.TabPage();
-            this.ShinyNumBox = new System.Windows.Forms.NumericUpDown();
-            this.ShinyApply = new System.Windows.Forms.Button();
-            this.Overlay16Tab = new System.Windows.Forms.TabPage();
+            this.MainTab = new System.Windows.Forms.TabPage();
             this.ApplyCrits = new System.Windows.Forms.Button();
             this.critRate = new System.Windows.Forms.ComboBox();
+            this.KadabEverstone = new System.Windows.Forms.Button();
+            this.ShinyNumBox = new System.Windows.Forms.NumericUpDown();
+            this.ShinyApply = new System.Windows.Forms.Button();
+            this.MartsTab = new System.Windows.Forms.TabPage();
+            this.StartersTab = new System.Windows.Forms.TabPage();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.KadabEverstone = new System.Windows.Forms.Button();
             this.PlatTabs.SuspendLayout();
-            this.arm9Tab.SuspendLayout();
+            this.MainTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShinyNumBox)).BeginInit();
-            this.Overlay16Tab.SuspendLayout();
             this.SuspendLayout();
             // 
             // Trainer_Names
@@ -59,28 +58,61 @@
             // 
             // PlatTabs
             // 
-            this.PlatTabs.Controls.Add(this.arm9Tab);
-            this.PlatTabs.Controls.Add(this.tabPage1);
-            this.PlatTabs.Controls.Add(this.Overlay16Tab);
+            this.PlatTabs.Controls.Add(this.MainTab);
+            this.PlatTabs.Controls.Add(this.MartsTab);
+            this.PlatTabs.Controls.Add(this.StartersTab);
             this.PlatTabs.Location = new System.Drawing.Point(12, 12);
             this.PlatTabs.Name = "PlatTabs";
             this.PlatTabs.SelectedIndex = 0;
             this.PlatTabs.Size = new System.Drawing.Size(365, 426);
             this.PlatTabs.TabIndex = 1;
             // 
-            // arm9Tab
+            // MainTab
             // 
-            this.arm9Tab.Controls.Add(this.KadabEverstone);
-            this.arm9Tab.Controls.Add(this.ShinyNumBox);
-            this.arm9Tab.Controls.Add(this.ShinyApply);
-            this.arm9Tab.Controls.Add(this.Trainer_Names);
-            this.arm9Tab.Location = new System.Drawing.Point(4, 22);
-            this.arm9Tab.Name = "arm9Tab";
-            this.arm9Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.arm9Tab.Size = new System.Drawing.Size(357, 400);
-            this.arm9Tab.TabIndex = 0;
-            this.arm9Tab.Text = "Arm9";
-            this.arm9Tab.UseVisualStyleBackColor = true;
+            this.MainTab.Controls.Add(this.ApplyCrits);
+            this.MainTab.Controls.Add(this.critRate);
+            this.MainTab.Controls.Add(this.KadabEverstone);
+            this.MainTab.Controls.Add(this.ShinyNumBox);
+            this.MainTab.Controls.Add(this.ShinyApply);
+            this.MainTab.Controls.Add(this.Trainer_Names);
+            this.MainTab.Location = new System.Drawing.Point(4, 22);
+            this.MainTab.Name = "MainTab";
+            this.MainTab.Padding = new System.Windows.Forms.Padding(3);
+            this.MainTab.Size = new System.Drawing.Size(357, 400);
+            this.MainTab.TabIndex = 0;
+            this.MainTab.Text = "Main";
+            this.MainTab.UseVisualStyleBackColor = true;
+            // 
+            // ApplyCrits
+            // 
+            this.ApplyCrits.Location = new System.Drawing.Point(281, 36);
+            this.ApplyCrits.Name = "ApplyCrits";
+            this.ApplyCrits.Size = new System.Drawing.Size(70, 21);
+            this.ApplyCrits.TabIndex = 9;
+            this.ApplyCrits.Text = "Apply";
+            this.ToolTip.SetToolTip(this.ApplyCrits, "Credit to Lhea From Kingdom of DS Hacking");
+            this.ApplyCrits.UseVisualStyleBackColor = true;
+            this.ApplyCrits.Click += new System.EventHandler(this.ApplyCrits_Click);
+            // 
+            // critRate
+            // 
+            this.critRate.FormattingEnabled = true;
+            this.critRate.Location = new System.Drawing.Point(195, 36);
+            this.critRate.Name = "critRate";
+            this.critRate.Size = new System.Drawing.Size(80, 21);
+            this.critRate.TabIndex = 8;
+            this.critRate.Text = "Crit Rate";
+            // 
+            // KadabEverstone
+            // 
+            this.KadabEverstone.Location = new System.Drawing.Point(195, 6);
+            this.KadabEverstone.Name = "KadabEverstone";
+            this.KadabEverstone.Size = new System.Drawing.Size(156, 23);
+            this.KadabEverstone.TabIndex = 7;
+            this.KadabEverstone.Text = "Kadabra Everstone";
+            this.ToolTip.SetToolTip(this.KadabEverstone, "Credit to Critchy From Kingdom of DS Hacking");
+            this.KadabEverstone.UseVisualStyleBackColor = true;
+            this.KadabEverstone.Click += new System.EventHandler(this.KadabEverstone_Click);
             // 
             // ShinyNumBox
             // 
@@ -110,37 +142,23 @@
             this.ShinyApply.UseVisualStyleBackColor = true;
             this.ShinyApply.Click += new System.EventHandler(this.ShinyApply_Click);
             // 
-            // Overlay16Tab
+            // MartsTab
             // 
-            this.Overlay16Tab.Controls.Add(this.ApplyCrits);
-            this.Overlay16Tab.Controls.Add(this.critRate);
-            this.Overlay16Tab.Location = new System.Drawing.Point(4, 22);
-            this.Overlay16Tab.Name = "Overlay16Tab";
-            this.Overlay16Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.Overlay16Tab.Size = new System.Drawing.Size(357, 400);
-            this.Overlay16Tab.TabIndex = 1;
-            this.Overlay16Tab.Text = "Overlay16";
-            this.Overlay16Tab.UseVisualStyleBackColor = true;
+            this.MartsTab.Location = new System.Drawing.Point(4, 22);
+            this.MartsTab.Name = "MartsTab";
+            this.MartsTab.Size = new System.Drawing.Size(357, 400);
+            this.MartsTab.TabIndex = 2;
+            this.MartsTab.Text = "Marts";
+            this.MartsTab.UseVisualStyleBackColor = true;
             // 
-            // ApplyCrits
+            // StartersTab
             // 
-            this.ApplyCrits.Location = new System.Drawing.Point(92, 8);
-            this.ApplyCrits.Name = "ApplyCrits";
-            this.ApplyCrits.Size = new System.Drawing.Size(70, 21);
-            this.ApplyCrits.TabIndex = 1;
-            this.ApplyCrits.Text = "Apply";
-            this.ToolTip.SetToolTip(this.ApplyCrits, "Credit to Lhea From Kingdom of DS Hacking");
-            this.ApplyCrits.UseVisualStyleBackColor = true;
-            this.ApplyCrits.Click += new System.EventHandler(this.ApplyCrits_Click);
-            // 
-            // critRate
-            // 
-            this.critRate.FormattingEnabled = true;
-            this.critRate.Location = new System.Drawing.Point(6, 8);
-            this.critRate.Name = "critRate";
-            this.critRate.Size = new System.Drawing.Size(80, 21);
-            this.critRate.TabIndex = 0;
-            this.critRate.Text = "Crit Rate";
+            this.StartersTab.Location = new System.Drawing.Point(4, 22);
+            this.StartersTab.Name = "StartersTab";
+            this.StartersTab.Size = new System.Drawing.Size(357, 400);
+            this.StartersTab.TabIndex = 3;
+            this.StartersTab.Text = "Starters (Overlay78)";
+            this.StartersTab.UseVisualStyleBackColor = true;
             // 
             // NewFile
             // 
@@ -151,26 +169,6 @@
             this.NewFile.Text = "Open New File";
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(357, 400);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Marts";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // KadabEverstone
-            // 
-            this.KadabEverstone.Location = new System.Drawing.Point(195, 6);
-            this.KadabEverstone.Name = "KadabEverstone";
-            this.KadabEverstone.Size = new System.Drawing.Size(156, 23);
-            this.KadabEverstone.TabIndex = 7;
-            this.KadabEverstone.Text = "Kadabra Everstone";
-            this.ToolTip.SetToolTip(this.KadabEverstone, "Credit to Critchy From Kingdom of DS Hacking");
-            this.KadabEverstone.UseVisualStyleBackColor = true;
-            this.KadabEverstone.Click += new System.EventHandler(this.KadabEverstone_Click);
             // 
             // PlatinumHex
             // 
@@ -184,9 +182,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PlatinumHex_FormClosing);
             this.Load += new System.EventHandler(this.PlatinumHex_Load);
             this.PlatTabs.ResumeLayout(false);
-            this.arm9Tab.ResumeLayout(false);
+            this.MainTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ShinyNumBox)).EndInit();
-            this.Overlay16Tab.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -195,15 +192,15 @@
 
         private System.Windows.Forms.Button Trainer_Names;
         private System.Windows.Forms.TabControl PlatTabs;
-        private System.Windows.Forms.TabPage arm9Tab;
-        private System.Windows.Forms.TabPage Overlay16Tab;
-        private System.Windows.Forms.ComboBox critRate;
-        private System.Windows.Forms.Button ApplyCrits;
+        private System.Windows.Forms.TabPage MainTab;
         private System.Windows.Forms.Button NewFile;
         private System.Windows.Forms.NumericUpDown ShinyNumBox;
         private System.Windows.Forms.Button ShinyApply;
         private System.Windows.Forms.ToolTip ToolTip;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage MartsTab;
         private System.Windows.Forms.Button KadabEverstone;
+        private System.Windows.Forms.TabPage StartersTab;
+        private System.Windows.Forms.Button ApplyCrits;
+        private System.Windows.Forms.ComboBox critRate;
     }
 }

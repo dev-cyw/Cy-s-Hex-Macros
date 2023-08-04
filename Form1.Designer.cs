@@ -39,7 +39,7 @@
             this.Open_File.Name = "Open_File";
             this.Open_File.Size = new System.Drawing.Size(120, 25);
             this.Open_File.TabIndex = 0;
-            this.Open_File.Text = "Open File";
+            this.Open_File.Text = "Open arm9.bin";
             this.Open_File.UseVisualStyleBackColor = true;
             this.Open_File.Click += new System.EventHandler(this.Open_File_Click);
             // 
