@@ -1,0 +1,538 @@
+None
+Master Ball
+Ultra Ball
+Great Ball
+Poké Ball
+Safari Ball
+Net Ball
+Dive Ball
+Nest Ball
+Repeat Ball
+Timer Ball
+Luxury Ball
+Premier Ball
+Dusk Ball
+Heal Ball
+Quick Ball
+Cherish Ball
+Potion
+Antidote
+Burn Heal
+Ice Heal
+Awakening
+Parlyz Heal
+Full Restore
+Max Potion
+Hyper Potion
+Super Potion
+Full Heal
+Revive
+Max Revive
+Fresh Water
+Soda Pop
+Lemonade
+Moomoo Milk
+EnergyPowder
+0Energy Root
+Heal Powder
+Revival Herb
+Ether
+Max Ether
+Elixir
+Max Elixir
+Lava Cookie
+Berry Juice
+Sacred Ash
+HP Up
+Protein
+Iron
+Carbos
+Calcium
+Rare Candy
+PP Up
+Zinc
+PP Max
+Old Gateau
+Guard Spec.
+Dire Hit
+X Attack
+X Defense
+X Speed
+X Accuracy
+X Special
+X Sp. Def
+Poké Doll
+Fluffy Tail
+Blue Flute
+Yellow Flute
+Red Flute
+Black Flute
+White Flute
+Shoal Salt
+Shoal Shell
+Red Shard
+Blue Shard
+Yellow Shard
+Green Shard
+Super Repel
+Max Repel
+Escape Rope
+Repel
+Sun Stone
+Moon Stone
+Fire Stone
+Thunderstone
+Water Stone
+Leaf Stone
+TinyMushroom
+Big Mushroom
+Pearl
+Big Pearl
+Stardust
+Star Piece
+Nugget
+Heart Scale
+Honey
+Growth Mulch
+Damp Mulch
+Stable Mulch
+Gooey Mulch
+Root Fossil
+Claw Fossil
+Helix Fossil
+Dome Fossil
+Old Amber
+Armor Fossil
+Skull Fossil
+Rare Bone
+Shiny Stone
+Dusk Stone
+Dawn Stone
+Oval Stone
+Odd Keystone
+Griseous Orb*
+unknown
+unknown
+unknown
+unknown
+unknown
+unknown
+unknown
+unknown
+unknown
+unknown	unknown
+123	0x007B	unknown	unknown
+124	0x007C	unknown	unknown
+125	0x007D	unknown	unknown
+126	0x007E	unknown	unknown
+127	0x007F	unknown	unknown
+128	0x0080	unknown	unknown
+129	0x0081	unknown	unknown
+130	0x0082	unknown	unknown
+131	0x0083	unknown	unknown
+132	0x0084	unknown	unknown
+133	0x0085	unknown	unknown
+134	0x0086	unknown	unknown
+135	0x0087	Adamant Orb	Adamant Orb
+136	0x0088	Lustrous Orb	Lustrous Orb
+137	0x0089	Grass Mail	Grass Mail
+138	0x008A	Flame Mail	Flame Mail
+139	0x008B	Bubble Mail	Bubble Mail
+140	0x008C	Bloom Mail	Bloom Mail
+141	0x008D	Tunnel Mail	Tunnel Mail
+142	0x008E	Steel Mail	Steel Mail
+143	0x008F	Heart Mail	Heart Mail
+144	0x0090	Snow Mail	Snow Mail
+145	0x0091	Space Mail	Space Mail
+146	0x0092	Air Mail	Air Mail
+147	0x0093	Mosaic Mail	Mosaic Mail
+148	0x0094	Brick Mail	Brick Mail
+149	0x0095	Cheri Berry	Cheri Berry
+150	0x0096	Chesto Berry	Chesto Berry
+151	0x0097	Pecha Berry	Pecha Berry
+152	0x0098	Rawst Berry	Rawst Berry
+153	0x0099	Aspear Berry	Aspear Berry
+154	0x009A	Leppa Berry	Leppa Berry
+155	0x009B	Oran Berry	Oran Berry
+156	0x009C	Persim Berry	Persim Berry
+157	0x009D	Lum Berry	Lum Berry
+158	0x009E	Sitrus Berry	Sitrus Berry
+159	0x009F	Figy Berry	Figy Berry
+160	0x00A0	Wiki Berry	Wiki Berry
+161	0x00A1	Mago Berry	Mago Berry
+162	0x00A2	Aguav Berry	Aguav Berry
+163	0x00A3	Iapapa Berry	Iapapa Berry
+164	0x00A4	Razz Berry III	Razz Berry
+165	0x00A5	Bluk Berry	Bluk Berry
+166	0x00A6	Nanab Berry III	Nanab Berry
+167	0x00A7	Wepear Berry	Wepear Berry
+168	0x00A8	Pinap Berry	Pinap Berry
+169	0x00A9	Pomeg Berry	Pomeg Berry
+170	0x00AA	Kelpsy Berry	Kelpsy Berry
+171	0x00AB	Qualot Berry	Qualot Berry
+172	0x00AC	Hondew Berry	Hondew Berry
+173	0x00AD	Grepa Berry	Grepa Berry
+174	0x00AE	Tamato Berry	Tamato Berry
+175	0x00AF	Cornn Berry	Cornn Berry
+176	0x00B0	Magost Berry	Magost Berry
+177	0x00B1	Rabuta Berry	Rabuta Berry
+178	0x00B2	Nomel Berry	Nomel Berry
+179	0x00B3	Spelon Berry	Spelon Berry
+180	0x00B4	Pamtre Berry	Pamtre Berry
+181	0x00B5	Watmel Berry	Watmel Berry
+182	0x00B6	Durin Berry	Durin Berry
+183	0x00B7	Belue Berry	Belue Berry
+184	0x00B8	Occa Berry	Occa Berry
+185	0x00B9	Passho Berry	Passho Berry
+186	0x00BA	Wacan Berry	Wacan Berry
+187	0x00BB	Rindo Berry	Rindo Berry
+188	0x00BC	Yache Berry	Yache Berry
+189	0x00BD	Chople Berry	Chople Berry
+190	0x00BE	Kebia Berry	Kebia Berry
+191	0x00BF	Shuca Berry	Shuca Berry
+192	0x00C0	Coba Berry	Coba Berry
+193	0x00C1	Payapa Berry	Payapa Berry
+194	0x00C2	Tanga Berry	Tanga Berry
+195	0x00C3	Charti Berry	Charti Berry
+196	0x00C4	Kasib Berry	Kasib Berry
+197	0x00C5	Haban Berry	Haban Berry
+198	0x00C6	Colbur Berry	Colbur Berry
+199	0x00C7	Babiri Berry	Babiri Berry
+200	0x00C8	Chilan Berry	Chilan Berry
+201	0x00C9	Liechi Berry	Liechi Berry
+202	0x00CA	Ganlon Berry	Ganlon Berry
+203	0x00CB	Salac Berry	Salac Berry
+204	0x00CC	Petaya Berry	Petaya Berry
+205	0x00CD	Apicot Berry	Apicot Berry
+206	0x00CE	Lansat Berry	Lansat Berry
+207	0x00CF	Starf Berry	Starf Berry
+208	0x00D0	Enigma Berry	Enigma Berry
+209	0x00D1	Micle Berry	Micle Berry
+210	0x00D2	Custap Berry	Custap Berry
+211	0x00D3	Jaboca Berry	Jaboca Berry
+212	0x00D4	Rowap Berry	Rowap Berry
+213	0x00D5	Bright Powder	BrightPowder
+214	0x00D6	White Herb	White Herb
+215	0x00D7	Macho Brace	Macho Brace
+216	0x00D8	Exp. Share	Exp. Share
+217	0x00D9	Quick Claw	Quick Claw
+218	0x00DA	Soothe Bell	Soothe Bell
+219	0x00DB	Mental Herb	Mental Herb
+220	0x00DC	Choice Band	Choice Band
+221	0x00DD	King's Rock	King's Rock
+222	0x00DE	Silver Powder	SilverPowder
+223	0x00DF	Amulet Coin III	Amulet Coin
+224	0x00E0	Cleanse Tag	Cleanse Tag
+225	0x00E1	Soul Dew	Soul Dew
+226	0x00E2	Deep Sea Tooth	DeepSeaTooth
+227	0x00E3	Deep Sea Scale	DeepSeaScale
+228	0x00E4	Smoke Ball	Smoke Ball
+229	0x00E5	Everstone	Everstone
+230	0x00E6	Focus Band	Focus Band
+231	0x00E7	Lucky Egg	Lucky Egg
+232	0x00E8	Scope Lens	Scope Lens
+233	0x00E9	Metal Coat	Metal Coat
+234	0x00EA	Leftovers	Leftovers
+235	0x00EB	Dragon Scale	Dragon Scale
+236	0x00EC	Light Ball	Light Ball
+237	0x00ED	Soft Sand	Soft Sand
+238	0x00EE	Hard Stone	Hard Stone
+239	0x00EF	Miracle Seed	Miracle Seed
+240	0x00F0	Black Glasses	BlackGlasses
+241	0x00F1	Black Belt	Black Belt
+242	0x00F2	Magnet		Magnet
+243	0x00F3	Mystic Water	Mystic Water
+244	0x00F4	Sharp Beak	Sharp Beak
+245	0x00F5	Poison Barb	Poison Barb
+246	0x00F6	Never-Melt Ice	NeverMeltIce
+247	0x00F7	Spell Tag	Spell Tag
+248	0x00F8	Twisted Spoon	TwistedSpoon
+249	0x00F9	Charcoal	Charcoal
+250	0x00FA	Dragon Fang	Dragon Fang
+251	0x00FB	Silk Scarf	Silk Scarf
+252	0x00FC	Up-Grade	Up-Grade
+253	0x00FD	Shell Bell	Shell Bell
+254	0x00FE	Sea Incense	Sea Incense
+255	0x00FF	Lax Incense	Lax Incense
+256	0x0100	Lucky Punch	Lucky Punch
+257	0x0101	Metal Powder	Metal Powder
+258	0x0102	Thick Club	Thick Club
+259	0x0103	Stick		Stick
+260	0x0104	Red Scarf	Red Scarf
+261	0x0105	Blue Scarf	Blue Scarf
+262	0x0106	Pink Scarf	Pink Scarf
+263	0x0107	Green Scarf	Green Scarf
+264	0x0108	Yellow Scarf	Yellow Scarf
+265	0x0109	Wide Lens	Wide Lens
+266	0x010A	Muscle Band	Muscle Band
+267	0x010B	Wise Glasses	Wise Glasses
+268	0x010C	Expert Belt	Expert Belt
+269	0x010D	Light Clay	Light Clay
+270	0x010E	Life Orb	Life Orb
+271	0x010F	Power Herb	Power Herb
+272	0x0110	Toxic Orb	Toxic Orb
+273	0x0111	Flame Orb	Flame Orb
+274	0x0112	Quick Powder	Quick Powder
+275	0x0113	Focus Sash	Focus Sash
+276	0x0114	Zoom Lens	Zoom Lens
+277	0x0115	Metronome	Metronome
+278	0x0116	Iron Ball	Iron Ball
+279	0x0117	Lagging Tail	Lagging Tail
+280	0x0118	Destiny Knot	Destiny Knot
+281	0x0119	Black Sludge	Black Sludge
+282	0x011A	Icy Rock	Icy Rock
+283	0x011B	Smooth Rock	Smooth Rock
+284	0x011C	Heat Rock	Heat Rock
+285	0x011D	Damp Rock	Damp Rock
+286	0x011E	Grip Claw	Grip Claw
+287	0x011F	Choice Scarf	Choice Scarf
+288	0x0120	Sticky Barb	Sticky Barb
+289	0x0121	Power Bracer	Power Bracer
+290	0x0122	Power Belt	Power Belt
+291	0x0123	Power Lens	Power Lens
+292	0x0124	Power Band	Power Band
+293	0x0125	Power Anklet	Power Anklet
+294	0x0126	Power Weight	Power Weight
+295	0x0127	Shed Shell	Shed Shell
+296	0x0128	Big Root	Big Root
+297	0x0129	Choice Specs	Choice Specs
+298	0x012A	Flame Plate	Flame Plate
+299	0x012B	Splash Plate	Splash Plate
+300	0x012C	Zap Plate	Zap Plate
+301	0x012D	Meadow Plate	Meadow Plate
+302	0x012E	Icicle Plate	Icicle Plate
+303	0x012F	Fist Plate	Fist Plate
+304	0x0130	Toxic Plate	Toxic Plate
+305	0x0131	Earth Plate	Earth Plate
+306	0x0132	Sky Plate	Sky Plate
+307	0x0133	Mind Plate	Mind Plate
+308	0x0134	Insect Plate	Insect Plate
+309	0x0135	Stone Plate	Stone Plate
+310	0x0136	Spooky Plate	Spooky Plate
+311	0x0137	Draco Plate	Draco Plate
+312	0x0138	Dread Plate	Dread Plate
+313	0x0139	Iron Plate	Iron Plate
+314	0x013A	Odd Incense	Odd Incense
+315	0x013B	Rock Incense	Rock Incense
+316	0x013C	Full Incense	Full Incense
+317	0x013D	Wave Incense	Wave Incense
+318	0x013E	Rose Incense	Rose Incense
+319	0x013F	Luck Incense	Luck Incense
+320	0x0140	Pure Incense	Pure Incense
+321	0x0141	Protector	Protector
+322	0x0142	Electirizer	Electirizer
+323	0x0143	Magmarizer	Magmarizer
+324	0x0144	Dubious Disc	Dubious Disc
+325	0x0145	Reaper Cloth	Reaper Cloth
+326	0x0146	Razor Claw	Razor Claw
+327	0x0147	Razor Fang	Razor Fang
+328	0x0148	TM Fighting	TM01
+329	0x0149	TM Dragon	TM02
+330	0x014A	TM Water	TM03
+331	0x014B	TM Psychic	TM04
+332	0x014C	TM Normal	TM05
+333	0x014D	TM Poison	TM06
+334	0x014E	TM Ice		TM07
+335	0x014F	TM Fighting	TM08
+336	0x0150	TM Grass	TM09
+337	0x0151	TM Normal	TM10
+338	0x0152	TM Fire		TM11
+339	0x0153	TM Dark		TM12
+340	0x0154	TM Ice		TM13
+341	0x0155	TM Ice		TM14
+342	0x0156	TM Normal	TM15
+343	0x0157	TM Psychic	TM16
+344	0x0158	TM Normal	TM17
+345	0x0159	TM Water	TM18
+346	0x015A	TM Grass	TM19
+347	0x015B	TM Normal	TM20
+348	0x015C	TM Normal	TM21
+349	0x015D	TM Grass	TM22
+350	0x015E	TM Steel	TM23
+351	0x015F	TM Electric	TM24
+352	0x0160	TM Electric	TM25
+353	0x0161	TM Ground	TM26
+354	0x0162	TM Normal	TM27
+355	0x0163	TM Ground	TM28
+356	0x0164	TM Psychic	TM29
+357	0x0165	TM Ghost	TM30
+358	0x0166	TM Fighting	TM31
+359	0x0167	TM Normal	TM32
+360	0x0168	TM Psychic	TM33
+361	0x0169	TM Electric	TM34
+362	0x016A	TM Fire		TM35
+363	0x016B	TM Poison	TM36
+364	0x016C	TM Rock		TM37
+365	0x016D	TM Fire		TM38
+366	0x016E	TM Rock		TM39
+367	0x016F	TM Flying	TM40
+368	0x0170	TM Dark		TM41
+369	0x0171	TM Normal	TM42
+370	0x0172	TM Normal	TM43
+371	0x0173	TM Psychic	TM44
+372	0x0174	TM Normal	TM45
+373	0x0175	TM Dark		TM46
+374	0x0176	TM Steel	TM47
+375	0x0177	TM Psychic	TM48
+376	0x0178	TM Dark		TM49
+377	0x0179	TM Fire		TM50
+378	0x017A	TM Flying	TM51
+379	0x017B	TM Fighting	TM52
+380	0x017C	TM Grass	TM53
+381	0x017D	TM Normal	TM54
+382	0x017E	TM Water	TM55
+383	0x017F	TM Dark		TM56
+384	0x0180	TM Electric	TM57
+385	0x0181	TM Normal	TM58
+386	0x0182	TM Dragon	TM59
+387	0x0183	TM Fighting	TM60
+388	0x0184	TM Fire		TM61
+389	0x0185	TM Bug		TM62
+390	0x0186	TM Dark		TM63
+391	0x0187	TM Normal	TM64
+392	0x0188	TM Ghost	TM65
+393	0x0189	TM Dark		TM66
+394	0x018A	TM Normal	TM67
+395	0x018B	TM Normal	TM68
+396	0x018C	TM Rock		TM69
+397	0x018D	TM Normal	TM70
+398	0x018E	TM Rock		TM71
+399	0x018F	TM Ice		TM72
+400	0x0190	TM Electric	TM73
+401	0x0191	TM Steel	TM74
+402	0x0192	TM Normal	TM75
+403	0x0193	TM Rock		TM76
+404	0x0194	TM Normal	TM77
+405	0x0195	TM Normal	TM78
+406	0x0196	TM Dark		TM79
+407	0x0197	TM Rock		TM80
+408	0x0198	TM Bug		TM81
+409	0x0199	TM Normal	TM82
+410	0x019A	TM Normal	TM83
+411	0x019B	TM Poison	TM84
+412	0x019C	TM Psychic	TM85
+413	0x019D	TM Grass	TM86
+414	0x019E	TM Normal	TM87
+415	0x019F	TM Flying	TM88
+416	0x01A0	TM Bug		TM89
+417	0x01A1	TM Normal	TM90
+418	0x01A2	TM Steel	TM91
+419	0x01A3	TM Psychic	TM92
+420	0x01A4	HM Normal	HM01
+421	0x01A5	HM Flying	HM02
+422	0x01A6	HM Water	HM03
+423	0x01A7	HM Normal	HM04
+424	0x01A8	HM Water	HM05
+425	0x01A9	HM Fighting	HM06
+426	0x01AA	HM Water	HM07
+427	0x01AB	HM Normal	HM08
+428	0x01AC	Explorer Kit	Explorer Kit*
+428	0x01AC	unknown		???*
+429	0x01AD	Loot Sack	Loot Sack
+430	0x01AE	Rule Book	Rule Book
+431	0x01AF	Poké Radar	Poké Radar
+432	0x01B0	Point Card	Point Card
+433	0x01B1	Journal		Journal
+434	0x01B2	Seal Case	Seal Case
+435	0x01B3	Fashion Case	Fashion Case
+436	0x01B4	Seal Bag	Seal Bag
+437	0x01B5	Pal Pad		Pal Pad
+438	0x01B6	Works Key	Works Key
+439	0x01B7	Old Charm	Old Charm
+440	0x01B8	Galactic Key	Galactic Key
+441	0x01B9	Red Chain	Red Chain
+442	0x01BA	Town Map IV	Town Map
+443	0x01BB	Vs. Seeker	Vs. Seeker
+444	0x01BC	Coin Case	Coin Case
+445	0x01BD	Old Rod III	Old Rod
+446	0x01BE	Good Rod III	Good Rod
+447	0x01BF	Super Rod III	Super Rod
+448	0x01C0	Sprayduck	Sprayduck
+449	0x01C1	Poffin Case	Poffin Case
+450	0x01C2	Bicycle		Bicycle
+451	0x01C3	Suite Key	Suite Key
+452	0x01C4	Oak's Letter	Oak's Letter
+453	0x01C5	Lunar Wing	Lunar Wing
+454	0x01C6	Member Card	Member Card
+455	0x01C7	Azure Flute	Azure Flute
+456	0x01C8	S.S. Ticket	S.S. Ticket
+457	0x01C9	Contest Pass	Contest Pass
+458	0x01CA	Magma Stone	Magma Stone
+459	0x01CB	Parcel		Parcel
+460	0x01CC	Coupon 1	Coupon 1
+461	0x01CD	Coupon 2	Coupon 2
+462	0x01CE	Coupon 3	Coupon 3
+463	0x01CF	Storage Key IV	Storage Key
+464	0x01D0	Secret Potion	SecretPotion
+465	0x01D1	Vs. Recorder	Vs. Recorder*
+466	0x01D2	Gracidea	Gracidea*
+467	0x01D3	Secret Key IV	Secret Key*
+468	0x01D4	Apricorn Box	Apricorn Box*
+469	0x01D5	Unown Report	Unown Report*
+470	0x01D6	Berry Pots	Berry Pots*
+471	0x01D7	Dowsing MCHN IV	Dowsing MCHN*
+472	0x01D8	Blue Card	Blue Card*
+473	0x01D9	Slowpoke Tail	SlowpokeTail*
+474	0x01DA	Clear Bell	Clear Bell*
+475	0x01DB	Card Key	Card Key*
+476	0x01DC	Basement Key IV	Basement Key*
+477	0x01DD	Squirt Bottle	SquirtBottle*
+478	0x01DE	Red Scale	Red Scale*
+479	0x01DF	Lost Item IV	Lost Item*
+480	0x01E0	Pass		Pass*
+481	0x01E1	Machine Part	Machine Part*
+482	0x01E2	Silver Wing	Silver Wing*
+483	0x01E3	Rainbow Wing	Rainbow Wing*
+484	0x01E4	Mystery Egg	Mystery Egg*
+485	0x01E5	Red Apricorn	Red Apricorn*
+486	0x01E6	Yellow Apricorn	Ylw Apricorn*
+487	0x01E7	Blue Apricorn	Blu Apricorn*
+488	0x01E8	Green Apricorn	Grn Apricorn*
+489	0x01E9	Pink Apricorn	Pnk Apricorn*
+490	0x01EA	White Apricorn	Wht Apricorn*
+491	0x01EB	Black Apricorn	Blk Apricorn*
+492	0x01EC	Fast Ball	Fast Ball*
+493	0x01ED	Level Ball	Level Ball*
+494	0x01EE	Lure Ball IV	Lure Ball*
+495	0x01EF	Heavy Ball	Heavy Ball*
+496	0x01F0	Love Ball	Love Ball*
+497	0x01F1	Friend Ball	Friend Ball*
+498	0x01F2	Moon Ball	Moon Ball*
+499	0x01F3	Sport Ball	Sport Ball*
+500	0x01F4	Park Ball IV	Park Ball*
+501	0x01F5	Photo Album	Photo Album*
+502	0x01F6	GB Sounds	GB Sounds*
+503	0x01F7	Tidal Bell	Tidal Bell*
+504	0x01F8	Rage Candy Bar	RageCandyBar*
+505	0x01F9	Data Card	Data Card 01*
+506	0x01FA	Data Card	Data Card 02*
+507	0x01FB	Data Card	Data Card 03*
+508	0x01FC	Data Card	Data Card 04*
+509	0x01FD	Data Card	Data Card 05*
+510	0x01FE	Data Card	Data Card 06*
+511	0x01FF	Data Card	Data Card 07*
+512	0x0200	Data Card	Data Card 08*
+513	0x0201	Data Card	Data Card 09*
+514	0x0202	Data Card	Data Card 10*
+515	0x0203	Data Card	Data Card 11*
+516	0x0204	Data Card	Data Card 12*
+517	0x0205	Data Card	Data Card 13*
+518	0x0206	Data Card	Data Card 14*
+519	0x0207	Data Card	Data Card 15*
+520	0x0208	Data Card	Data Card 16*
+521	0x0209	Data Card	Data Card 17*
+522	0x020A	Data Card	Data Card 18*
+523	0x020B	Data Card	Data Card 19*
+524	0x020C	Data Card	Data Card 20*
+525	0x020D	Data Card	Data Card 21*
+526	0x020E	Data Card	Data Card 22*
+527	0x020F	Data Card	Data Card 23*
+528	0x0210	Data Card	Data Card 24*
+529	0x0211	Data Card	Data Card 25*
+530	0x0212	Data Card	Data Card 26*
+531	0x0213	Data Card	Data Card 27*
+532	0x0214	Jade Orb	Jade Orb*
+533	0x0215	Lock Capsule IV	Lock Capsule*
+534	0x0216	Red Orb IV	Red Orb*
+535	0x0217	Blue Orb IV	Blue Orb*
+536	0x0218	Enigma Stone	Enigma Stone*

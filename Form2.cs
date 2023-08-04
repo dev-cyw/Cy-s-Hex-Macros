@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,11 +23,11 @@ namespace Cy_s_Hex_Macros
         public string arm9 = Game_Option.arm9;
         string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
         bool close = true;
-
+        
 
         private void PlatinumHex_Load(object sender, EventArgs e)
         {
-            CritRefresh();
+            RefreshItems();
         }
 
         private void HexEdit(int offset, byte[] newData, string path)
@@ -37,13 +38,20 @@ namespace Cy_s_Hex_Macros
             binaryWriter.Close();
         }
 
-        private void CritRefresh()
+        private void RefreshItems()
         {
+            ItemsList();
             string[] CritRate = { "Gen 6: 1/16", "Gen 7: 1/24"};
             foreach (string Crits in CritRate)
             {
                 critRate.Items.Add(Crits);
             }
+
+            BinaryReader reader = new BinaryReader(File.Open(arm9,FileMode.Open, FileAccess.Read));
+            reader.BaseStream.Seek(0x79E50, SeekOrigin.Begin);
+            string hexString = Convert.ToString(reader.ReadByte());
+            reader.Close();
+            ShinyNumBox.Value = Convert.ToInt16(hexString);
         }
 
         private void NewFile_Click(object sender, EventArgs e)
@@ -106,5 +114,30 @@ namespace Cy_s_Hex_Macros
                 MessageBox.Show("You have not Selected an option!");
             }
         }
+
+
+        private void ItemsList()
+        {
+            string[] ItemsPlat = new string[468];
+            ItemsPlat = File.ReadAllLines(@"C:\Users\cpoon\source\repos\Cy's Hex Macros\ItemsPlat.txt", Encoding.UTF8);    //Directory.GetCurrentDirectory() + "ItemsPlat.txt"
+            int HexString;
+            
+            int[] ItemOffsets =
+            {
+                0xEBAFC, 0xEBB00, 0xEBB04, 0xEBB08, 0xEBB0C, 0xEBB10, 0xEBB14, 0xEBB18, 0xEBB1C, 0xEBB20, 0xEBB24, 0xEBB28, 0xEBB2C, 0xEBB30, 0xEBB34, 0xEBB38, 0xEBB3C, 0xEBB40,
+            };
+
+            //BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));            
+           // reader.BaseStream.Seek(ItemOffsets[], SeekOrigin.Begin);
+           // HexString = reader.ReadByte();
+                
+            //foreach(var Combobox in MartPanel.Controls.OfType<ComboBox>()) 
+            {
+            //     Combobox.SelectedIndex = HexString;
+            }
+            
+            //reader.Close();
+        }
+
     }
 }
