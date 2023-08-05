@@ -820,9 +820,24 @@
             // MartBadge1
             // 
             this.MartBadge1.Location = new System.Drawing.Point(89, 16);
+            this.MartBadge1.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge1.Name = "MartBadge1";
             this.MartBadge1.Size = new System.Drawing.Size(32, 20);
             this.MartBadge1.TabIndex = 1;
+            this.MartBadge1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox2
             // 
@@ -1305,9 +1320,24 @@
             // MartBadge2
             // 
             this.MartBadge2.Location = new System.Drawing.Point(89, 43);
+            this.MartBadge2.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge2.Name = "MartBadge2";
             this.MartBadge2.Size = new System.Drawing.Size(32, 20);
             this.MartBadge2.TabIndex = 3;
+            this.MartBadge2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox3
             // 
@@ -1790,9 +1820,24 @@
             // MartBadge3
             // 
             this.MartBadge3.Location = new System.Drawing.Point(89, 70);
+            this.MartBadge3.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge3.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge3.Name = "MartBadge3";
             this.MartBadge3.Size = new System.Drawing.Size(32, 20);
             this.MartBadge3.TabIndex = 5;
+            this.MartBadge3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox4
             // 
@@ -2275,9 +2320,24 @@
             // MartBadge4
             // 
             this.MartBadge4.Location = new System.Drawing.Point(89, 97);
+            this.MartBadge4.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge4.Name = "MartBadge4";
             this.MartBadge4.Size = new System.Drawing.Size(32, 20);
             this.MartBadge4.TabIndex = 7;
+            this.MartBadge4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox5
             // 
@@ -2760,9 +2820,24 @@
             // MartBadge5
             // 
             this.MartBadge5.Location = new System.Drawing.Point(89, 124);
+            this.MartBadge5.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge5.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge5.Name = "MartBadge5";
             this.MartBadge5.Size = new System.Drawing.Size(32, 20);
             this.MartBadge5.TabIndex = 9;
+            this.MartBadge5.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox6
             // 
@@ -3245,9 +3320,24 @@
             // MartBadge6
             // 
             this.MartBadge6.Location = new System.Drawing.Point(89, 151);
+            this.MartBadge6.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge6.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge6.Name = "MartBadge6";
             this.MartBadge6.Size = new System.Drawing.Size(32, 20);
             this.MartBadge6.TabIndex = 11;
+            this.MartBadge6.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox7
             // 
@@ -3730,9 +3820,24 @@
             // MartBadge7
             // 
             this.MartBadge7.Location = new System.Drawing.Point(89, 178);
+            this.MartBadge7.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge7.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge7.Name = "MartBadge7";
             this.MartBadge7.Size = new System.Drawing.Size(32, 20);
             this.MartBadge7.TabIndex = 13;
+            this.MartBadge7.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox8
             // 
@@ -4215,9 +4320,24 @@
             // MartBadge8
             // 
             this.MartBadge8.Location = new System.Drawing.Point(89, 205);
+            this.MartBadge8.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge8.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge8.Name = "MartBadge8";
             this.MartBadge8.Size = new System.Drawing.Size(32, 20);
             this.MartBadge8.TabIndex = 15;
+            this.MartBadge8.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox9
             // 
@@ -4700,9 +4820,24 @@
             // MartBadge9
             // 
             this.MartBadge9.Location = new System.Drawing.Point(89, 232);
+            this.MartBadge9.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge9.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge9.Name = "MartBadge9";
             this.MartBadge9.Size = new System.Drawing.Size(32, 20);
             this.MartBadge9.TabIndex = 17;
+            this.MartBadge9.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox10
             // 
@@ -5185,9 +5320,24 @@
             // MartBadge10
             // 
             this.MartBadge10.Location = new System.Drawing.Point(89, 259);
+            this.MartBadge10.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge10.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge10.Name = "MartBadge10";
             this.MartBadge10.Size = new System.Drawing.Size(32, 20);
             this.MartBadge10.TabIndex = 19;
+            this.MartBadge10.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox11
             // 
@@ -5670,9 +5820,24 @@
             // MartBadge11
             // 
             this.MartBadge11.Location = new System.Drawing.Point(89, 286);
+            this.MartBadge11.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge11.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge11.Name = "MartBadge11";
             this.MartBadge11.Size = new System.Drawing.Size(32, 20);
             this.MartBadge11.TabIndex = 21;
+            this.MartBadge11.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox12
             // 
@@ -6155,9 +6320,24 @@
             // MartBadge12
             // 
             this.MartBadge12.Location = new System.Drawing.Point(89, 313);
+            this.MartBadge12.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge12.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge12.Name = "MartBadge12";
             this.MartBadge12.Size = new System.Drawing.Size(32, 20);
             this.MartBadge12.TabIndex = 23;
+            this.MartBadge12.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox13
             // 
@@ -6640,9 +6820,24 @@
             // MartBadge13
             // 
             this.MartBadge13.Location = new System.Drawing.Point(89, 340);
+            this.MartBadge13.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge13.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge13.Name = "MartBadge13";
             this.MartBadge13.Size = new System.Drawing.Size(32, 20);
             this.MartBadge13.TabIndex = 25;
+            this.MartBadge13.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox14
             // 
@@ -7125,9 +7320,24 @@
             // MartBadge14
             // 
             this.MartBadge14.Location = new System.Drawing.Point(89, 367);
+            this.MartBadge14.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge14.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge14.Name = "MartBadge14";
             this.MartBadge14.Size = new System.Drawing.Size(32, 20);
             this.MartBadge14.TabIndex = 27;
+            this.MartBadge14.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox15
             // 
@@ -7610,9 +7820,24 @@
             // MartBadge15
             // 
             this.MartBadge15.Location = new System.Drawing.Point(89, 394);
+            this.MartBadge15.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge15.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge15.Name = "MartBadge15";
             this.MartBadge15.Size = new System.Drawing.Size(32, 20);
             this.MartBadge15.TabIndex = 29;
+            this.MartBadge15.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox16
             // 
@@ -8095,9 +8320,24 @@
             // MartBadge16
             // 
             this.MartBadge16.Location = new System.Drawing.Point(89, 421);
+            this.MartBadge16.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge16.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge16.Name = "MartBadge16";
             this.MartBadge16.Size = new System.Drawing.Size(32, 20);
             this.MartBadge16.TabIndex = 31;
+            this.MartBadge16.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox17
             // 
@@ -8580,9 +8820,24 @@
             // MartBadge17
             // 
             this.MartBadge17.Location = new System.Drawing.Point(89, 448);
+            this.MartBadge17.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge17.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge17.Name = "MartBadge17";
             this.MartBadge17.Size = new System.Drawing.Size(32, 20);
             this.MartBadge17.TabIndex = 33;
+            this.MartBadge17.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox18
             // 
@@ -9065,9 +9320,24 @@
             // MartBadge18
             // 
             this.MartBadge18.Location = new System.Drawing.Point(89, 475);
+            this.MartBadge18.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge18.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge18.Name = "MartBadge18";
             this.MartBadge18.Size = new System.Drawing.Size(32, 20);
             this.MartBadge18.TabIndex = 35;
+            this.MartBadge18.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // MartBox19
             // 
@@ -9550,9 +9820,24 @@
             // MartBadge19
             // 
             this.MartBadge19.Location = new System.Drawing.Point(89, 502);
+            this.MartBadge19.Maximum = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
+            this.MartBadge19.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge19.Name = "MartBadge19";
             this.MartBadge19.Size = new System.Drawing.Size(32, 20);
             this.MartBadge19.TabIndex = 37;
+            this.MartBadge19.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // StartersTab
             // 

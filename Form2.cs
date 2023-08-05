@@ -121,22 +121,25 @@ namespace Cy_s_Hex_Macros
             string[] ItemsPlat = new string[468];
             ItemsPlat = File.ReadAllLines(@"C:\Users\cpoon\source\repos\Cy's Hex Macros\ItemsPlat.txt", Encoding.UTF8);    //Directory.GetCurrentDirectory() + "ItemsPlat.txt"
             int HexString;
-            
+            int i = 0;
+
             int[] ItemOffsets =
             {
-                0xEBAFC, 0xEBB00, 0xEBB04, 0xEBB08, 0xEBB0C, 0xEBB10, 0xEBB14, 0xEBB18, 0xEBB1C, 0xEBB20, 0xEBB24, 0xEBB28, 0xEBB2C, 0xEBB30, 0xEBB34, 0xEBB38, 0xEBB3C, 0xEBB40,
+                0xEBAFC, 0xEBB00, 0xEBB04, 0xEBB08, 0xEBB0C, 0xEBB10, 0xEBB14, 0xEBB18, 0xEBB1C, 0xEBB20, 0xEBB24, 0xEBB28, 0xEBB2C, 0xEBB30, 0xEBB34, 0xEBB38, 0xEBB3C, 0xEBB40, 0xEBB44
             };
 
-            //BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));            
-           // reader.BaseStream.Seek(ItemOffsets[], SeekOrigin.Begin);
-           // HexString = reader.ReadByte();
-                
-            //foreach(var Combobox in MartPanel.Controls.OfType<ComboBox>()) 
+            BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));                            
+            foreach(var Combobox in MartPanel.Controls.OfType<ComboBox>()) 
             {
-            //     Combobox.SelectedIndex = HexString;
+                
+                Console.WriteLine(i);
+                reader.BaseStream.Seek(ItemOffsets[i], SeekOrigin.Begin);
+                HexString = reader.ReadByte();
+                Combobox.SelectedIndex = HexString;
+                i++;
             }
             
-            //reader.Close();
+            reader.Close();
         }
 
     }
