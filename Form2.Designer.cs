@@ -115,6 +115,7 @@
             this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.Apply_Mart = new System.Windows.Forms.Button();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -173,7 +174,7 @@
             this.MainTab.Controls.Add(this.flowLayoutPanel2);
             this.MainTab.Location = new System.Drawing.Point(4, 22);
             this.MainTab.Name = "MainTab";
-            this.MainTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.MainTab.Padding = new System.Windows.Forms.Padding(3);
             this.MainTab.Size = new System.Drawing.Size(407, 400);
             this.MainTab.TabIndex = 0;
             this.MainTab.Text = "Main";
@@ -315,9 +316,10 @@
             this.MartPanel.Controls.Add(this.MartBadge18);
             this.MartPanel.Controls.Add(this.MartBox19);
             this.MartPanel.Controls.Add(this.MartBadge19);
+            this.MartPanel.Controls.Add(this.Apply_Mart);
             this.MartPanel.Location = new System.Drawing.Point(6, 19);
             this.MartPanel.Name = "MartPanel";
-            this.MartPanel.Size = new System.Drawing.Size(144, 369);
+            this.MartPanel.Size = new System.Drawing.Size(156, 369);
             this.MartPanel.TabIndex = 2;
             // 
             // ItemLabel
@@ -345,19 +347,15 @@
             this.MartBox1.FormattingEnabled = true;
             this.MartBox1.Location = new System.Drawing.Point(3, 16);
             this.MartBox1.Name = "MartBox1";
-            this.MartBox1.Size = new System.Drawing.Size(80, 21);
+            this.MartBox1.Size = new System.Drawing.Size(90, 21);
             this.MartBox1.TabIndex = 0;
             // 
             // MartBadge1
             // 
-            this.MartBadge1.Location = new System.Drawing.Point(89, 16);
+            this.MartBadge1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.MartBadge1.Location = new System.Drawing.Point(99, 16);
             this.MartBadge1.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge1.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -376,19 +374,14 @@
             this.MartBox2.FormattingEnabled = true;
             this.MartBox2.Location = new System.Drawing.Point(3, 43);
             this.MartBox2.Name = "MartBox2";
-            this.MartBox2.Size = new System.Drawing.Size(80, 21);
+            this.MartBox2.Size = new System.Drawing.Size(90, 21);
             this.MartBox2.TabIndex = 2;
             // 
             // MartBadge2
             // 
-            this.MartBadge2.Location = new System.Drawing.Point(89, 43);
+            this.MartBadge2.Location = new System.Drawing.Point(99, 43);
             this.MartBadge2.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge2.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -407,19 +400,14 @@
             this.MartBox3.FormattingEnabled = true;
             this.MartBox3.Location = new System.Drawing.Point(3, 70);
             this.MartBox3.Name = "MartBox3";
-            this.MartBox3.Size = new System.Drawing.Size(80, 21);
+            this.MartBox3.Size = new System.Drawing.Size(90, 21);
             this.MartBox3.TabIndex = 4;
             // 
             // MartBadge3
             // 
-            this.MartBadge3.Location = new System.Drawing.Point(89, 70);
+            this.MartBadge3.Location = new System.Drawing.Point(99, 70);
             this.MartBadge3.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge3.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -438,19 +426,14 @@
             this.MartBox4.FormattingEnabled = true;
             this.MartBox4.Location = new System.Drawing.Point(3, 97);
             this.MartBox4.Name = "MartBox4";
-            this.MartBox4.Size = new System.Drawing.Size(80, 21);
+            this.MartBox4.Size = new System.Drawing.Size(90, 21);
             this.MartBox4.TabIndex = 6;
             // 
             // MartBadge4
             // 
-            this.MartBadge4.Location = new System.Drawing.Point(89, 97);
+            this.MartBadge4.Location = new System.Drawing.Point(99, 97);
             this.MartBadge4.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge4.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -469,19 +452,14 @@
             this.MartBox5.FormattingEnabled = true;
             this.MartBox5.Location = new System.Drawing.Point(3, 124);
             this.MartBox5.Name = "MartBox5";
-            this.MartBox5.Size = new System.Drawing.Size(80, 21);
+            this.MartBox5.Size = new System.Drawing.Size(90, 21);
             this.MartBox5.TabIndex = 8;
             // 
             // MartBadge5
             // 
-            this.MartBadge5.Location = new System.Drawing.Point(89, 124);
+            this.MartBadge5.Location = new System.Drawing.Point(99, 124);
             this.MartBadge5.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge5.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -500,19 +478,14 @@
             this.MartBox6.FormattingEnabled = true;
             this.MartBox6.Location = new System.Drawing.Point(3, 151);
             this.MartBox6.Name = "MartBox6";
-            this.MartBox6.Size = new System.Drawing.Size(80, 21);
+            this.MartBox6.Size = new System.Drawing.Size(90, 21);
             this.MartBox6.TabIndex = 10;
             // 
             // MartBadge6
             // 
-            this.MartBadge6.Location = new System.Drawing.Point(89, 151);
+            this.MartBadge6.Location = new System.Drawing.Point(99, 151);
             this.MartBadge6.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge6.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -531,19 +504,14 @@
             this.MartBox7.FormattingEnabled = true;
             this.MartBox7.Location = new System.Drawing.Point(3, 178);
             this.MartBox7.Name = "MartBox7";
-            this.MartBox7.Size = new System.Drawing.Size(80, 21);
+            this.MartBox7.Size = new System.Drawing.Size(90, 21);
             this.MartBox7.TabIndex = 12;
             // 
             // MartBadge7
             // 
-            this.MartBadge7.Location = new System.Drawing.Point(89, 178);
+            this.MartBadge7.Location = new System.Drawing.Point(99, 178);
             this.MartBadge7.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge7.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -562,19 +530,14 @@
             this.MartBox8.FormattingEnabled = true;
             this.MartBox8.Location = new System.Drawing.Point(3, 205);
             this.MartBox8.Name = "MartBox8";
-            this.MartBox8.Size = new System.Drawing.Size(80, 21);
+            this.MartBox8.Size = new System.Drawing.Size(90, 21);
             this.MartBox8.TabIndex = 14;
             // 
             // MartBadge8
             // 
-            this.MartBadge8.Location = new System.Drawing.Point(89, 205);
+            this.MartBadge8.Location = new System.Drawing.Point(99, 205);
             this.MartBadge8.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge8.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -593,19 +556,14 @@
             this.MartBox9.FormattingEnabled = true;
             this.MartBox9.Location = new System.Drawing.Point(3, 232);
             this.MartBox9.Name = "MartBox9";
-            this.MartBox9.Size = new System.Drawing.Size(80, 21);
+            this.MartBox9.Size = new System.Drawing.Size(90, 21);
             this.MartBox9.TabIndex = 16;
             // 
             // MartBadge9
             // 
-            this.MartBadge9.Location = new System.Drawing.Point(89, 232);
+            this.MartBadge9.Location = new System.Drawing.Point(99, 232);
             this.MartBadge9.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge9.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -624,19 +582,14 @@
             this.MartBox10.FormattingEnabled = true;
             this.MartBox10.Location = new System.Drawing.Point(3, 259);
             this.MartBox10.Name = "MartBox10";
-            this.MartBox10.Size = new System.Drawing.Size(80, 21);
+            this.MartBox10.Size = new System.Drawing.Size(90, 21);
             this.MartBox10.TabIndex = 18;
             // 
             // MartBadge10
             // 
-            this.MartBadge10.Location = new System.Drawing.Point(89, 259);
+            this.MartBadge10.Location = new System.Drawing.Point(99, 259);
             this.MartBadge10.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge10.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -655,19 +608,14 @@
             this.MartBox11.FormattingEnabled = true;
             this.MartBox11.Location = new System.Drawing.Point(3, 286);
             this.MartBox11.Name = "MartBox11";
-            this.MartBox11.Size = new System.Drawing.Size(80, 21);
+            this.MartBox11.Size = new System.Drawing.Size(90, 21);
             this.MartBox11.TabIndex = 20;
             // 
             // MartBadge11
             // 
-            this.MartBadge11.Location = new System.Drawing.Point(89, 286);
+            this.MartBadge11.Location = new System.Drawing.Point(99, 286);
             this.MartBadge11.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge11.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -686,19 +634,14 @@
             this.MartBox12.FormattingEnabled = true;
             this.MartBox12.Location = new System.Drawing.Point(3, 313);
             this.MartBox12.Name = "MartBox12";
-            this.MartBox12.Size = new System.Drawing.Size(80, 21);
+            this.MartBox12.Size = new System.Drawing.Size(90, 21);
             this.MartBox12.TabIndex = 22;
             // 
             // MartBadge12
             // 
-            this.MartBadge12.Location = new System.Drawing.Point(89, 313);
+            this.MartBadge12.Location = new System.Drawing.Point(99, 313);
             this.MartBadge12.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge12.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -717,19 +660,14 @@
             this.MartBox13.FormattingEnabled = true;
             this.MartBox13.Location = new System.Drawing.Point(3, 340);
             this.MartBox13.Name = "MartBox13";
-            this.MartBox13.Size = new System.Drawing.Size(80, 21);
+            this.MartBox13.Size = new System.Drawing.Size(90, 21);
             this.MartBox13.TabIndex = 24;
             // 
             // MartBadge13
             // 
-            this.MartBadge13.Location = new System.Drawing.Point(89, 340);
+            this.MartBadge13.Location = new System.Drawing.Point(99, 340);
             this.MartBadge13.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge13.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -748,19 +686,14 @@
             this.MartBox14.FormattingEnabled = true;
             this.MartBox14.Location = new System.Drawing.Point(3, 367);
             this.MartBox14.Name = "MartBox14";
-            this.MartBox14.Size = new System.Drawing.Size(80, 21);
+            this.MartBox14.Size = new System.Drawing.Size(90, 21);
             this.MartBox14.TabIndex = 26;
             // 
             // MartBadge14
             // 
-            this.MartBadge14.Location = new System.Drawing.Point(89, 367);
+            this.MartBadge14.Location = new System.Drawing.Point(99, 367);
             this.MartBadge14.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge14.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -779,19 +712,14 @@
             this.MartBox15.FormattingEnabled = true;
             this.MartBox15.Location = new System.Drawing.Point(3, 394);
             this.MartBox15.Name = "MartBox15";
-            this.MartBox15.Size = new System.Drawing.Size(80, 21);
+            this.MartBox15.Size = new System.Drawing.Size(90, 21);
             this.MartBox15.TabIndex = 28;
             // 
             // MartBadge15
             // 
-            this.MartBadge15.Location = new System.Drawing.Point(89, 394);
+            this.MartBadge15.Location = new System.Drawing.Point(99, 394);
             this.MartBadge15.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge15.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -810,19 +738,14 @@
             this.MartBox16.FormattingEnabled = true;
             this.MartBox16.Location = new System.Drawing.Point(3, 421);
             this.MartBox16.Name = "MartBox16";
-            this.MartBox16.Size = new System.Drawing.Size(80, 21);
+            this.MartBox16.Size = new System.Drawing.Size(90, 21);
             this.MartBox16.TabIndex = 30;
             // 
             // MartBadge16
             // 
-            this.MartBadge16.Location = new System.Drawing.Point(89, 421);
+            this.MartBadge16.Location = new System.Drawing.Point(99, 421);
             this.MartBadge16.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge16.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -841,19 +764,14 @@
             this.MartBox17.FormattingEnabled = true;
             this.MartBox17.Location = new System.Drawing.Point(3, 448);
             this.MartBox17.Name = "MartBox17";
-            this.MartBox17.Size = new System.Drawing.Size(80, 21);
+            this.MartBox17.Size = new System.Drawing.Size(90, 21);
             this.MartBox17.TabIndex = 32;
             // 
             // MartBadge17
             // 
-            this.MartBadge17.Location = new System.Drawing.Point(89, 448);
+            this.MartBadge17.Location = new System.Drawing.Point(99, 448);
             this.MartBadge17.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge17.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -872,19 +790,14 @@
             this.MartBox18.FormattingEnabled = true;
             this.MartBox18.Location = new System.Drawing.Point(3, 475);
             this.MartBox18.Name = "MartBox18";
-            this.MartBox18.Size = new System.Drawing.Size(80, 21);
+            this.MartBox18.Size = new System.Drawing.Size(90, 21);
             this.MartBox18.TabIndex = 34;
             // 
             // MartBadge18
             // 
-            this.MartBadge18.Location = new System.Drawing.Point(89, 475);
+            this.MartBadge18.Location = new System.Drawing.Point(99, 475);
             this.MartBadge18.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge18.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -903,19 +816,14 @@
             this.MartBox19.FormattingEnabled = true;
             this.MartBox19.Location = new System.Drawing.Point(3, 502);
             this.MartBox19.Name = "MartBox19";
-            this.MartBox19.Size = new System.Drawing.Size(80, 21);
+            this.MartBox19.Size = new System.Drawing.Size(90, 21);
             this.MartBox19.TabIndex = 36;
             // 
             // MartBadge19
             // 
-            this.MartBadge19.Location = new System.Drawing.Point(89, 502);
+            this.MartBadge19.Location = new System.Drawing.Point(99, 502);
             this.MartBadge19.Maximum = new decimal(new int[] {
             6,
-            0,
-            0,
-            0});
-            this.MartBadge19.Minimum = new decimal(new int[] {
-            1,
             0,
             0,
             0});
@@ -1225,6 +1133,16 @@
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
             // 
+            // Apply_Mart
+            // 
+            this.Apply_Mart.Location = new System.Drawing.Point(3, 529);
+            this.Apply_Mart.Name = "Apply_Mart";
+            this.Apply_Mart.Size = new System.Drawing.Size(128, 23);
+            this.Apply_Mart.TabIndex = 3;
+            this.Apply_Mart.Text = "Apply";
+            this.Apply_Mart.UseVisualStyleBackColor = true;
+            this.Apply_Mart.Click += new System.EventHandler(this.Apply_Mart_Click);
+            // 
             // PlatinumHex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1361,5 +1279,6 @@
         private System.Windows.Forms.NumericUpDown MartBadge19;
         private System.Windows.Forms.Label ItemLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Apply_Mart;
     }
 }

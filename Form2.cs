@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Cy_s_Hex_Macros
 {
@@ -25,6 +26,14 @@ namespace Cy_s_Hex_Macros
         string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
         bool close = true;
         string[] ItemsPlat = new string[468];
+        int[] ItemOffsets =
+ {
+                0xEBAFC, 0xEBB00, 0xEBB04, 0xEBB08, 0xEBB0C, 0xEBB10, 0xEBB14, 0xEBB18, 0xEBB1C, 0xEBB20, 0xEBB24, 0xEBB28, 0xEBB2C, 0xEBB30, 0xEBB34, 0xEBB38, 0xEBB3C, 0xEBB40, 0xEBB44
+            };
+        int[] LevelOffsets =
+        {
+                0xEBAFE, 0xEBB02, 0xEBB06, 0xEBB0A, 0xEBB0E, 0xEBB12, 0xEBB16, 0xEBB1A, 0xEBB1E, 0xEBB22, 0xEBB26, 0xEBB2A, 0xEBB2E, 0xEBB32, 0xEBB36, 0xEBB3A, 0xEBB3E, 0xEBB42, 0xEBB46
+            };
 
 
         private void PlatinumHex_Load(object sender, EventArgs e)
@@ -51,7 +60,7 @@ namespace Cy_s_Hex_Macros
             }
 
             BinaryReader reader = new BinaryReader(File.Open(arm9,FileMode.Open, FileAccess.Read));
-            reader.BaseStream.Seek(0x79E50, SeekOrigin.Begin);
+            reader.BaseStream.Seek(0x75E50, SeekOrigin.Begin);
             int hexString = reader.ReadByte();
             reader.Close();
             ShinyNumBox.Value = hexString;
@@ -86,7 +95,8 @@ namespace Cy_s_Hex_Macros
         private void ShinyApply_Click(object sender, EventArgs e)
         {
             byte[] ShinyOdds = new byte[] { Convert.ToByte(ShinyNumBox.Value) };
-            HexEdit(0x79E50, ShinyOdds, arm9);
+            Console.WriteLine(ShinyOdds[0]);
+            HexEdit(0x75E50, ShinyOdds, arm9);
             MessageBox.Show("The hex has been changed!"); //
         }
 
@@ -124,26 +134,29 @@ namespace Cy_s_Hex_Macros
             int HexString;
             int i = 0;
 
-            int[] ItemOffsets =
-            {
-                0xEBAFC, 0xEBB00, 0xEBB04, 0xEBB08, 0xEBB0C, 0xEBB10, 0xEBB14, 0xEBB18, 0xEBB1C, 0xEBB20, 0xEBB24, 0xEBB28, 0xEBB2C, 0xEBB30, 0xEBB34, 0xEBB38, 0xEBB3C, 0xEBB40, 0xEBB44
-            };
-
             BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));                            
-            foreach(var Combobox in MartPanel.Controls.OfType<ComboBox>()) 
+            foreach(var Combobox in MartPanel.Controls.OfType<System.Windows.Forms.ComboBox>()) 
             {
                 reader.BaseStream.Seek(ItemOffsets[i], SeekOrigin.Begin);
                 HexString = reader.ReadByte();
                 Combobox.SelectedIndex = HexString;
                 i++;
             }
-            
+            i = 0;
+            foreach (var NumericUpDown in MartPanel.Controls.OfType<NumericUpDown>())
+            {
+                reader.BaseStream.Seek(LevelOffsets[i], SeekOrigin.Begin);
+                HexString = reader.ReadByte();
+                Console.WriteLine(HexString + " " + LevelOffsets[i]);
+                NumericUpDown.Value = Convert.ToByte(HexString);
+                i++;
+            }
             reader.Close();
         }
         private void PopulateComboBoxes()
         {
             //Directory.GetCurrentDirectory() + "ItemsPlat.txt"
-            ItemsPlat = File.ReadAllLines(@"C:\Users\cpoon\source\repos\dev-cyw\Cy-s-Hex-Macros\ItemsPlat.txt", Encoding.UTF8);
+            ItemsPlat = File.ReadAllLines(@"C:\Users\cpoon\source\repos\Cy's Hex Macros\ItemsPlat.txt", Encoding.UTF8);
             BackgroundWorker worker = new BackgroundWorker();
 
             MartBox1.Update();
@@ -223,17 +236,35 @@ namespace Cy_s_Hex_Macros
             MartBox19.EndUpdate();
 
             worker.RunWorkerAsync();
-            Stopwatch stopwatch = new Stopwatch();
             while (worker.IsBusy == true)
             {
-                stopwatch.Start();
                 PlatTabs.SelectTab(1);
                 PlatTabs.SelectTab(0);
-                stopwatch.Stop();
-                Console.WriteLine(stopwatch.Elapsed.ToString());
                 Application.DoEvents();
             }
         }
 
+        private void Apply_Mart_Click(object sender, EventArgs e)
+
+        {
+            int i = 0;
+            int HexString;
+            BinaryWriter MartWriter = new BinaryWriter(File.Open(arm9, FileMode.Open, FileAccess.ReadWrite));
+            foreach(var Control in MartPanel.Controls.OfType<NumericUpDown>())
+            {
+                MartWriter.BaseStream.Seek(LevelOffsets[i], SeekOrigin.Begin);
+                HexString = (int)Control.Value;
+                MartWriter.Write((byte)HexString);
+                i++;
+            }
+            i = 0;
+            foreach (var Control in MartPanel.Controls.OfType<System.Windows.Forms.ComboBox>())
+            {
+                MartWriter.BaseStream.Seek(ItemOffsets[i], SeekOrigin.Begin);
+                HexString = (int)Control.SelectedIndex;
+                MartWriter.Write((byte)HexString);
+                i++;
+            }
+        }
     }
 }

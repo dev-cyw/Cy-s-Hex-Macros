@@ -33,7 +33,7 @@ Soda Pop
 Lemonade
 Moomoo Milk
 EnergyPowder
-0Energy Root
+Energy Root
 Heal Powder
 Revival Herb
 Ether
