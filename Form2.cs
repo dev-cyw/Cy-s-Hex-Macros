@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -23,7 +24,8 @@ namespace Cy_s_Hex_Macros
         public string arm9 = Game_Option.arm9;
         string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
         bool close = true;
-        
+        string[] ItemsPlat = new string[468];
+
 
         private void PlatinumHex_Load(object sender, EventArgs e)
         {
@@ -40,6 +42,7 @@ namespace Cy_s_Hex_Macros
 
         private void RefreshItems()
         {
+            PopulateComboBoxes();
             ItemsList();
             string[] CritRate = { "Gen 6: 1/16", "Gen 7: 1/24"};
             foreach (string Crits in CritRate)
@@ -49,9 +52,9 @@ namespace Cy_s_Hex_Macros
 
             BinaryReader reader = new BinaryReader(File.Open(arm9,FileMode.Open, FileAccess.Read));
             reader.BaseStream.Seek(0x79E50, SeekOrigin.Begin);
-            string hexString = Convert.ToString(reader.ReadByte());
+            int hexString = reader.ReadByte();
             reader.Close();
-            ShinyNumBox.Value = Convert.ToInt16(hexString);
+            ShinyNumBox.Value = hexString;
         }
 
         private void NewFile_Click(object sender, EventArgs e)
@@ -118,8 +121,6 @@ namespace Cy_s_Hex_Macros
 
         private void ItemsList()
         {
-            string[] ItemsPlat = new string[468];
-            ItemsPlat = File.ReadAllLines(@"C:\Users\cpoon\source\repos\Cy's Hex Macros\ItemsPlat.txt", Encoding.UTF8);    //Directory.GetCurrentDirectory() + "ItemsPlat.txt"
             int HexString;
             int i = 0;
 
@@ -131,8 +132,6 @@ namespace Cy_s_Hex_Macros
             BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));                            
             foreach(var Combobox in MartPanel.Controls.OfType<ComboBox>()) 
             {
-                
-                Console.WriteLine(i);
                 reader.BaseStream.Seek(ItemOffsets[i], SeekOrigin.Begin);
                 HexString = reader.ReadByte();
                 Combobox.SelectedIndex = HexString;
@@ -140,6 +139,100 @@ namespace Cy_s_Hex_Macros
             }
             
             reader.Close();
+        }
+        private void PopulateComboBoxes()
+        {
+            //Directory.GetCurrentDirectory() + "ItemsPlat.txt"
+            ItemsPlat = File.ReadAllLines(@"C:\Users\cpoon\source\repos\dev-cyw\Cy-s-Hex-Macros\ItemsPlat.txt", Encoding.UTF8);
+            BackgroundWorker worker = new BackgroundWorker();
+
+            MartBox1.Update();
+            MartBox1.Items.AddRange(ItemsPlat);
+            MartBox1.EndUpdate();
+
+            MartBox2.Update();
+            MartBox2.Items.AddRange(ItemsPlat);
+            MartBox2.EndUpdate();
+
+            MartBox3.Update();
+            MartBox3.Items.AddRange(ItemsPlat);
+            MartBox3.EndUpdate();
+
+            MartBox4.Update();
+            MartBox4.Items.AddRange(ItemsPlat);
+            MartBox4.EndUpdate();
+
+            MartBox5.Update();
+            MartBox5.Items.AddRange(ItemsPlat);
+            MartBox5.EndUpdate();
+
+            MartBox6.Update();
+            MartBox6.Items.AddRange(ItemsPlat);
+            MartBox6.EndUpdate();
+
+            MartBox7.Update();
+            MartBox7.Items.AddRange(ItemsPlat);
+            MartBox7.EndUpdate();
+
+            MartBox8.Update();
+            MartBox8.Items.AddRange(ItemsPlat);
+            MartBox8.EndUpdate();
+
+            MartBox9.Update();
+            MartBox9.Items.AddRange(ItemsPlat);
+            MartBox9.EndUpdate();
+
+            MartBox10.Update();
+            MartBox10.Items.AddRange(ItemsPlat);
+            MartBox10.EndUpdate();
+
+            MartBox11.Update();
+            MartBox11.Items.AddRange(ItemsPlat);
+            MartBox11.EndUpdate();
+
+            MartBox12.Update();
+            MartBox12.Items.AddRange(ItemsPlat);
+            MartBox12.EndUpdate();
+
+            MartBox13.Update();
+            MartBox13.Items.AddRange(ItemsPlat);
+            MartBox13.EndUpdate();
+
+            MartBox14.Update();
+            MartBox14.Items.AddRange(ItemsPlat);
+            MartBox14.EndUpdate();
+
+            MartBox15.Update();
+            MartBox15.Items.AddRange(ItemsPlat);
+            MartBox15.EndUpdate();
+
+            MartBox16.Update();
+            MartBox16.Items.AddRange(ItemsPlat);
+            MartBox16.EndUpdate();
+
+            MartBox17.Update();
+            MartBox17.Items.AddRange(ItemsPlat);
+            MartBox17.EndUpdate();
+
+            MartBox18.Update();
+            MartBox18.Items.AddRange(ItemsPlat);
+            MartBox18.EndUpdate();
+
+            MartBox19.Update();
+            MartBox19.Items.AddRange(ItemsPlat);
+            MartBox19.EndUpdate();
+
+            worker.RunWorkerAsync();
+            Stopwatch stopwatch = new Stopwatch();
+            while (worker.IsBusy == true)
+            {
+                stopwatch.Start();
+                PlatTabs.SelectTab(1);
+                PlatTabs.SelectTab(0);
+                stopwatch.Stop();
+                Console.WriteLine(stopwatch.Elapsed.ToString());
+                Application.DoEvents();
+            }
         }
 
     }

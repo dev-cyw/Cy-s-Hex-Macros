@@ -27,8 +27,8 @@ namespace Cy_s_Hex_Macros
 
         private void GameSelect_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Open_File.Enabled = true;
             gameIndex = GameSelect.SelectedIndex;
+            Open_File.Enabled = true;
         }
 
         private void GamesRefresh()
@@ -45,23 +45,32 @@ namespace Cy_s_Hex_Macros
         {
             openFileDialog.FileName = "";
             openFileDialog.Filter = "Binary Files (*.bin)|*.bin";
-            openFileDialog.ShowDialog(this);
-            arm9 = openFileDialog.FileName;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                arm9 = openFileDialog.FileName;
 
-            switch(gameIndex){
-                case 0:
-                    PlatinumHex Platinum = new PlatinumHex();
-                    Platinum.RefToMenu = this;
-                    this.Visible = false;
-                    Platinum.Show();
-                    break;
-                case 1:
+                switch (gameIndex)
+                {
+                    case 0:
+                        PlatinumHex Platinum = new PlatinumHex();
+                        Platinum.RefToMenu = this;
+                        this.Visible = false;
+                        Platinum.Show();
+                        break;
+                    case 1:
 
-                    break;
-                case 2:
+                        break;
+                    case 2:
 
-                    break;
+                        break;
+                }
             }
+            else
+            {
+                return;
+            }
+
+
         }
     }
 }
