@@ -23,19 +23,19 @@ namespace Cy_s_Hex_Macros
         }
         public Form RefToMenu { get; set; }
         public string arm9 = Game_Option.arm9;
-        string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
+        readonly string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
         bool close = true;
         string[] ItemsPlat = new string[468];
         string[] Pokemon = new string[493];
-        int[] ItemOffsets =
+        readonly int[] ItemOffsets =
             {
                 0xEBAFC, 0xEBB00, 0xEBB04, 0xEBB08, 0xEBB0C, 0xEBB10, 0xEBB14, 0xEBB18, 0xEBB1C, 0xEBB20, 0xEBB24, 0xEBB28, 0xEBB2C, 0xEBB30, 0xEBB34, 0xEBB38, 0xEBB3C, 0xEBB40, 0xEBB44
             };
-        int[] LevelOffsets =
+        readonly int[] LevelOffsets =
             {
                 0xEBAFE, 0xEBB02, 0xEBB06, 0xEBB0A, 0xEBB0E, 0xEBB12, 0xEBB16, 0xEBB1A, 0xEBB1E, 0xEBB22, 0xEBB26, 0xEBB2A, 0xEBB2E, 0xEBB32, 0xEBB36, 0xEBB3A, 0xEBB3E, 0xEBB42, 0xEBB46
             };
-        int[] StarterOffsets =
+        readonly int[] StarterOffsets =
             {
                 0x1BC0, 0x1BC4, 0x1BC8,
             };

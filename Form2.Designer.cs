@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlatinumHex));
             this.Trainer_Names = new System.Windows.Forms.Button();
             this.PlatTabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
@@ -41,6 +40,7 @@
             this.ApplyCrits = new System.Windows.Forms.Button();
             this.MartsTab = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.MartPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ItemLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -84,6 +84,7 @@
             this.MartBadge19 = new System.Windows.Forms.NumericUpDown();
             this.Apply_Mart = new System.Windows.Forms.Button();
             this.StartersTab = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
             this.ApplyStarters = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -94,7 +95,6 @@
             this.MiscTab = new System.Windows.Forms.TabPage();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label5 = new System.Windows.Forms.Label();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -244,6 +244,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.MartPanel);
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
@@ -251,6 +252,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Main Mart";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(168, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(220, 54);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "there\'s 6 levels of marts\r\nthey upgrade at 1/3/5/7/8 badges\r\nwhere 1 is before th" +
+    "e first gym\r\n";
             // 
             // MartPanel
             // 
@@ -937,6 +949,18 @@
             this.StartersTab.Text = "Starters";
             this.StartersTab.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(21, 206);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(368, 54);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Reminder: If you change the Starter mons, your Rival\r\nwill always pick Turtwig (a" +
+    "nd its evolutions) in all battles\r\nunless you edit each Rival battle script.";
+            // 
             // ApplyStarters
             // 
             this.ApplyStarters.Location = new System.Drawing.Point(141, 144);
@@ -1020,16 +1044,6 @@
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 244);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(372, 72);
-            this.label5.TabIndex = 7;
-            this.label5.Text = resources.GetString("label5.Text");
-            // 
             // PlatinumHex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1051,6 +1065,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ShinyNumBox)).EndInit();
             this.MartsTab.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.MartPanel.ResumeLayout(false);
             this.MartPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge1)).EndInit();
@@ -1145,5 +1160,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ApplyStarters;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

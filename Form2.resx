@@ -120,13 +120,6 @@
   <metadata name="ToolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>39, 24</value>
   </metadata>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Keep in mind that the way the scripts work that the rival
-will always choose turtwig if the starters are different
-to the regular ones so you will need to look into the rival
-scripts to change this
-</value>
-  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>40</value>
   </metadata>
