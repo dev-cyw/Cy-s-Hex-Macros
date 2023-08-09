@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlatinumHex));
             this.Trainer_Names = new System.Windows.Forms.Button();
             this.PlatTabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
@@ -81,41 +82,19 @@
             this.MartBadge18 = new System.Windows.Forms.NumericUpDown();
             this.MartBox19 = new System.Windows.Forms.ComboBox();
             this.MartBadge19 = new System.Windows.Forms.NumericUpDown();
+            this.Apply_Mart = new System.Windows.Forms.Button();
             this.StartersTab = new System.Windows.Forms.TabPage();
+            this.ApplyStarters = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Slot1Box = new System.Windows.Forms.ComboBox();
+            this.Slot2Box = new System.Windows.Forms.ComboBox();
+            this.Slot3Box = new System.Windows.Forms.ComboBox();
             this.MiscTab = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.comboBox17 = new System.Windows.Forms.ComboBox();
-            this.comboBox18 = new System.Windows.Forms.ComboBox();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.comboBox23 = new System.Windows.Forms.ComboBox();
-            this.comboBox24 = new System.Windows.Forms.ComboBox();
-            this.comboBox25 = new System.Windows.Forms.ComboBox();
-            this.comboBox26 = new System.Windows.Forms.ComboBox();
-            this.comboBox27 = new System.Windows.Forms.ComboBox();
-            this.comboBox28 = new System.Windows.Forms.ComboBox();
-            this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.Apply_Mart = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -142,8 +121,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge19)).BeginInit();
-            this.MiscTab.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.StartersTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // Trainer_Names
@@ -164,6 +142,7 @@
             this.PlatTabs.Controls.Add(this.StartersTab);
             this.PlatTabs.Controls.Add(this.MiscTab);
             this.PlatTabs.Location = new System.Drawing.Point(12, 12);
+            this.PlatTabs.Multiline = true;
             this.PlatTabs.Name = "PlatTabs";
             this.PlatTabs.SelectedIndex = 0;
             this.PlatTabs.Size = new System.Drawing.Size(415, 426);
@@ -359,6 +338,11 @@
             0,
             0,
             0});
+            this.MartBadge1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge1.Name = "MartBadge1";
             this.MartBadge1.Size = new System.Drawing.Size(32, 20);
             this.MartBadge1.TabIndex = 1;
@@ -382,6 +366,11 @@
             this.MartBadge2.Location = new System.Drawing.Point(99, 43);
             this.MartBadge2.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge2.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -411,6 +400,11 @@
             0,
             0,
             0});
+            this.MartBadge3.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge3.Name = "MartBadge3";
             this.MartBadge3.Size = new System.Drawing.Size(32, 20);
             this.MartBadge3.TabIndex = 5;
@@ -434,6 +428,11 @@
             this.MartBadge4.Location = new System.Drawing.Point(99, 97);
             this.MartBadge4.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge4.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -463,6 +462,11 @@
             0,
             0,
             0});
+            this.MartBadge5.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge5.Name = "MartBadge5";
             this.MartBadge5.Size = new System.Drawing.Size(32, 20);
             this.MartBadge5.TabIndex = 9;
@@ -486,6 +490,11 @@
             this.MartBadge6.Location = new System.Drawing.Point(99, 151);
             this.MartBadge6.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge6.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -515,6 +524,11 @@
             0,
             0,
             0});
+            this.MartBadge7.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge7.Name = "MartBadge7";
             this.MartBadge7.Size = new System.Drawing.Size(32, 20);
             this.MartBadge7.TabIndex = 13;
@@ -538,6 +552,11 @@
             this.MartBadge8.Location = new System.Drawing.Point(99, 205);
             this.MartBadge8.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge8.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -567,6 +586,11 @@
             0,
             0,
             0});
+            this.MartBadge9.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge9.Name = "MartBadge9";
             this.MartBadge9.Size = new System.Drawing.Size(32, 20);
             this.MartBadge9.TabIndex = 17;
@@ -590,6 +614,11 @@
             this.MartBadge10.Location = new System.Drawing.Point(99, 259);
             this.MartBadge10.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge10.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -619,6 +648,11 @@
             0,
             0,
             0});
+            this.MartBadge11.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge11.Name = "MartBadge11";
             this.MartBadge11.Size = new System.Drawing.Size(32, 20);
             this.MartBadge11.TabIndex = 21;
@@ -642,6 +676,11 @@
             this.MartBadge12.Location = new System.Drawing.Point(99, 313);
             this.MartBadge12.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge12.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -671,6 +710,11 @@
             0,
             0,
             0});
+            this.MartBadge13.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge13.Name = "MartBadge13";
             this.MartBadge13.Size = new System.Drawing.Size(32, 20);
             this.MartBadge13.TabIndex = 25;
@@ -694,6 +738,11 @@
             this.MartBadge14.Location = new System.Drawing.Point(99, 367);
             this.MartBadge14.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge14.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -723,6 +772,11 @@
             0,
             0,
             0});
+            this.MartBadge15.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge15.Name = "MartBadge15";
             this.MartBadge15.Size = new System.Drawing.Size(32, 20);
             this.MartBadge15.TabIndex = 29;
@@ -746,6 +800,11 @@
             this.MartBadge16.Location = new System.Drawing.Point(99, 421);
             this.MartBadge16.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge16.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -775,6 +834,11 @@
             0,
             0,
             0});
+            this.MartBadge17.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge17.Name = "MartBadge17";
             this.MartBadge17.Size = new System.Drawing.Size(32, 20);
             this.MartBadge17.TabIndex = 33;
@@ -798,6 +862,11 @@
             this.MartBadge18.Location = new System.Drawing.Point(99, 475);
             this.MartBadge18.Maximum = new decimal(new int[] {
             6,
+            0,
+            0,
+            0});
+            this.MartBadge18.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
@@ -827,6 +896,11 @@
             0,
             0,
             0});
+            this.MartBadge19.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.MartBadge19.Name = "MartBadge19";
             this.MartBadge19.Size = new System.Drawing.Size(32, 20);
             this.MartBadge19.TabIndex = 37;
@@ -836,292 +910,105 @@
             0,
             0});
             // 
+            // Apply_Mart
+            // 
+            this.Apply_Mart.Location = new System.Drawing.Point(3, 529);
+            this.Apply_Mart.Name = "Apply_Mart";
+            this.Apply_Mart.Size = new System.Drawing.Size(128, 23);
+            this.Apply_Mart.TabIndex = 3;
+            this.Apply_Mart.Text = "Apply";
+            this.Apply_Mart.UseVisualStyleBackColor = true;
+            this.Apply_Mart.Click += new System.EventHandler(this.Apply_Mart_Click);
+            // 
             // StartersTab
             // 
+            this.StartersTab.Controls.Add(this.label5);
+            this.StartersTab.Controls.Add(this.ApplyStarters);
+            this.StartersTab.Controls.Add(this.label4);
+            this.StartersTab.Controls.Add(this.label3);
+            this.StartersTab.Controls.Add(this.label2);
+            this.StartersTab.Controls.Add(this.Slot1Box);
+            this.StartersTab.Controls.Add(this.Slot2Box);
+            this.StartersTab.Controls.Add(this.Slot3Box);
             this.StartersTab.Location = new System.Drawing.Point(4, 22);
             this.StartersTab.Name = "StartersTab";
             this.StartersTab.Size = new System.Drawing.Size(407, 400);
             this.StartersTab.TabIndex = 3;
-            this.StartersTab.Text = "Starters (Overlay78)";
+            this.StartersTab.Text = "Starters";
             this.StartersTab.UseVisualStyleBackColor = true;
+            // 
+            // ApplyStarters
+            // 
+            this.ApplyStarters.Location = new System.Drawing.Point(141, 144);
+            this.ApplyStarters.Name = "ApplyStarters";
+            this.ApplyStarters.Size = new System.Drawing.Size(121, 25);
+            this.ApplyStarters.TabIndex = 6;
+            this.ApplyStarters.Text = "Apply";
+            this.ApplyStarters.UseVisualStyleBackColor = true;
+            this.ApplyStarters.Click += new System.EventHandler(this.ApplyStarters_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(307, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 18);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Slot3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(180, 63);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 18);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Slot 2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(51, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Slot 1";
+            // 
+            // Slot1Box
+            // 
+            this.Slot1Box.FormattingEnabled = true;
+            this.Slot1Box.Location = new System.Drawing.Point(14, 84);
+            this.Slot1Box.Name = "Slot1Box";
+            this.Slot1Box.Size = new System.Drawing.Size(121, 21);
+            this.Slot1Box.TabIndex = 2;
+            // 
+            // Slot2Box
+            // 
+            this.Slot2Box.FormattingEnabled = true;
+            this.Slot2Box.Location = new System.Drawing.Point(141, 84);
+            this.Slot2Box.Name = "Slot2Box";
+            this.Slot2Box.Size = new System.Drawing.Size(121, 21);
+            this.Slot2Box.TabIndex = 1;
+            // 
+            // Slot3Box
+            // 
+            this.Slot3Box.FormattingEnabled = true;
+            this.Slot3Box.Location = new System.Drawing.Point(268, 84);
+            this.Slot3Box.Name = "Slot3Box";
+            this.Slot3Box.Size = new System.Drawing.Size(121, 21);
+            this.Slot3Box.TabIndex = 0;
             // 
             // MiscTab
             // 
-            this.MiscTab.Controls.Add(this.flowLayoutPanel1);
             this.MiscTab.Location = new System.Drawing.Point(4, 22);
             this.MiscTab.Name = "MiscTab";
             this.MiscTab.Size = new System.Drawing.Size(407, 400);
             this.MiscTab.TabIndex = 4;
             this.MiscTab.Text = "Misc";
             this.MiscTab.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.comboBox1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox2);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox3);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox4);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox5);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox6);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox7);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox8);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox9);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox10);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox11);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox12);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox13);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox14);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox15);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox16);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox17);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox18);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox19);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox20);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox21);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox22);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox23);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox24);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox25);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox26);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox27);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox28);
-            this.flowLayoutPanel1.Controls.Add(this.comboBox29);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 4);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(252, 396);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(113, 21);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(122, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(113, 21);
-            this.comboBox2.TabIndex = 1;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(3, 30);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(113, 21);
-            this.comboBox3.TabIndex = 2;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(122, 30);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(113, 21);
-            this.comboBox4.TabIndex = 3;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(3, 57);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(113, 21);
-            this.comboBox5.TabIndex = 4;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(122, 57);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(113, 21);
-            this.comboBox6.TabIndex = 5;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(3, 84);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(113, 21);
-            this.comboBox7.TabIndex = 6;
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(122, 84);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(113, 21);
-            this.comboBox8.TabIndex = 7;
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(3, 111);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(113, 21);
-            this.comboBox9.TabIndex = 8;
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(122, 111);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(113, 21);
-            this.comboBox10.TabIndex = 9;
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(3, 138);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(113, 21);
-            this.comboBox11.TabIndex = 10;
-            // 
-            // comboBox12
-            // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(122, 138);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(113, 21);
-            this.comboBox12.TabIndex = 11;
-            // 
-            // comboBox13
-            // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(3, 165);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(113, 21);
-            this.comboBox13.TabIndex = 12;
-            // 
-            // comboBox14
-            // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(122, 165);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(113, 21);
-            this.comboBox14.TabIndex = 13;
-            // 
-            // comboBox15
-            // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(3, 192);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(113, 21);
-            this.comboBox15.TabIndex = 14;
-            // 
-            // comboBox16
-            // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(122, 192);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(113, 21);
-            this.comboBox16.TabIndex = 15;
-            // 
-            // comboBox17
-            // 
-            this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(3, 219);
-            this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(113, 21);
-            this.comboBox17.TabIndex = 16;
-            // 
-            // comboBox18
-            // 
-            this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(122, 219);
-            this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(113, 21);
-            this.comboBox18.TabIndex = 17;
-            // 
-            // comboBox19
-            // 
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(3, 246);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(113, 21);
-            this.comboBox19.TabIndex = 18;
-            // 
-            // comboBox20
-            // 
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(122, 246);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(113, 21);
-            this.comboBox20.TabIndex = 19;
-            // 
-            // comboBox21
-            // 
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(3, 273);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(113, 21);
-            this.comboBox21.TabIndex = 20;
-            // 
-            // comboBox22
-            // 
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(122, 273);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(113, 21);
-            this.comboBox22.TabIndex = 21;
-            // 
-            // comboBox23
-            // 
-            this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(3, 300);
-            this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(113, 21);
-            this.comboBox23.TabIndex = 22;
-            // 
-            // comboBox24
-            // 
-            this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(122, 300);
-            this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(113, 21);
-            this.comboBox24.TabIndex = 23;
-            // 
-            // comboBox25
-            // 
-            this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Location = new System.Drawing.Point(3, 327);
-            this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(113, 21);
-            this.comboBox25.TabIndex = 24;
-            // 
-            // comboBox26
-            // 
-            this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(122, 327);
-            this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(113, 21);
-            this.comboBox26.TabIndex = 25;
-            // 
-            // comboBox27
-            // 
-            this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(3, 354);
-            this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(113, 21);
-            this.comboBox27.TabIndex = 26;
-            // 
-            // comboBox28
-            // 
-            this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.Location = new System.Drawing.Point(122, 354);
-            this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(113, 21);
-            this.comboBox28.TabIndex = 27;
-            // 
-            // comboBox29
-            // 
-            this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(3, 381);
-            this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(113, 21);
-            this.comboBox29.TabIndex = 28;
             // 
             // NewFile
             // 
@@ -1133,15 +1020,15 @@
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
             // 
-            // Apply_Mart
+            // label5
             // 
-            this.Apply_Mart.Location = new System.Drawing.Point(3, 529);
-            this.Apply_Mart.Name = "Apply_Mart";
-            this.Apply_Mart.Size = new System.Drawing.Size(128, 23);
-            this.Apply_Mart.TabIndex = 3;
-            this.Apply_Mart.Text = "Apply";
-            this.Apply_Mart.UseVisualStyleBackColor = true;
-            this.Apply_Mart.Click += new System.EventHandler(this.Apply_Mart_Click);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(13, 244);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(372, 72);
+            this.label5.TabIndex = 7;
+            this.label5.Text = resources.GetString("label5.Text");
             // 
             // PlatinumHex
             // 
@@ -1185,8 +1072,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge19)).EndInit();
-            this.MiscTab.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.StartersTab.ResumeLayout(false);
+            this.StartersTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1206,37 +1093,7 @@
         private System.Windows.Forms.Button ApplyCrits;
         private System.Windows.Forms.ComboBox critRate;
         private System.Windows.Forms.TabPage MiscTab;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.ComboBox comboBox17;
-        private System.Windows.Forms.ComboBox comboBox18;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.ComboBox comboBox19;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.ComboBox comboBox23;
-        private System.Windows.Forms.ComboBox comboBox24;
-        private System.Windows.Forms.ComboBox comboBox25;
-        private System.Windows.Forms.ComboBox comboBox26;
-        private System.Windows.Forms.ComboBox comboBox27;
-        private System.Windows.Forms.ComboBox comboBox28;
-        private System.Windows.Forms.ComboBox comboBox29;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.FlowLayoutPanel MartPanel;
         private System.Windows.Forms.ComboBox MartBox1;
@@ -1280,5 +1137,13 @@
         private System.Windows.Forms.Label ItemLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Apply_Mart;
+        private System.Windows.Forms.ComboBox Slot1Box;
+        private System.Windows.Forms.ComboBox Slot2Box;
+        private System.Windows.Forms.ComboBox Slot3Box;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button ApplyStarters;
+        private System.Windows.Forms.Label label5;
     }
 }
