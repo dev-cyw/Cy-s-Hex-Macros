@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -382,7 +383,39 @@ namespace Cy_s_Hex_Macros
                 binaryWriter.Close();
             }
 
-            MessageBox.Show("The Starters have been changed!");
+            MessageBox.Show("The Starters have been changed!");//turtleissac
+        }
+
+        private void DefaultTextSpeed_Click(object sender, EventArgs e)
+        {
+            byte[] newData = { 0x02 };
+            HexEdit(0x27A2E, newData, arm9);//lhea
+            MessageBox.Show("The Hex has been changed!");
+        }
+
+        private void DefaultSetMode_Click(object sender, EventArgs e)
+        {
+            byte[] newData = { 0x40, 0x20, 0x10, 0x43 };
+            HexEdit(0x27A3E, newData, arm9);//lhea
+            MessageBox.Show("The Hex has been changed!");
+        }
+
+        private void SpeedHP_Click(object sender, EventArgs e)
+        {
+            byte[] newData = { 0x88, 0x1E };
+            HexEdit(0x2D046, newData, overlay + "016.bin");//adastra
+            MessageBox.Show("The Hex has been changed!");
+        }
+
+        private void SkipRivalName_Click(object sender, EventArgs e)
+        {
+            byte[] newData = { 0xD6, 0x0C };
+            HexEdit(0x166A, newData, overlay + "073.bin");
+            newData = new byte[] { 0x5A,  0x20 };
+            HexEdit(0x2256, newData, overlay + "073.bin");
+            newData = new byte[] { 0x02, 0x21 };
+            HexEdit(0x2256, newData, overlay + "073.bin");//lhea
+            MessageBox.Show("Your rival will now receive a default name as specified from Text Archive 389, entry 37!");
         }
     }
 }

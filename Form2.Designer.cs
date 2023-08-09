@@ -95,6 +95,11 @@
             this.MiscTab = new System.Windows.Forms.TabPage();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.DefaultTextSpeed = new System.Windows.Forms.Button();
+            this.DefaultSetMode = new System.Windows.Forms.Button();
+            this.SpeedHP = new System.Windows.Forms.Button();
+            this.SkipRivalName = new System.Windows.Forms.Button();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -127,7 +132,7 @@
             // Trainer_Names
             // 
             this.Trainer_Names.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Trainer_Names.Location = new System.Drawing.Point(3, 32);
+            this.Trainer_Names.Location = new System.Drawing.Point(3, 3);
             this.Trainer_Names.Name = "Trainer_Names";
             this.Trainer_Names.Size = new System.Drawing.Size(172, 23);
             this.Trainer_Names.TabIndex = 0;
@@ -161,8 +166,12 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.KadabEverstone);
             this.flowLayoutPanel2.Controls.Add(this.Trainer_Names);
+            this.flowLayoutPanel2.Controls.Add(this.DefaultTextSpeed);
+            this.flowLayoutPanel2.Controls.Add(this.DefaultSetMode);
+            this.flowLayoutPanel2.Controls.Add(this.SpeedHP);
+            this.flowLayoutPanel2.Controls.Add(this.SkipRivalName);
+            this.flowLayoutPanel2.Controls.Add(this.KadabEverstone);
             this.flowLayoutPanel2.Controls.Add(this.ShinyNumBox);
             this.flowLayoutPanel2.Controls.Add(this.ShinyApply);
             this.flowLayoutPanel2.Controls.Add(this.critRate);
@@ -174,7 +183,7 @@
             // 
             // KadabEverstone
             // 
-            this.KadabEverstone.Location = new System.Drawing.Point(3, 3);
+            this.KadabEverstone.Location = new System.Drawing.Point(3, 148);
             this.KadabEverstone.Name = "KadabEverstone";
             this.KadabEverstone.Size = new System.Drawing.Size(172, 23);
             this.KadabEverstone.TabIndex = 7;
@@ -185,7 +194,7 @@
             // 
             // ShinyNumBox
             // 
-            this.ShinyNumBox.Location = new System.Drawing.Point(3, 61);
+            this.ShinyNumBox.Location = new System.Drawing.Point(3, 177);
             this.ShinyNumBox.Maximum = new decimal(new int[] {
             255,
             0,
@@ -202,7 +211,7 @@
             // 
             // ShinyApply
             // 
-            this.ShinyApply.Location = new System.Drawing.Point(100, 61);
+            this.ShinyApply.Location = new System.Drawing.Point(100, 177);
             this.ShinyApply.Name = "ShinyApply";
             this.ShinyApply.Size = new System.Drawing.Size(75, 21);
             this.ShinyApply.TabIndex = 5;
@@ -214,7 +223,7 @@
             // critRate
             // 
             this.critRate.FormattingEnabled = true;
-            this.critRate.Location = new System.Drawing.Point(3, 88);
+            this.critRate.Location = new System.Drawing.Point(3, 204);
             this.critRate.Name = "critRate";
             this.critRate.Size = new System.Drawing.Size(91, 21);
             this.critRate.TabIndex = 8;
@@ -223,7 +232,7 @@
             // ApplyCrits
             // 
             this.ApplyCrits.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ApplyCrits.Location = new System.Drawing.Point(100, 88);
+            this.ApplyCrits.Location = new System.Drawing.Point(100, 204);
             this.ApplyCrits.Name = "ApplyCrits";
             this.ApplyCrits.Size = new System.Drawing.Size(75, 21);
             this.ApplyCrits.TabIndex = 9;
@@ -259,10 +268,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(168, 35);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(220, 54);
+            this.label6.Size = new System.Drawing.Size(178, 54);
             this.label6.TabIndex = 3;
-            this.label6.Text = "there\'s 6 levels of marts\r\nthey upgrade at 1/3/5/7/8 badges\r\nwhere 1 is before th" +
-    "e first gym\r\n";
+            this.label6.Text = "The mart level starts at 1\r\n and goes up after badges\r\n1, 3, 5, 7, and 8";
             // 
             // MartPanel
             // 
@@ -934,6 +942,7 @@
             // 
             // StartersTab
             // 
+            this.StartersTab.Controls.Add(this.label7);
             this.StartersTab.Controls.Add(this.label5);
             this.StartersTab.Controls.Add(this.ApplyStarters);
             this.StartersTab.Controls.Add(this.label4);
@@ -953,7 +962,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 206);
+            this.label5.Location = new System.Drawing.Point(21, 223);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label5.Size = new System.Drawing.Size(368, 54);
@@ -963,7 +972,7 @@
             // 
             // ApplyStarters
             // 
-            this.ApplyStarters.Location = new System.Drawing.Point(141, 144);
+            this.ApplyStarters.Location = new System.Drawing.Point(141, 161);
             this.ApplyStarters.Name = "ApplyStarters";
             this.ApplyStarters.Size = new System.Drawing.Size(121, 25);
             this.ApplyStarters.TabIndex = 6;
@@ -975,7 +984,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(307, 63);
+            this.label4.Location = new System.Drawing.Point(307, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 18);
             this.label4.TabIndex = 5;
@@ -985,7 +994,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(180, 63);
+            this.label3.Location = new System.Drawing.Point(179, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 18);
             this.label3.TabIndex = 4;
@@ -995,7 +1004,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 63);
+            this.label2.Location = new System.Drawing.Point(51, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 18);
             this.label2.TabIndex = 3;
@@ -1004,7 +1013,7 @@
             // Slot1Box
             // 
             this.Slot1Box.FormattingEnabled = true;
-            this.Slot1Box.Location = new System.Drawing.Point(14, 84);
+            this.Slot1Box.Location = new System.Drawing.Point(14, 101);
             this.Slot1Box.Name = "Slot1Box";
             this.Slot1Box.Size = new System.Drawing.Size(121, 21);
             this.Slot1Box.TabIndex = 2;
@@ -1012,7 +1021,7 @@
             // Slot2Box
             // 
             this.Slot2Box.FormattingEnabled = true;
-            this.Slot2Box.Location = new System.Drawing.Point(141, 84);
+            this.Slot2Box.Location = new System.Drawing.Point(141, 101);
             this.Slot2Box.Name = "Slot2Box";
             this.Slot2Box.Size = new System.Drawing.Size(121, 21);
             this.Slot2Box.TabIndex = 1;
@@ -1020,7 +1029,7 @@
             // Slot3Box
             // 
             this.Slot3Box.FormattingEnabled = true;
-            this.Slot3Box.Location = new System.Drawing.Point(268, 84);
+            this.Slot3Box.Location = new System.Drawing.Point(268, 101);
             this.Slot3Box.Name = "Slot3Box";
             this.Slot3Box.Size = new System.Drawing.Size(121, 21);
             this.Slot3Box.TabIndex = 0;
@@ -1043,6 +1052,56 @@
             this.NewFile.Text = "Open New File";
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(143, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 20);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Starter Editor";
+            // 
+            // DefaultTextSpeed
+            // 
+            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 32);
+            this.DefaultTextSpeed.Name = "DefaultTextSpeed";
+            this.DefaultTextSpeed.Size = new System.Drawing.Size(172, 23);
+            this.DefaultTextSpeed.TabIndex = 10;
+            this.DefaultTextSpeed.Text = "Default Fast Text Speed";
+            this.DefaultTextSpeed.UseVisualStyleBackColor = true;
+            this.DefaultTextSpeed.Click += new System.EventHandler(this.DefaultTextSpeed_Click);
+            // 
+            // DefaultSetMode
+            // 
+            this.DefaultSetMode.Location = new System.Drawing.Point(3, 61);
+            this.DefaultSetMode.Name = "DefaultSetMode";
+            this.DefaultSetMode.Size = new System.Drawing.Size(172, 23);
+            this.DefaultSetMode.TabIndex = 11;
+            this.DefaultSetMode.Text = "Default Set Mode";
+            this.DefaultSetMode.UseVisualStyleBackColor = true;
+            this.DefaultSetMode.Click += new System.EventHandler(this.DefaultSetMode_Click);
+            // 
+            // SpeedHP
+            // 
+            this.SpeedHP.Location = new System.Drawing.Point(3, 90);
+            this.SpeedHP.Name = "SpeedHP";
+            this.SpeedHP.Size = new System.Drawing.Size(172, 23);
+            this.SpeedHP.TabIndex = 12;
+            this.SpeedHP.Text = "Increase HP bar (2x)";
+            this.SpeedHP.UseVisualStyleBackColor = true;
+            this.SpeedHP.Click += new System.EventHandler(this.SpeedHP_Click);
+            // 
+            // SkipRivalName
+            // 
+            this.SkipRivalName.Location = new System.Drawing.Point(3, 119);
+            this.SkipRivalName.Name = "SkipRivalName";
+            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
+            this.SkipRivalName.TabIndex = 13;
+            this.SkipRivalName.Text = "Skip Rival Naming";
+            this.SkipRivalName.UseVisualStyleBackColor = true;
+            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
             // 
             // PlatinumHex
             // 
@@ -1161,5 +1220,10 @@
         private System.Windows.Forms.Button ApplyStarters;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button DefaultTextSpeed;
+        private System.Windows.Forms.Button DefaultSetMode;
+        private System.Windows.Forms.Button SpeedHP;
+        private System.Windows.Forms.Button SkipRivalName;
     }
 }
