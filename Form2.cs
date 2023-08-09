@@ -417,5 +417,19 @@ namespace Cy_s_Hex_Macros
             HexEdit(0x2256, newData, overlay + "073.bin");//lhea
             MessageBox.Show("Your rival will now receive a default name as specified from Text Archive 389, entry 37!");
         }
+
+        private void RemoveOWpoison_Click(object sender, EventArgs e)
+        {
+            byte[] newData = { 0x05, 0xE0, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46 };
+            HexEdit(0x1BAE, newData, overlay + "005.bin");
+            MessageBox.Show("The Hex has been changed!");//lhea
+        }
+
+        private void RemoveMarshStep_Click(object sender, EventArgs e)
+        {
+            byte[] newData = { 0x05, 0xE0, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46 };
+            HexEdit(0x1BBC, newData, overlay + "005.bin");
+            MessageBox.Show("The Hex has been changed!");//lhea
+        }
     }
 }

@@ -100,6 +100,8 @@
             this.DefaultSetMode = new System.Windows.Forms.Button();
             this.SpeedHP = new System.Windows.Forms.Button();
             this.SkipRivalName = new System.Windows.Forms.Button();
+            this.RemoveOWpoison = new System.Windows.Forms.Button();
+            this.RemoveMarshStep = new System.Windows.Forms.Button();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -167,10 +169,12 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.Trainer_Names);
-            this.flowLayoutPanel2.Controls.Add(this.DefaultTextSpeed);
-            this.flowLayoutPanel2.Controls.Add(this.DefaultSetMode);
             this.flowLayoutPanel2.Controls.Add(this.SpeedHP);
+            this.flowLayoutPanel2.Controls.Add(this.DefaultSetMode);
+            this.flowLayoutPanel2.Controls.Add(this.DefaultTextSpeed);
+            this.flowLayoutPanel2.Controls.Add(this.RemoveOWpoison);
             this.flowLayoutPanel2.Controls.Add(this.SkipRivalName);
+            this.flowLayoutPanel2.Controls.Add(this.RemoveMarshStep);
             this.flowLayoutPanel2.Controls.Add(this.KadabEverstone);
             this.flowLayoutPanel2.Controls.Add(this.ShinyNumBox);
             this.flowLayoutPanel2.Controls.Add(this.ShinyApply);
@@ -183,7 +187,7 @@
             // 
             // KadabEverstone
             // 
-            this.KadabEverstone.Location = new System.Drawing.Point(3, 148);
+            this.KadabEverstone.Location = new System.Drawing.Point(3, 206);
             this.KadabEverstone.Name = "KadabEverstone";
             this.KadabEverstone.Size = new System.Drawing.Size(172, 23);
             this.KadabEverstone.TabIndex = 7;
@@ -194,7 +198,7 @@
             // 
             // ShinyNumBox
             // 
-            this.ShinyNumBox.Location = new System.Drawing.Point(3, 177);
+            this.ShinyNumBox.Location = new System.Drawing.Point(3, 235);
             this.ShinyNumBox.Maximum = new decimal(new int[] {
             255,
             0,
@@ -211,7 +215,7 @@
             // 
             // ShinyApply
             // 
-            this.ShinyApply.Location = new System.Drawing.Point(100, 177);
+            this.ShinyApply.Location = new System.Drawing.Point(100, 235);
             this.ShinyApply.Name = "ShinyApply";
             this.ShinyApply.Size = new System.Drawing.Size(75, 21);
             this.ShinyApply.TabIndex = 5;
@@ -223,7 +227,7 @@
             // critRate
             // 
             this.critRate.FormattingEnabled = true;
-            this.critRate.Location = new System.Drawing.Point(3, 204);
+            this.critRate.Location = new System.Drawing.Point(3, 262);
             this.critRate.Name = "critRate";
             this.critRate.Size = new System.Drawing.Size(91, 21);
             this.critRate.TabIndex = 8;
@@ -232,7 +236,7 @@
             // ApplyCrits
             // 
             this.ApplyCrits.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ApplyCrits.Location = new System.Drawing.Point(100, 204);
+            this.ApplyCrits.Location = new System.Drawing.Point(100, 262);
             this.ApplyCrits.Name = "ApplyCrits";
             this.ApplyCrits.Size = new System.Drawing.Size(75, 21);
             this.ApplyCrits.TabIndex = 9;
@@ -1065,7 +1069,7 @@
             // 
             // DefaultTextSpeed
             // 
-            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 32);
+            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 90);
             this.DefaultTextSpeed.Name = "DefaultTextSpeed";
             this.DefaultTextSpeed.Size = new System.Drawing.Size(172, 23);
             this.DefaultTextSpeed.TabIndex = 10;
@@ -1085,7 +1089,7 @@
             // 
             // SpeedHP
             // 
-            this.SpeedHP.Location = new System.Drawing.Point(3, 90);
+            this.SpeedHP.Location = new System.Drawing.Point(3, 32);
             this.SpeedHP.Name = "SpeedHP";
             this.SpeedHP.Size = new System.Drawing.Size(172, 23);
             this.SpeedHP.TabIndex = 12;
@@ -1095,13 +1099,33 @@
             // 
             // SkipRivalName
             // 
-            this.SkipRivalName.Location = new System.Drawing.Point(3, 119);
+            this.SkipRivalName.Location = new System.Drawing.Point(3, 148);
             this.SkipRivalName.Name = "SkipRivalName";
             this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
             this.SkipRivalName.TabIndex = 13;
             this.SkipRivalName.Text = "Skip Rival Naming";
             this.SkipRivalName.UseVisualStyleBackColor = true;
             this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
+            // 
+            // RemoveOWpoison
+            // 
+            this.RemoveOWpoison.Location = new System.Drawing.Point(3, 119);
+            this.RemoveOWpoison.Name = "RemoveOWpoison";
+            this.RemoveOWpoison.Size = new System.Drawing.Size(172, 23);
+            this.RemoveOWpoison.TabIndex = 14;
+            this.RemoveOWpoison.Text = "Remove Overworld Poison";
+            this.RemoveOWpoison.UseVisualStyleBackColor = true;
+            this.RemoveOWpoison.Click += new System.EventHandler(this.RemoveOWpoison_Click);
+            // 
+            // RemoveMarshStep
+            // 
+            this.RemoveMarshStep.Location = new System.Drawing.Point(3, 177);
+            this.RemoveMarshStep.Name = "RemoveMarshStep";
+            this.RemoveMarshStep.Size = new System.Drawing.Size(172, 23);
+            this.RemoveMarshStep.TabIndex = 15;
+            this.RemoveMarshStep.Text = "Remove Marsh Step Counter";
+            this.RemoveMarshStep.UseVisualStyleBackColor = true;
+            this.RemoveMarshStep.Click += new System.EventHandler(this.RemoveMarshStep_Click);
             // 
             // PlatinumHex
             // 
@@ -1225,5 +1249,7 @@
         private System.Windows.Forms.Button DefaultSetMode;
         private System.Windows.Forms.Button SpeedHP;
         private System.Windows.Forms.Button SkipRivalName;
+        private System.Windows.Forms.Button RemoveOWpoison;
+        private System.Windows.Forms.Button RemoveMarshStep;
     }
 }
