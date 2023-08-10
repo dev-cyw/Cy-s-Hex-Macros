@@ -33,6 +33,12 @@
             this.PlatTabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.SpeedHP = new System.Windows.Forms.Button();
+            this.DefaultSetMode = new System.Windows.Forms.Button();
+            this.DefaultTextSpeed = new System.Windows.Forms.Button();
+            this.RemoveOWpoison = new System.Windows.Forms.Button();
+            this.SkipRivalName = new System.Windows.Forms.Button();
+            this.RemoveMarshStep = new System.Windows.Forms.Button();
             this.KadabEverstone = new System.Windows.Forms.Button();
             this.ShinyNumBox = new System.Windows.Forms.NumericUpDown();
             this.ShinyApply = new System.Windows.Forms.Button();
@@ -84,6 +90,7 @@
             this.MartBadge19 = new System.Windows.Forms.NumericUpDown();
             this.Apply_Mart = new System.Windows.Forms.Button();
             this.StartersTab = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.ApplyStarters = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -92,16 +99,10 @@
             this.Slot1Box = new System.Windows.Forms.ComboBox();
             this.Slot2Box = new System.Windows.Forms.ComboBox();
             this.Slot3Box = new System.Windows.Forms.ComboBox();
-            this.MiscTab = new System.Windows.Forms.TabPage();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.DefaultTextSpeed = new System.Windows.Forms.Button();
-            this.DefaultSetMode = new System.Windows.Forms.Button();
-            this.SpeedHP = new System.Windows.Forms.Button();
-            this.SkipRivalName = new System.Windows.Forms.Button();
-            this.RemoveOWpoison = new System.Windows.Forms.Button();
-            this.RemoveMarshStep = new System.Windows.Forms.Button();
+            this.ShayminCheck = new System.Windows.Forms.Button();
+            this.PickupEdit = new System.Windows.Forms.Button();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -147,7 +148,6 @@
             this.PlatTabs.Controls.Add(this.MainTab);
             this.PlatTabs.Controls.Add(this.MartsTab);
             this.PlatTabs.Controls.Add(this.StartersTab);
-            this.PlatTabs.Controls.Add(this.MiscTab);
             this.PlatTabs.Location = new System.Drawing.Point(12, 12);
             this.PlatTabs.Multiline = true;
             this.PlatTabs.Name = "PlatTabs";
@@ -169,11 +169,13 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.Trainer_Names);
+            this.flowLayoutPanel2.Controls.Add(this.SkipRivalName);
             this.flowLayoutPanel2.Controls.Add(this.SpeedHP);
             this.flowLayoutPanel2.Controls.Add(this.DefaultSetMode);
             this.flowLayoutPanel2.Controls.Add(this.DefaultTextSpeed);
             this.flowLayoutPanel2.Controls.Add(this.RemoveOWpoison);
-            this.flowLayoutPanel2.Controls.Add(this.SkipRivalName);
+            this.flowLayoutPanel2.Controls.Add(this.PickupEdit);
+            this.flowLayoutPanel2.Controls.Add(this.ShayminCheck);
             this.flowLayoutPanel2.Controls.Add(this.RemoveMarshStep);
             this.flowLayoutPanel2.Controls.Add(this.KadabEverstone);
             this.flowLayoutPanel2.Controls.Add(this.ShinyNumBox);
@@ -185,9 +187,69 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(180, 393);
             this.flowLayoutPanel2.TabIndex = 10;
             // 
+            // SpeedHP
+            // 
+            this.SpeedHP.Location = new System.Drawing.Point(3, 61);
+            this.SpeedHP.Name = "SpeedHP";
+            this.SpeedHP.Size = new System.Drawing.Size(172, 23);
+            this.SpeedHP.TabIndex = 12;
+            this.SpeedHP.Text = "Increase HP Bar Speed (2x)";
+            this.SpeedHP.UseVisualStyleBackColor = true;
+            this.SpeedHP.Click += new System.EventHandler(this.SpeedHP_Click);
+            // 
+            // DefaultSetMode
+            // 
+            this.DefaultSetMode.Location = new System.Drawing.Point(3, 90);
+            this.DefaultSetMode.Name = "DefaultSetMode";
+            this.DefaultSetMode.Size = new System.Drawing.Size(172, 23);
+            this.DefaultSetMode.TabIndex = 11;
+            this.DefaultSetMode.Text = "Default Set Mode";
+            this.DefaultSetMode.UseVisualStyleBackColor = true;
+            this.DefaultSetMode.Click += new System.EventHandler(this.DefaultSetMode_Click);
+            // 
+            // DefaultTextSpeed
+            // 
+            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 119);
+            this.DefaultTextSpeed.Name = "DefaultTextSpeed";
+            this.DefaultTextSpeed.Size = new System.Drawing.Size(172, 23);
+            this.DefaultTextSpeed.TabIndex = 10;
+            this.DefaultTextSpeed.Text = "Default Fast Text Speed";
+            this.DefaultTextSpeed.UseVisualStyleBackColor = true;
+            this.DefaultTextSpeed.Click += new System.EventHandler(this.DefaultTextSpeed_Click);
+            // 
+            // RemoveOWpoison
+            // 
+            this.RemoveOWpoison.Location = new System.Drawing.Point(3, 148);
+            this.RemoveOWpoison.Name = "RemoveOWpoison";
+            this.RemoveOWpoison.Size = new System.Drawing.Size(172, 23);
+            this.RemoveOWpoison.TabIndex = 14;
+            this.RemoveOWpoison.Text = "Remove Overworld Poison";
+            this.RemoveOWpoison.UseVisualStyleBackColor = true;
+            this.RemoveOWpoison.Click += new System.EventHandler(this.RemoveOWpoison_Click);
+            // 
+            // SkipRivalName
+            // 
+            this.SkipRivalName.Location = new System.Drawing.Point(3, 32);
+            this.SkipRivalName.Name = "SkipRivalName";
+            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
+            this.SkipRivalName.TabIndex = 13;
+            this.SkipRivalName.Text = "Skip Rival Naming";
+            this.SkipRivalName.UseVisualStyleBackColor = true;
+            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
+            // 
+            // RemoveMarshStep
+            // 
+            this.RemoveMarshStep.Location = new System.Drawing.Point(3, 235);
+            this.RemoveMarshStep.Name = "RemoveMarshStep";
+            this.RemoveMarshStep.Size = new System.Drawing.Size(172, 23);
+            this.RemoveMarshStep.TabIndex = 15;
+            this.RemoveMarshStep.Text = "Remove Marsh Step Counter";
+            this.RemoveMarshStep.UseVisualStyleBackColor = true;
+            this.RemoveMarshStep.Click += new System.EventHandler(this.RemoveMarshStep_Click);
+            // 
             // KadabEverstone
             // 
-            this.KadabEverstone.Location = new System.Drawing.Point(3, 206);
+            this.KadabEverstone.Location = new System.Drawing.Point(3, 264);
             this.KadabEverstone.Name = "KadabEverstone";
             this.KadabEverstone.Size = new System.Drawing.Size(172, 23);
             this.KadabEverstone.TabIndex = 7;
@@ -198,7 +260,7 @@
             // 
             // ShinyNumBox
             // 
-            this.ShinyNumBox.Location = new System.Drawing.Point(3, 235);
+            this.ShinyNumBox.Location = new System.Drawing.Point(3, 293);
             this.ShinyNumBox.Maximum = new decimal(new int[] {
             255,
             0,
@@ -215,7 +277,7 @@
             // 
             // ShinyApply
             // 
-            this.ShinyApply.Location = new System.Drawing.Point(100, 235);
+            this.ShinyApply.Location = new System.Drawing.Point(100, 293);
             this.ShinyApply.Name = "ShinyApply";
             this.ShinyApply.Size = new System.Drawing.Size(75, 21);
             this.ShinyApply.TabIndex = 5;
@@ -227,7 +289,7 @@
             // critRate
             // 
             this.critRate.FormattingEnabled = true;
-            this.critRate.Location = new System.Drawing.Point(3, 262);
+            this.critRate.Location = new System.Drawing.Point(3, 320);
             this.critRate.Name = "critRate";
             this.critRate.Size = new System.Drawing.Size(91, 21);
             this.critRate.TabIndex = 8;
@@ -236,7 +298,7 @@
             // ApplyCrits
             // 
             this.ApplyCrits.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ApplyCrits.Location = new System.Drawing.Point(100, 262);
+            this.ApplyCrits.Location = new System.Drawing.Point(100, 320);
             this.ApplyCrits.Name = "ApplyCrits";
             this.ApplyCrits.Size = new System.Drawing.Size(75, 21);
             this.ApplyCrits.TabIndex = 9;
@@ -962,6 +1024,16 @@
             this.StartersTab.Text = "Starters";
             this.StartersTab.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(143, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 20);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Starter Editor";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1038,15 +1110,6 @@
             this.Slot3Box.Size = new System.Drawing.Size(121, 21);
             this.Slot3Box.TabIndex = 0;
             // 
-            // MiscTab
-            // 
-            this.MiscTab.Location = new System.Drawing.Point(4, 22);
-            this.MiscTab.Name = "MiscTab";
-            this.MiscTab.Size = new System.Drawing.Size(407, 400);
-            this.MiscTab.TabIndex = 4;
-            this.MiscTab.Text = "Misc";
-            this.MiscTab.UseVisualStyleBackColor = true;
-            // 
             // NewFile
             // 
             this.NewFile.Location = new System.Drawing.Point(336, 7);
@@ -1057,75 +1120,25 @@
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
             // 
-            // label7
+            // ShayminCheck
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(143, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 20);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Starter Editor";
+            this.ShayminCheck.Location = new System.Drawing.Point(3, 206);
+            this.ShayminCheck.Name = "ShayminCheck";
+            this.ShayminCheck.Size = new System.Drawing.Size(172, 23);
+            this.ShayminCheck.TabIndex = 16;
+            this.ShayminCheck.Text = "Shaymin Gracidea Check";
+            this.ShayminCheck.UseVisualStyleBackColor = true;
+            this.ShayminCheck.Click += new System.EventHandler(this.ShayminCheck_Click);
             // 
-            // DefaultTextSpeed
+            // PickupEdit
             // 
-            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 90);
-            this.DefaultTextSpeed.Name = "DefaultTextSpeed";
-            this.DefaultTextSpeed.Size = new System.Drawing.Size(172, 23);
-            this.DefaultTextSpeed.TabIndex = 10;
-            this.DefaultTextSpeed.Text = "Default Fast Text Speed";
-            this.DefaultTextSpeed.UseVisualStyleBackColor = true;
-            this.DefaultTextSpeed.Click += new System.EventHandler(this.DefaultTextSpeed_Click);
-            // 
-            // DefaultSetMode
-            // 
-            this.DefaultSetMode.Location = new System.Drawing.Point(3, 61);
-            this.DefaultSetMode.Name = "DefaultSetMode";
-            this.DefaultSetMode.Size = new System.Drawing.Size(172, 23);
-            this.DefaultSetMode.TabIndex = 11;
-            this.DefaultSetMode.Text = "Default Set Mode";
-            this.DefaultSetMode.UseVisualStyleBackColor = true;
-            this.DefaultSetMode.Click += new System.EventHandler(this.DefaultSetMode_Click);
-            // 
-            // SpeedHP
-            // 
-            this.SpeedHP.Location = new System.Drawing.Point(3, 32);
-            this.SpeedHP.Name = "SpeedHP";
-            this.SpeedHP.Size = new System.Drawing.Size(172, 23);
-            this.SpeedHP.TabIndex = 12;
-            this.SpeedHP.Text = "Increase HP bar (2x)";
-            this.SpeedHP.UseVisualStyleBackColor = true;
-            this.SpeedHP.Click += new System.EventHandler(this.SpeedHP_Click);
-            // 
-            // SkipRivalName
-            // 
-            this.SkipRivalName.Location = new System.Drawing.Point(3, 148);
-            this.SkipRivalName.Name = "SkipRivalName";
-            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
-            this.SkipRivalName.TabIndex = 13;
-            this.SkipRivalName.Text = "Skip Rival Naming";
-            this.SkipRivalName.UseVisualStyleBackColor = true;
-            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
-            // 
-            // RemoveOWpoison
-            // 
-            this.RemoveOWpoison.Location = new System.Drawing.Point(3, 119);
-            this.RemoveOWpoison.Name = "RemoveOWpoison";
-            this.RemoveOWpoison.Size = new System.Drawing.Size(172, 23);
-            this.RemoveOWpoison.TabIndex = 14;
-            this.RemoveOWpoison.Text = "Remove Overworld Poison";
-            this.RemoveOWpoison.UseVisualStyleBackColor = true;
-            this.RemoveOWpoison.Click += new System.EventHandler(this.RemoveOWpoison_Click);
-            // 
-            // RemoveMarshStep
-            // 
-            this.RemoveMarshStep.Location = new System.Drawing.Point(3, 177);
-            this.RemoveMarshStep.Name = "RemoveMarshStep";
-            this.RemoveMarshStep.Size = new System.Drawing.Size(172, 23);
-            this.RemoveMarshStep.TabIndex = 15;
-            this.RemoveMarshStep.Text = "Remove Marsh Step Counter";
-            this.RemoveMarshStep.UseVisualStyleBackColor = true;
-            this.RemoveMarshStep.Click += new System.EventHandler(this.RemoveMarshStep_Click);
+            this.PickupEdit.Location = new System.Drawing.Point(3, 177);
+            this.PickupEdit.Name = "PickupEdit";
+            this.PickupEdit.Size = new System.Drawing.Size(172, 23);
+            this.PickupEdit.TabIndex = 17;
+            this.PickupEdit.Text = "Pickup Table Editor";
+            this.PickupEdit.UseVisualStyleBackColor = true;
+            this.PickupEdit.Click += new System.EventHandler(this.PickupEdit_Click);
             // 
             // PlatinumHex
             // 
@@ -1190,7 +1203,6 @@
         private System.Windows.Forms.TabPage StartersTab;
         private System.Windows.Forms.Button ApplyCrits;
         private System.Windows.Forms.ComboBox critRate;
-        private System.Windows.Forms.TabPage MiscTab;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.FlowLayoutPanel MartPanel;
@@ -1251,5 +1263,7 @@
         private System.Windows.Forms.Button SkipRivalName;
         private System.Windows.Forms.Button RemoveOWpoison;
         private System.Windows.Forms.Button RemoveMarshStep;
+        private System.Windows.Forms.Button ShayminCheck;
+        private System.Windows.Forms.Button PickupEdit;
     }
 }

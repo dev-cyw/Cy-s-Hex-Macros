@@ -26,7 +26,7 @@ namespace Cy_s_Hex_Macros
         public string arm9 = Game_Option.arm9;
         readonly string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
         bool close = true;
-        string[] ItemsPlat = new string[468];
+        public string[] ItemsPlat = new string[468];
         string[] Pokemon = new string[493];
         readonly int[] ItemOffsets =
             {
@@ -49,10 +49,17 @@ namespace Cy_s_Hex_Macros
 
         private void HexEdit(int Offset, byte[] newData, string path)
         {
-            BinaryWriter binaryWriter = new BinaryWriter(File.Open(path, FileMode.Open, FileAccess.ReadWrite));
-            binaryWriter.BaseStream.Seek(Offset, SeekOrigin.Begin);
-            binaryWriter.Write(newData);
-            binaryWriter.Close();
+            try
+            {
+                BinaryWriter binaryWriter = new BinaryWriter(File.Open(path, FileMode.Open, FileAccess.ReadWrite));
+                binaryWriter.BaseStream.Seek(Offset, SeekOrigin.Begin);
+                binaryWriter.Write(newData);
+                binaryWriter.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An execption occured:" + ex);
+            }
         }
 
         private void RefreshItems()
@@ -64,12 +71,18 @@ namespace Cy_s_Hex_Macros
             {
                 critRate.Items.Add(Crits);
             }
-
-            BinaryReader reader = new BinaryReader(File.Open(arm9,FileMode.Open, FileAccess.Read));
-            reader.BaseStream.Seek(0x75E50, SeekOrigin.Begin);
-            int hexString = reader.ReadByte();
-            reader.Close();
-            ShinyNumBox.Value = hexString;
+            try
+            {
+                BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));
+                reader.BaseStream.Seek(0x75E50, SeekOrigin.Begin);
+                int hexString = reader.ReadByte();
+                reader.Close();
+                ShinyNumBox.Value = hexString;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An execption occured:" + ex);
+            }
         }
 
         private void NewFile_Click(object sender, EventArgs e)
@@ -140,39 +153,43 @@ namespace Cy_s_Hex_Macros
             byte[] HexBytes;
             int HexString;
             int i = 0;
-
-            BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));                            
-            foreach(var Combobox in MartPanel.Controls.OfType<System.Windows.Forms.ComboBox>()) 
+            try
             {
-                reader.BaseStream.Seek(ItemOffsets[i], SeekOrigin.Begin);
-                HexString = reader.ReadByte();
-                Combobox.SelectedIndex = HexString;
-                i++;
-            }
-            i = 0;
-            foreach (var NumericUpDown in MartPanel.Controls.OfType<NumericUpDown>())
-            {
-                reader.BaseStream.Seek(LevelOffsets[i], SeekOrigin.Begin);
-                HexString = reader.ReadByte();
-                NumericUpDown.Value = Convert.ToByte(HexString);
-                i++;
-            }
-            reader.Close();
-            BinaryReader BinRead = new BinaryReader(File.Open(overlay + "078.bin", FileMode.Open, FileAccess.Read));
-            i = 0;
-            foreach (var Control in StartersTab.Controls.OfType<System.Windows.Forms.ComboBox>())
-            {
-                BinRead.BaseStream.Seek(StarterOffsets[i], SeekOrigin.Begin);
-                HexBytes = BinRead.ReadBytes(2);
-                foreach(byte b in HexBytes)
+                BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));
+                foreach (var Combobox in MartPanel.Controls.OfType<System.Windows.Forms.ComboBox>())
                 {
-                    Console.WriteLine(b);
+                    reader.BaseStream.Seek(ItemOffsets[i], SeekOrigin.Begin);
+                    HexString = reader.ReadByte();
+                    Combobox.SelectedIndex = HexString;
+                    i++;
                 }
-                Control.SelectedIndex = BitConverter.ToInt16(HexBytes, 0) - 1;
-                i++;
-            }
+                i = 0;
+                foreach (var NumericUpDown in MartPanel.Controls.OfType<NumericUpDown>())
+                {
+                    reader.BaseStream.Seek(LevelOffsets[i], SeekOrigin.Begin);
+                    HexString = reader.ReadByte();
+                    NumericUpDown.Value = Convert.ToByte(HexString);
+                    i++;
+                }
+                reader.Close();
+                BinaryReader BinRead = new BinaryReader(File.Open(overlay + "078.bin", FileMode.Open, FileAccess.Read));
+                i = 0;
+                foreach (var Control in StartersTab.Controls.OfType<System.Windows.Forms.ComboBox>())
+                {
+                    BinRead.BaseStream.Seek(StarterOffsets[i], SeekOrigin.Begin);
+                    HexBytes = BinRead.ReadBytes(2);
+                    Control.SelectedIndex = BitConverter.ToInt16(HexBytes, 0) - 1;
+                    i++;
+                }
 
-            BinRead.Close();
+                BinRead.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An execption occured:" + ex);
+                Environment.Exit(100);
+            }
+            
         }
         private void PopulateComboBoxes()
         {
@@ -300,7 +317,7 @@ namespace Cy_s_Hex_Macros
                 MartWriter.Write((byte)HexString);
                 i++;
             }
-
+            MartWriter.Close();
             MessageBox.Show("The Mart Has Changed!");
         }
 
@@ -430,6 +447,19 @@ namespace Cy_s_Hex_Macros
             byte[] newData = { 0x05, 0xE0, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46 };
             HexEdit(0x1BBC, newData, overlay + "005.bin");
             MessageBox.Show("The Hex has been changed!");//lhea
+        }
+
+        private void ShayminCheck_Click(object sender, EventArgs e)
+        {
+            byte[] newData = { 0xC0, 0x46, 0xC0, 0x46 };
+            HexEdit(0x77B6C, newData ,arm9);
+            MessageBox.Show("The Hex has been changed!");//adastra
+        }
+
+        private void PickupEdit_Click(object sender, EventArgs e)
+        {
+            PickupEditor pickupEdit = new PickupEditor();
+            pickupEdit.ShowDialog();
         }
     }
 }
