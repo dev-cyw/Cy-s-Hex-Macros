@@ -57,6 +57,7 @@
             this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.comboBox30 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -291,11 +292,21 @@
             this.comboBox30.Size = new System.Drawing.Size(90, 21);
             this.comboBox30.TabIndex = 27;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(153, 310);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Apply";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // PickupEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 508);
+            this.ClientSize = new System.Drawing.Size(261, 508);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox29);
             this.Controls.Add(this.comboBox30);
             this.Controls.Add(this.comboBox25);
@@ -364,5 +375,6 @@
         private System.Windows.Forms.ComboBox comboBox27;
         private System.Windows.Forms.ComboBox comboBox29;
         private System.Windows.Forms.ComboBox comboBox30;
+        private System.Windows.Forms.Button button1;
     }
 }

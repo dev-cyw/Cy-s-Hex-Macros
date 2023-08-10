@@ -326,7 +326,7 @@ Dubious Disc
 Reaper Cloth
 Razor Claw
 Razor Fang
-M01
+TM01
 TM02
 TM03
 TM04
