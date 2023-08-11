@@ -431,7 +431,7 @@ namespace Cy_s_Hex_Macros
             newData = new byte[] { 0x5A,  0x20 };
             HexEdit(0x2256, newData, overlay + "073.bin");
             newData = new byte[] { 0x02, 0x21 };
-            HexEdit(0x2256, newData, overlay + "073.bin");//lhea
+            HexEdit(0x228E, newData, overlay + "073.bin");//lhea
             MessageBox.Show("Your rival will now receive a default name as specified from Text Archive 389, entry 37!");
         }
 

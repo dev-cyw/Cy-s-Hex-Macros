@@ -57,7 +57,8 @@
             this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.comboBox30 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ApplyPickup = new System.Windows.Forms.Button();
+            this.README = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -207,7 +208,7 @@
             // comboBox19
             // 
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(153, 66);
+            this.comboBox19.Location = new System.Drawing.Point(140, 66);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(90, 21);
             this.comboBox19.TabIndex = 20;
@@ -215,7 +216,7 @@
             // comboBox20
             // 
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(153, 39);
+            this.comboBox20.Location = new System.Drawing.Point(140, 39);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(90, 21);
             this.comboBox20.TabIndex = 19;
@@ -223,7 +224,7 @@
             // comboBox21
             // 
             this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(153, 12);
+            this.comboBox21.Location = new System.Drawing.Point(140, 12);
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(90, 21);
             this.comboBox21.TabIndex = 18;
@@ -231,7 +232,7 @@
             // comboBox22
             // 
             this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(153, 147);
+            this.comboBox22.Location = new System.Drawing.Point(140, 147);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(90, 21);
             this.comboBox22.TabIndex = 23;
@@ -239,7 +240,7 @@
             // comboBox23
             // 
             this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(153, 120);
+            this.comboBox23.Location = new System.Drawing.Point(140, 120);
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(90, 21);
             this.comboBox23.TabIndex = 22;
@@ -247,7 +248,7 @@
             // comboBox24
             // 
             this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(153, 93);
+            this.comboBox24.Location = new System.Drawing.Point(140, 93);
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(90, 21);
             this.comboBox24.TabIndex = 21;
@@ -255,7 +256,7 @@
             // comboBox25
             // 
             this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.Location = new System.Drawing.Point(153, 228);
+            this.comboBox25.Location = new System.Drawing.Point(140, 228);
             this.comboBox25.Name = "comboBox25";
             this.comboBox25.Size = new System.Drawing.Size(90, 21);
             this.comboBox25.TabIndex = 26;
@@ -263,7 +264,7 @@
             // comboBox26
             // 
             this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.Location = new System.Drawing.Point(153, 201);
+            this.comboBox26.Location = new System.Drawing.Point(140, 201);
             this.comboBox26.Name = "comboBox26";
             this.comboBox26.Size = new System.Drawing.Size(90, 21);
             this.comboBox26.TabIndex = 25;
@@ -271,7 +272,7 @@
             // comboBox27
             // 
             this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.Location = new System.Drawing.Point(153, 174);
+            this.comboBox27.Location = new System.Drawing.Point(140, 174);
             this.comboBox27.Name = "comboBox27";
             this.comboBox27.Size = new System.Drawing.Size(90, 21);
             this.comboBox27.TabIndex = 24;
@@ -279,7 +280,7 @@
             // comboBox29
             // 
             this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.Location = new System.Drawing.Point(153, 282);
+            this.comboBox29.Location = new System.Drawing.Point(140, 282);
             this.comboBox29.Name = "comboBox29";
             this.comboBox29.Size = new System.Drawing.Size(90, 21);
             this.comboBox29.TabIndex = 28;
@@ -287,26 +288,39 @@
             // comboBox30
             // 
             this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.Location = new System.Drawing.Point(153, 255);
+            this.comboBox30.Location = new System.Drawing.Point(140, 255);
             this.comboBox30.Name = "comboBox30";
             this.comboBox30.Size = new System.Drawing.Size(90, 21);
             this.comboBox30.TabIndex = 27;
             // 
-            // button1
+            // ApplyPickup
             // 
-            this.button1.Location = new System.Drawing.Point(153, 310);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Apply";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ApplyPickup.Location = new System.Drawing.Point(140, 310);
+            this.ApplyPickup.Name = "ApplyPickup";
+            this.ApplyPickup.Size = new System.Drawing.Size(90, 23);
+            this.ApplyPickup.TabIndex = 29;
+            this.ApplyPickup.Text = "Apply";
+            this.ApplyPickup.UseVisualStyleBackColor = true;
+            this.ApplyPickup.Click += new System.EventHandler(this.ApplyPickup_Click);
+            // 
+            // README
+            // 
+            this.README.AutoSize = true;
+            this.README.Location = new System.Drawing.Point(137, 353);
+            this.README.Name = "README";
+            this.README.Size = new System.Drawing.Size(101, 13);
+            this.README.TabIndex = 30;
+            this.README.TabStop = true;
+            this.README.Text = "Link To Understand";
+            this.README.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.README_LinkClicked);
             // 
             // PickupEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(261, 508);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(242, 508);
+            this.Controls.Add(this.README);
+            this.Controls.Add(this.ApplyPickup);
             this.Controls.Add(this.comboBox29);
             this.Controls.Add(this.comboBox30);
             this.Controls.Add(this.comboBox25);
@@ -341,6 +355,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PickupEditor_FormClosing);
             this.Load += new System.EventHandler(this.PickupEditor_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -375,6 +390,7 @@
         private System.Windows.Forms.ComboBox comboBox27;
         private System.Windows.Forms.ComboBox comboBox29;
         private System.Windows.Forms.ComboBox comboBox30;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ApplyPickup;
+        private System.Windows.Forms.LinkLabel README;
     }
 }
