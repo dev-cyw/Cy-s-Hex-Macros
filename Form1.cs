@@ -72,5 +72,11 @@ namespace Cy_s_Hex_Macros
 
 
         }
+
+        private void README_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            README.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://github.com/dev-cyw/Cy-s-Hex-Macros/blob/master/README.md");
+        }
     }
 }

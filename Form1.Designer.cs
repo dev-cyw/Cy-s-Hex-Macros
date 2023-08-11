@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game_Option));
             this.Open_File = new System.Windows.Forms.Button();
             this.GameSelect = new System.Windows.Forms.ComboBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.README = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // Open_File
@@ -57,24 +59,37 @@
             // 
             this.openFileDialog.FileName = "openFileDialog";
             // 
+            // README
+            // 
+            this.README.AutoSize = true;
+            this.README.Location = new System.Drawing.Point(54, 72);
+            this.README.Name = "README";
+            this.README.Size = new System.Drawing.Size(50, 13);
+            this.README.TabIndex = 31;
+            this.README.TabStop = true;
+            this.README.Text = "README";
+            this.README.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.README_LinkClicked);
+            // 
             // Game_Option
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(169, 77);
+            this.ClientSize = new System.Drawing.Size(169, 94);
+            this.Controls.Add(this.README);
             this.Controls.Add(this.GameSelect);
             this.Controls.Add(this.Open_File);
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Game_Option";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CHM Menu";
             this.Load += new System.EventHandler(this.Game_Option_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -83,6 +98,7 @@
         private System.Windows.Forms.Button Open_File;
         private System.Windows.Forms.ComboBox GameSelect;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.LinkLabel README;
     }
 }
 
