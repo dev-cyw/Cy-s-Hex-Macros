@@ -27,8 +27,6 @@ This Program Relies on the fact that you select the arm9 within your unpacked [D
   >  The default value of this byte is 8, which matches the odds of 8/65535
 - Crit Rate Editor, This Gives you 2 options For gen 6 Crit rate, or Gen 7 Crit rate (This Purley changes the rate not the damage modifer)
 ## Pickup Table Editor
-![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/0ef8647c-77ba-49d9-b1a6-018d30060d10)
-
 
 | Pokemon Level | Potion | Antidote | Super Potion | Great Ball | Repel | Escape Rope | Full Heal | Hyper Potion | Ultra Ball | Revive | Rare Candy | Dusk Stone | Shiny Stone | Dawn Stone | Full Restore | Max Revive | PP up's | Max Elixir | 
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
