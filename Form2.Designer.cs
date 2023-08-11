@@ -33,11 +33,13 @@
             this.PlatTabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.SkipRivalName = new System.Windows.Forms.Button();
             this.SpeedHP = new System.Windows.Forms.Button();
             this.DefaultSetMode = new System.Windows.Forms.Button();
             this.DefaultTextSpeed = new System.Windows.Forms.Button();
             this.RemoveOWpoison = new System.Windows.Forms.Button();
-            this.SkipRivalName = new System.Windows.Forms.Button();
+            this.PickupEdit = new System.Windows.Forms.Button();
+            this.ShayminCheck = new System.Windows.Forms.Button();
             this.RemoveMarshStep = new System.Windows.Forms.Button();
             this.KadabEverstone = new System.Windows.Forms.Button();
             this.ShinyNumBox = new System.Windows.Forms.NumericUpDown();
@@ -101,8 +103,6 @@
             this.Slot3Box = new System.Windows.Forms.ComboBox();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.ShayminCheck = new System.Windows.Forms.Button();
-            this.PickupEdit = new System.Windows.Forms.Button();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -187,6 +187,16 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(180, 393);
             this.flowLayoutPanel2.TabIndex = 10;
             // 
+            // SkipRivalName
+            // 
+            this.SkipRivalName.Location = new System.Drawing.Point(3, 32);
+            this.SkipRivalName.Name = "SkipRivalName";
+            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
+            this.SkipRivalName.TabIndex = 13;
+            this.SkipRivalName.Text = "Skip Rival Naming";
+            this.SkipRivalName.UseVisualStyleBackColor = true;
+            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
+            // 
             // SpeedHP
             // 
             this.SpeedHP.Location = new System.Drawing.Point(3, 61);
@@ -227,15 +237,25 @@
             this.RemoveOWpoison.UseVisualStyleBackColor = true;
             this.RemoveOWpoison.Click += new System.EventHandler(this.RemoveOWpoison_Click);
             // 
-            // SkipRivalName
+            // PickupEdit
             // 
-            this.SkipRivalName.Location = new System.Drawing.Point(3, 32);
-            this.SkipRivalName.Name = "SkipRivalName";
-            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
-            this.SkipRivalName.TabIndex = 13;
-            this.SkipRivalName.Text = "Skip Rival Naming";
-            this.SkipRivalName.UseVisualStyleBackColor = true;
-            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
+            this.PickupEdit.Location = new System.Drawing.Point(3, 177);
+            this.PickupEdit.Name = "PickupEdit";
+            this.PickupEdit.Size = new System.Drawing.Size(172, 23);
+            this.PickupEdit.TabIndex = 17;
+            this.PickupEdit.Text = "Pickup Table Editor";
+            this.PickupEdit.UseVisualStyleBackColor = true;
+            this.PickupEdit.Click += new System.EventHandler(this.PickupEdit_Click);
+            // 
+            // ShayminCheck
+            // 
+            this.ShayminCheck.Location = new System.Drawing.Point(3, 206);
+            this.ShayminCheck.Name = "ShayminCheck";
+            this.ShayminCheck.Size = new System.Drawing.Size(172, 23);
+            this.ShayminCheck.TabIndex = 16;
+            this.ShayminCheck.Text = "Shaymin Gracidea Check";
+            this.ShayminCheck.UseVisualStyleBackColor = true;
+            this.ShayminCheck.Click += new System.EventHandler(this.ShayminCheck_Click);
             // 
             // RemoveMarshStep
             // 
@@ -1088,6 +1108,7 @@
             // 
             // Slot1Box
             // 
+            this.Slot1Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Slot1Box.FormattingEnabled = true;
             this.Slot1Box.Location = new System.Drawing.Point(14, 101);
             this.Slot1Box.Name = "Slot1Box";
@@ -1096,6 +1117,7 @@
             // 
             // Slot2Box
             // 
+            this.Slot2Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Slot2Box.FormattingEnabled = true;
             this.Slot2Box.Location = new System.Drawing.Point(141, 101);
             this.Slot2Box.Name = "Slot2Box";
@@ -1104,6 +1126,7 @@
             // 
             // Slot3Box
             // 
+            this.Slot3Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Slot3Box.FormattingEnabled = true;
             this.Slot3Box.Location = new System.Drawing.Point(268, 101);
             this.Slot3Box.Name = "Slot3Box";
@@ -1119,26 +1142,6 @@
             this.NewFile.Text = "Open New File";
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
-            // 
-            // ShayminCheck
-            // 
-            this.ShayminCheck.Location = new System.Drawing.Point(3, 206);
-            this.ShayminCheck.Name = "ShayminCheck";
-            this.ShayminCheck.Size = new System.Drawing.Size(172, 23);
-            this.ShayminCheck.TabIndex = 16;
-            this.ShayminCheck.Text = "Shaymin Gracidea Check";
-            this.ShayminCheck.UseVisualStyleBackColor = true;
-            this.ShayminCheck.Click += new System.EventHandler(this.ShayminCheck_Click);
-            // 
-            // PickupEdit
-            // 
-            this.PickupEdit.Location = new System.Drawing.Point(3, 177);
-            this.PickupEdit.Name = "PickupEdit";
-            this.PickupEdit.Size = new System.Drawing.Size(172, 23);
-            this.PickupEdit.TabIndex = 17;
-            this.PickupEdit.Text = "Pickup Table Editor";
-            this.PickupEdit.UseVisualStyleBackColor = true;
-            this.PickupEdit.Click += new System.EventHandler(this.PickupEdit_Click);
             // 
             // PlatinumHex
             // 
