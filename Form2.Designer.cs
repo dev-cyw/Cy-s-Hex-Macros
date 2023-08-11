@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlatinumHex));
             this.Trainer_Names = new System.Windows.Forms.Button();
             this.PlatTabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
@@ -1152,6 +1153,7 @@
             this.Controls.Add(this.NewFile);
             this.Controls.Add(this.PlatTabs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "PlatinumHex";
