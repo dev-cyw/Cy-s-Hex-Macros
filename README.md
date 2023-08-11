@@ -61,7 +61,8 @@ and then in the next Collumn of the pickup table editor is the "Rare items" with
 | ^^^^^ | ![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/438768fa-736c-4be2-94a7-286a058ca248) |
 ## Mart
 This Works similarly to gen 4 Mart Editor Where there are drop downs containing
-all the items and levels, the levels correlate to what point you can get them, The mart level starts at 1 and goes up after badges 1, 3, 5, 7, and 8 
+all the items and levels, the levels correlate to what point you can get them, The mart level starts at 1 and goes up after badges 1, 3, 5, 7, and 8
+Remember to Click Apply at the bottom of the list!
 
 ## Starters
 The Starters Tab allows you change the starters quickly and easily including the sprites* of each. 
