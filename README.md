@@ -10,7 +10,7 @@ Join The [The Kingdom Of DS Hacking!](https://discord.gg/zAtqJDW2jC) Discord for
 # Usage And Explanation
 ![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/009e7c1d-53de-4533-ab69-f8172a65c51f)
 
-This is the main menu where you can choose what game you are editing. **if you do not pick the right game it could seriouslly destroy your rom/arm9**
+This is the main menu where you can choose what game you are editing. **If you do not pick the right game it could seriouslly destroy your rom/arm9**
 
 This Program Relies on the fact that you select the arm9 within your unpacked [DSPRE](https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor) folder if not, the program will not work
 # Platinum
