@@ -48,7 +48,7 @@ This Program Relies on the fact that you select the arm9 within your unpacked [D
 How the pickup table works is % chances that slides across the 18 items Where the first on is 30% the next 6 items are 10% and then it goes 4% for the last two. the pickup table editor first collumn shows these items going down
 
 So the % Chances are 30% 10% 10% 10% 10% 10% 10% 4% 4%
-and then in the next Collumn of the pickup table editor is the "Rare items" with 2, 1% items. You can either get the Level you are on OR the one below your level slot with Earthquake being at the end.
+and then in the next Collumn of the pickup table editor is the "Rare items" with 2, 1% items. You can either get the Level you are on OR the one below your level slot for example if your pokemon is between level 91-100 The rare item would be leftovers OR earthquake.
 
 | Levels | Items |
 | :-: | :-: |
