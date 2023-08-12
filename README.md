@@ -8,6 +8,10 @@ Join The [The Kingdom Of DS Hacking!](https://discord.gg/zAtqJDW2jC) Discord for
 (@C y (Gigalith)[GB]) On this Discord
 
 # Usage And Explanation
+![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/009e7c1d-53de-4533-ab69-f8172a65c51f)
+
+This is the main menu where you can choose what game you are editing. **If you do not pick the right game it could seriouslly destroy your rom/arm9**
+
 This Program Relies on the fact that you select the arm9 within your unpacked [DSPRE](https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor) folder if not, the program will not work
 # Platinum
 ## Main
@@ -44,7 +48,7 @@ This Program Relies on the fact that you select the arm9 within your unpacked [D
 How the pickup table works is % chances that slides across the 18 items Where the first on is 30% the next 6 items are 10% and then it goes 4% for the last two. the pickup table editor first collumn shows these items going down
 
 So the % Chances are 30% 10% 10% 10% 10% 10% 10% 4% 4%
-and then in the next Collumn of the pickup table editor is the "Rare items" with 2, 1% items. You can either get the Level you are on OR the one below your level slot with Earthquake being at the end.
+and then in the next Collumn of the pickup table editor is the "Rare items" with 2, 1% items. You can either get the Level you are on OR the one below your level slot for example if your pokemon is between level 91-100 The rare item would be leftovers OR earthquake.
 
 | Levels | Items |
 | :-: | :-: |
@@ -60,12 +64,16 @@ and then in the next Collumn of the pickup table editor is the "Rare items" with
 | 91-100 | ![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/d17e1981-6f64-4c2f-98f7-888e1cc074c6)|
 | ^^^^^ | ![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/438768fa-736c-4be2-94a7-286a058ca248) |
 ## Mart
+![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/a9c95421-e4b3-40f9-bbe8-acb106f17e8a)
+
 This Works similarly to gen 4 Mart Editor Where there are drop downs containing
 all the items and levels, the levels correlate to what point you can get them, The mart level starts at 1 and goes up after badges 1, 3, 5, 7, and 8
 Remember to Click Apply at the bottom of the list!
 
 ## Starters
-The Starters Tab allows you change the starters quickly and easily including the sprites* of each. 
+![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/af004aca-ff2e-4bf9-89ea-1148ac77b3cf)
+
+The Starters Tab allows you change the starters you receive quickly and easily including the sprites* of each. 
 
 Reminder: If you change the Starter mons, your Rival will always pick Turtwig (and its evolutions) in all battles, unless you edit each Rival battle script
 
@@ -74,7 +82,6 @@ Reminder: If you change the Starter mons, your Rival will always pick Turtwig (a
 - Slot 2: ID'S 256-264
 - Slot 3: ID'S 256-269
 ## Misc Info
-it kinda slow
 
 ## Special Thanks
 
