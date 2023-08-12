@@ -62,7 +62,7 @@
             // README
             // 
             this.README.AutoSize = true;
-            this.README.Location = new System.Drawing.Point(54, 72);
+            this.README.Location = new System.Drawing.Point(58, 72);
             this.README.Name = "README";
             this.README.Size = new System.Drawing.Size(50, 13);
             this.README.TabIndex = 31;

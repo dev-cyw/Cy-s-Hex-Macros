@@ -74,7 +74,7 @@ Reminder: If you change the Starter mons, your Rival will always pick Turtwig (a
 - Slot 2: ID'S 256-264
 - Slot 3: ID'S 256-269
 ## Misc Info
-
+it kinda slow
 
 ## Special Thanks
 
