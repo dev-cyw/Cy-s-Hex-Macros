@@ -26,7 +26,7 @@ namespace Cy_s_Hex_Macros
         public string arm9 = Game_Option.arm9;
         readonly string overlay = Game_Option.arm9.Remove(Game_Option.arm9.Length - 8) + @"\overlay\overlay_0";
         bool close = true;
-        public string[] ItemsPlat = new string[468];
+        string[] ItemsPlat = new string[468];
         string[] Pokemon = new string[493];
         readonly int[] ItemOffsets =
             {

@@ -34,14 +34,9 @@
             this.PlatTabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.SkipRivalName = new System.Windows.Forms.Button();
             this.SpeedHP = new System.Windows.Forms.Button();
             this.DefaultSetMode = new System.Windows.Forms.Button();
             this.DefaultTextSpeed = new System.Windows.Forms.Button();
-            this.RemoveOWpoison = new System.Windows.Forms.Button();
-            this.PickupEdit = new System.Windows.Forms.Button();
-            this.ShayminCheck = new System.Windows.Forms.Button();
-            this.RemoveMarshStep = new System.Windows.Forms.Button();
             this.KadabEverstone = new System.Windows.Forms.Button();
             this.ShinyNumBox = new System.Windows.Forms.NumericUpDown();
             this.ShinyApply = new System.Windows.Forms.Button();
@@ -104,6 +99,11 @@
             this.Slot3Box = new System.Windows.Forms.ComboBox();
             this.NewFile = new System.Windows.Forms.Button();
             this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.RemoveOWpoison = new System.Windows.Forms.Button();
+            this.SkipRivalName = new System.Windows.Forms.Button();
+            this.PickupEdit = new System.Windows.Forms.Button();
+            this.ShayminCheck = new System.Windows.Forms.Button();
+            this.RemoveMarshStep = new System.Windows.Forms.Button();
             this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -188,16 +188,6 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(180, 393);
             this.flowLayoutPanel2.TabIndex = 10;
             // 
-            // SkipRivalName
-            // 
-            this.SkipRivalName.Location = new System.Drawing.Point(3, 32);
-            this.SkipRivalName.Name = "SkipRivalName";
-            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
-            this.SkipRivalName.TabIndex = 13;
-            this.SkipRivalName.Text = "Skip Rival Naming";
-            this.SkipRivalName.UseVisualStyleBackColor = true;
-            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
-            // 
             // SpeedHP
             // 
             this.SpeedHP.Location = new System.Drawing.Point(3, 61);
@@ -227,46 +217,6 @@
             this.DefaultTextSpeed.Text = "Default Fast Text Speed";
             this.DefaultTextSpeed.UseVisualStyleBackColor = true;
             this.DefaultTextSpeed.Click += new System.EventHandler(this.DefaultTextSpeed_Click);
-            // 
-            // RemoveOWpoison
-            // 
-            this.RemoveOWpoison.Location = new System.Drawing.Point(3, 148);
-            this.RemoveOWpoison.Name = "RemoveOWpoison";
-            this.RemoveOWpoison.Size = new System.Drawing.Size(172, 23);
-            this.RemoveOWpoison.TabIndex = 14;
-            this.RemoveOWpoison.Text = "Remove Overworld Poison";
-            this.RemoveOWpoison.UseVisualStyleBackColor = true;
-            this.RemoveOWpoison.Click += new System.EventHandler(this.RemoveOWpoison_Click);
-            // 
-            // PickupEdit
-            // 
-            this.PickupEdit.Location = new System.Drawing.Point(3, 177);
-            this.PickupEdit.Name = "PickupEdit";
-            this.PickupEdit.Size = new System.Drawing.Size(172, 23);
-            this.PickupEdit.TabIndex = 17;
-            this.PickupEdit.Text = "Pickup Table Editor";
-            this.PickupEdit.UseVisualStyleBackColor = true;
-            this.PickupEdit.Click += new System.EventHandler(this.PickupEdit_Click);
-            // 
-            // ShayminCheck
-            // 
-            this.ShayminCheck.Location = new System.Drawing.Point(3, 206);
-            this.ShayminCheck.Name = "ShayminCheck";
-            this.ShayminCheck.Size = new System.Drawing.Size(172, 23);
-            this.ShayminCheck.TabIndex = 16;
-            this.ShayminCheck.Text = "Shaymin Gracidea Check";
-            this.ShayminCheck.UseVisualStyleBackColor = true;
-            this.ShayminCheck.Click += new System.EventHandler(this.ShayminCheck_Click);
-            // 
-            // RemoveMarshStep
-            // 
-            this.RemoveMarshStep.Location = new System.Drawing.Point(3, 235);
-            this.RemoveMarshStep.Name = "RemoveMarshStep";
-            this.RemoveMarshStep.Size = new System.Drawing.Size(172, 23);
-            this.RemoveMarshStep.TabIndex = 15;
-            this.RemoveMarshStep.Text = "Remove Marsh Step Counter";
-            this.RemoveMarshStep.UseVisualStyleBackColor = true;
-            this.RemoveMarshStep.Click += new System.EventHandler(this.RemoveMarshStep_Click);
             // 
             // KadabEverstone
             // 
@@ -1144,6 +1094,56 @@
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
             // 
+            // RemoveOWpoison
+            // 
+            this.RemoveOWpoison.Location = new System.Drawing.Point(3, 148);
+            this.RemoveOWpoison.Name = "RemoveOWpoison";
+            this.RemoveOWpoison.Size = new System.Drawing.Size(172, 23);
+            this.RemoveOWpoison.TabIndex = 14;
+            this.RemoveOWpoison.Text = "Remove Overworld Poison";
+            this.RemoveOWpoison.UseVisualStyleBackColor = true;
+            this.RemoveOWpoison.Click += new System.EventHandler(this.RemoveOWpoison_Click);
+            // 
+            // SkipRivalName
+            // 
+            this.SkipRivalName.Location = new System.Drawing.Point(3, 32);
+            this.SkipRivalName.Name = "SkipRivalName";
+            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
+            this.SkipRivalName.TabIndex = 13;
+            this.SkipRivalName.Text = "Skip Rival Naming";
+            this.SkipRivalName.UseVisualStyleBackColor = true;
+            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
+            // 
+            // PickupEdit
+            // 
+            this.PickupEdit.Location = new System.Drawing.Point(3, 177);
+            this.PickupEdit.Name = "PickupEdit";
+            this.PickupEdit.Size = new System.Drawing.Size(172, 23);
+            this.PickupEdit.TabIndex = 17;
+            this.PickupEdit.Text = "Pickup Table Editor";
+            this.PickupEdit.UseVisualStyleBackColor = true;
+            this.PickupEdit.Click += new System.EventHandler(this.PickupEdit_Click);
+            // 
+            // ShayminCheck
+            // 
+            this.ShayminCheck.Location = new System.Drawing.Point(3, 206);
+            this.ShayminCheck.Name = "ShayminCheck";
+            this.ShayminCheck.Size = new System.Drawing.Size(172, 23);
+            this.ShayminCheck.TabIndex = 16;
+            this.ShayminCheck.Text = "Shaymin Gracidea Check";
+            this.ShayminCheck.UseVisualStyleBackColor = true;
+            this.ShayminCheck.Click += new System.EventHandler(this.ShayminCheck_Click);
+            // 
+            // RemoveMarshStep
+            // 
+            this.RemoveMarshStep.Location = new System.Drawing.Point(3, 235);
+            this.RemoveMarshStep.Name = "RemoveMarshStep";
+            this.RemoveMarshStep.Size = new System.Drawing.Size(172, 23);
+            this.RemoveMarshStep.TabIndex = 15;
+            this.RemoveMarshStep.Text = "Remove Marsh Step Counter";
+            this.RemoveMarshStep.UseVisualStyleBackColor = true;
+            this.RemoveMarshStep.Click += new System.EventHandler(this.RemoveMarshStep_Click);
+            // 
             // PlatinumHex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1265,10 +1265,10 @@
         private System.Windows.Forms.Button DefaultTextSpeed;
         private System.Windows.Forms.Button DefaultSetMode;
         private System.Windows.Forms.Button SpeedHP;
-        private System.Windows.Forms.Button SkipRivalName;
         private System.Windows.Forms.Button RemoveOWpoison;
-        private System.Windows.Forms.Button RemoveMarshStep;
-        private System.Windows.Forms.Button ShayminCheck;
+        private System.Windows.Forms.Button SkipRivalName;
         private System.Windows.Forms.Button PickupEdit;
+        private System.Windows.Forms.Button ShayminCheck;
+        private System.Windows.Forms.Button RemoveMarshStep;
     }
 }

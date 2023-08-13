@@ -58,10 +58,16 @@ namespace Cy_s_Hex_Macros
                         Platinum.Show();
                         break;
                     case 1:
-
+                        HGSSHEX HG = new HGSSHEX();
+                        HG.RefToMenu = this;
+                        this.Visible = false;
+                        HG.Show();
                         break;
                     case 2:
-
+                        HGSSHEX SS = new HGSSHEX();
+                        SS.RefToMenu = this;
+                        this.Visible = false;
+                        SS.Show();
                         break;
                 }
             }
