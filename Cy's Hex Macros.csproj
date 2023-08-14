@@ -49,42 +49,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MENU.cs">
+    <Compile Include="Forms\MENU.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MENU.Designer.cs">
+    <Compile Include="Forms\MENU.Designer.cs">
       <DependentUpon>MENU.cs</DependentUpon>
     </Compile>
-    <Compile Include="PLAT.cs">
+    <Compile Include="Forms\PLAT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PLAT.Designer.cs">
+    <Compile Include="Forms\PLAT.Designer.cs">
       <DependentUpon>PLAT.cs</DependentUpon>
     </Compile>
-    <Compile Include="PTPICKUP.cs">
+    <Compile Include="Forms\PTPICKUP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PTPICKUP.Designer.cs">
+    <Compile Include="Forms\PTPICKUP.Designer.cs">
       <DependentUpon>PTPICKUP.cs</DependentUpon>
     </Compile>
-    <Compile Include="HGSS.cs">
+    <Compile Include="Forms\HGSS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HGSS.Designer.cs">
+    <Compile Include="Forms\HGSS.Designer.cs">
       <DependentUpon>HGSS.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MENU.resx">
+    <EmbeddedResource Include="Forms\MENU.resx">
       <DependentUpon>MENU.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PLAT.resx">
+    <EmbeddedResource Include="Forms\PLAT.resx">
       <DependentUpon>PLAT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PTPICKUP.resx">
+    <EmbeddedResource Include="Forms\PTPICKUP.resx">
       <DependentUpon>PTPICKUP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HGSS.resx">
+    <EmbeddedResource Include="Forms\HGSS.resx">
       <DependentUpon>HGSS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -115,6 +115,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ItemsHG.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Text\" />
+    <Folder Include="Tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

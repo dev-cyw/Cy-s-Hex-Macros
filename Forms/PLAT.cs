@@ -187,9 +187,8 @@ namespace Cy_s_Hex_Macros
         }
         private void PopulateComboBoxes()
         {
-            //Directory.GetCurrentDirectory() + @"\ItemsPlat.txt";
-            ItemsPlat = File.ReadAllLines(@"C:\Users\cpoon\source\repos\Cy's Hex Macros\ItemsPlat.txt", Encoding.UTF8);
-            Pokemon = File.ReadAllLines(@"C:\Users\cpoon\source\repos\Cy's Hex Macros\Pokemons.txt", Encoding.UTF8);
+            ItemsPlat = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\ItemsPlat.txt", Encoding.UTF8);
+            Pokemon = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\Pokemon.txt", Encoding.UTF8);
             BackgroundWorker worker = new BackgroundWorker();
             worker.RunWorkerAsync();
             while (worker.IsBusy == true)
