@@ -47,7 +47,7 @@ namespace Cy_s_Hex_Macros
             RefreshItems();
         }
 
-        private void HexEdit(int Offset, byte[] newData, string path)
+        private void HexEdit(int Offset, byte[] newData, string path) //General Hex edit
         {
             try
             {
@@ -58,7 +58,8 @@ namespace Cy_s_Hex_Macros
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An execption occured:" + ex);
+                MessageBox.Show("An execption occured:" + ex,"ERROR" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
         }
 
@@ -66,26 +67,9 @@ namespace Cy_s_Hex_Macros
         {
             PopulateComboBoxes();
             FindDefault();
-            string[] CritRate = { "Gen 6: 1/16", "Gen 7: 1/24"};
-            foreach (string Crits in CritRate)
-            {
-                critRate.Items.Add(Crits);
-            }
-            try
-            {
-                BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));
-                reader.BaseStream.Seek(0x75E50, SeekOrigin.Begin);
-                int hexString = reader.ReadByte();
-                reader.Close();
-                ShinyNumBox.Value = hexString;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("An execption occured:" + ex);
-            }
         }
 
-        private void NewFile_Click(object sender, EventArgs e)
+        private void NewFile_Click(object sender, EventArgs e) //Closes the current form and makes the menu visible
         {         
             DialogResult dialogResult =  MessageBox.Show("Are you sure", "Do you want to open a new file?", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
@@ -96,11 +80,11 @@ namespace Cy_s_Hex_Macros
             }
         }
 
-        private void Trainer_Names_Click(object sender, EventArgs e)
+        private void Trainer_Names_Click(object sender, EventArgs e) // Mikelan
         {
             byte[] DSPRE = new byte[] { 0x0C };
             HexEdit(0x791DE, DSPRE, arm9);
-            MessageBox.Show("The hex has been changed!"); // Mikelan
+            MessageBox.Show("The hex has been changed!");
         }
 
         private void PlatinumHex_FormClosing(object sender, FormClosingEventArgs e)
@@ -114,32 +98,31 @@ namespace Cy_s_Hex_Macros
         private void ShinyApply_Click(object sender, EventArgs e)
         {
             byte[] ShinyOdds = new byte[] { Convert.ToByte(ShinyNumBox.Value) };
-            Console.WriteLine(ShinyOdds[0]);
             HexEdit(0x75E50, ShinyOdds, arm9);
-            MessageBox.Show("The hex has been changed!"); //
+            MessageBox.Show("The hex has been changed!");
         }
 
-        private void KadabEverstone_Click(object sender, EventArgs e)
+        private void KadabEverstone_Click(object sender, EventArgs e) // Chritchy
         {
             byte[] Kadabra = new byte[] { 0x00 };
             HexEdit(0x76BFE, Kadabra, arm9);
-            MessageBox.Show("The hex has been changed!"); // Chritchy
+            MessageBox.Show("The hex has been changed!");
         }
 
-        private void ApplyCrits_Click(object sender, EventArgs e)
+        private void ApplyCrits_Click(object sender, EventArgs e)//Lhea
         {
 
             if (critRate.SelectedIndex == 0)
             {
                 byte[] newData = new byte[] { 0x10, 0x08, 0x02, 0x01, 0x01 };// 1/16
                 HexEdit(0x33A60, newData, overlay + "016.bin");
-                MessageBox.Show("The hex has been changed!"); //Lhea in #Research-Chamber
+                MessageBox.Show("The hex has been changed!");
             }
             if (critRate.SelectedIndex == 1)
             {
                 byte[] newData = new byte[] { 0x18, 0x08, 0x02, 0x01, 0x01 }; // 1/24
                 HexEdit(0x33A60, newData, overlay + "016.bin");
-                MessageBox.Show("The hex has been changed!"); //Lhea in #Research-Chamber
+                MessageBox.Show("The hex has been changed!"); 
             }
             if (critRate.Text == "Crit Rate")
             {
@@ -148,7 +131,7 @@ namespace Cy_s_Hex_Macros
         }
 
 
-        private void FindDefault()
+        private void FindDefault() //Reads the values from the files
         {
             byte[] HexBytes;
             int HexString;
@@ -181,15 +164,26 @@ namespace Cy_s_Hex_Macros
                     Control.SelectedIndex = BitConverter.ToInt16(HexBytes, 0) - 1;
                     i++;
                 }
-
                 BinRead.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("An execption occured:" + ex);
-                Environment.Exit(100);
             }
-            
+
+            try
+            {
+                BinaryReader reader = new BinaryReader(File.Open(arm9, FileMode.Open, FileAccess.Read));
+                reader.BaseStream.Seek(0x75E50, SeekOrigin.Begin);
+                int hexString = reader.ReadByte();
+                reader.Close();
+                ShinyNumBox.Value = hexString;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An execption occured:" + ex);
+            }
+
         }
         private void PopulateComboBoxes()
         {
@@ -292,11 +286,18 @@ namespace Cy_s_Hex_Macros
                 PlatTabs.SelectTab(1);
                 PlatTabs.SelectTab(2);
                 PlatTabs.SelectTab(0);
+
+                string[] CritRate = { "Gen 6: 1/16", "Gen 7: 1/24" };
+                foreach (string Crits in CritRate)
+                {
+                    critRate.Items.Add(Crits);
+                }
+
                 Application.DoEvents();
             }
         }
 
-        private void Apply_Mart_Click(object sender, EventArgs e)
+        private void Apply_Mart_Click(object sender, EventArgs e) //Iterates through each control and applys the items and levels from the mart
 
         {
             int i = 0;
@@ -321,7 +322,7 @@ namespace Cy_s_Hex_Macros
             MessageBox.Show("The Mart Has Changed!");
         }
 
-        private void ApplyStarters_Click(object sender, EventArgs e)
+        private void ApplyStarters_Click(object sender, EventArgs e)//Iterates through each control and applys the pokemon and sprites from the starters
         {
             byte[] newData = BitConverter.GetBytes(Slot1Box.SelectedIndex + 1);
             HexEdit(StarterOffsets[0], newData, overlay + "078.bin");
@@ -403,60 +404,60 @@ namespace Cy_s_Hex_Macros
             MessageBox.Show("The Starters have been changed!");//turtleissac
         }
 
-        private void DefaultTextSpeed_Click(object sender, EventArgs e)
+        private void DefaultTextSpeed_Click(object sender, EventArgs e)//lhea
         {
             byte[] newData = { 0x02 };
-            HexEdit(0x27A2E, newData, arm9);//lhea
+            HexEdit(0x27A2E, newData, arm9);
             MessageBox.Show("The Hex has been changed!");
         }
 
-        private void DefaultSetMode_Click(object sender, EventArgs e)
+        private void DefaultSetMode_Click(object sender, EventArgs e)//lhea
         {
-            byte[] newData = { 0x40, 0x20, 0x10, 0x43 };
-            HexEdit(0x27A3E, newData, arm9);//lhea
+            byte[] newData = { 0x40, 0x20, 0x01, 0x43 };
+            HexEdit(0x27A3E, newData, arm9);
             MessageBox.Show("The Hex has been changed!");
         }
 
-        private void SpeedHP_Click(object sender, EventArgs e)
+        private void SpeedHP_Click(object sender, EventArgs e)//adastra
         {
             byte[] newData = { 0x88, 0x1E };
-            HexEdit(0x2D046, newData, overlay + "016.bin");//adastra
+            HexEdit(0x2D046, newData, overlay + "016.bin");
             MessageBox.Show("The Hex has been changed!");
         }
 
-        private void SkipRivalName_Click(object sender, EventArgs e)
+        private void SkipRivalName_Click(object sender, EventArgs e)//lhea
         {
             byte[] newData = { 0xD6, 0x0C };
             HexEdit(0x166A, newData, overlay + "073.bin");
             newData = new byte[] { 0x5A,  0x20 };
             HexEdit(0x2256, newData, overlay + "073.bin");
             newData = new byte[] { 0x02, 0x21 };
-            HexEdit(0x228E, newData, overlay + "073.bin");//lhea
+            HexEdit(0x228E, newData, overlay + "073.bin");
             MessageBox.Show("Your rival will now receive a default name as specified from Text Archive 389, entry 37!");
         }
 
-        private void RemoveOWpoison_Click(object sender, EventArgs e)
+        private void RemoveOWpoison_Click(object sender, EventArgs e)//lhea
         {
             byte[] newData = { 0x05, 0xE0, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46 };
             HexEdit(0x1BAE, newData, overlay + "005.bin");
-            MessageBox.Show("The Hex has been changed!");//lhea
+            MessageBox.Show("The Hex has been changed!");
         }
 
-        private void RemoveMarshStep_Click(object sender, EventArgs e)
+        private void RemoveMarshStep_Click(object sender, EventArgs e)//lhea
         {
             byte[] newData = { 0x05, 0xE0, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46, 0xC0, 0x46 };
             HexEdit(0x1BBC, newData, overlay + "005.bin");
-            MessageBox.Show("The Hex has been changed!");//lhea
+            MessageBox.Show("The Hex has been changed!");
         }
 
-        private void ShayminCheck_Click(object sender, EventArgs e)
+        private void ShayminCheck_Click(object sender, EventArgs e)//adastra
         {
             byte[] newData = { 0xC0, 0x46, 0xC0, 0x46 };
             HexEdit(0x77B6C, newData ,arm9);
-            MessageBox.Show("The Hex has been changed!");//adastra
+            MessageBox.Show("The Hex has been changed!");
         }
 
-        private void PickupEdit_Click(object sender, EventArgs e)
+        private void PickupEdit_Click(object sender, EventArgs e)//adastra
         {
             PickupEditor pickupEdit = new PickupEditor();
             pickupEdit.ShowDialog();

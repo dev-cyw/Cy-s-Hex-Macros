@@ -30,30 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game_Option));
             this.Open_File = new System.Windows.Forms.Button();
-            this.GameSelect = new System.Windows.Forms.ComboBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.README = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // Open_File
             // 
+            this.Open_File.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Open_File.Location = new System.Drawing.Point(24, 10);
             this.Open_File.Name = "Open_File";
-            this.Open_File.Size = new System.Drawing.Size(120, 25);
+            this.Open_File.Size = new System.Drawing.Size(120, 35);
             this.Open_File.TabIndex = 0;
             this.Open_File.Text = "Open arm9.bin";
             this.Open_File.UseVisualStyleBackColor = true;
             this.Open_File.Click += new System.EventHandler(this.Open_File_Click);
-            // 
-            // GameSelect
-            // 
-            this.GameSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GameSelect.FormattingEnabled = true;
-            this.GameSelect.Location = new System.Drawing.Point(24, 41);
-            this.GameSelect.Name = "GameSelect";
-            this.GameSelect.Size = new System.Drawing.Size(120, 21);
-            this.GameSelect.TabIndex = 1;
-            this.GameSelect.SelectedIndexChanged += new System.EventHandler(this.GameSelect_SelectedIndexChanged);
             // 
             // openFileDialog
             // 
@@ -62,7 +52,7 @@
             // README
             // 
             this.README.AutoSize = true;
-            this.README.Location = new System.Drawing.Point(58, 72);
+            this.README.Location = new System.Drawing.Point(56, 48);
             this.README.Name = "README";
             this.README.Size = new System.Drawing.Size(50, 13);
             this.README.TabIndex = 31;
@@ -76,9 +66,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(169, 94);
+            this.ClientSize = new System.Drawing.Size(169, 70);
             this.Controls.Add(this.README);
-            this.Controls.Add(this.GameSelect);
             this.Controls.Add(this.Open_File);
             this.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -96,7 +85,6 @@
         #endregion
 
         private System.Windows.Forms.Button Open_File;
-        private System.Windows.Forms.ComboBox GameSelect;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.LinkLabel README;
     }

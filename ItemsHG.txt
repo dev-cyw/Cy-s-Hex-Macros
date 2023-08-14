@@ -426,7 +426,7 @@ HM05
 HM06
 HM07
 HM08
-Explorer Kit
+???
 Loot Sack
 Rule Book
 Poké Radar
@@ -466,3 +466,72 @@ SecretPotion
 Vs. Recorder
 Gracidea
 Secret Key
+Apricorn Box
+Unown Report
+Berry Pots
+Dowsing MCHN
+Blue Card
+SlowpokeTail
+Clear Bell
+Card Key
+Basement Key
+SquirtBottle
+Red Scale
+Lost Item
+Pass
+Machine Part
+Silver Wing
+Rainbow Wing
+Mystery Egg
+Red Apricorn
+Ylw Apricorn
+Blu Apricorn
+Grn Apricorn
+Pnk Apricorn
+Wht Apricorn
+Blk Apricorn
+Fast Ball
+Level Ball
+Lure Ball
+Heavy Ball
+Love Ball
+Friend Ball
+Moon Ball
+Sport Ball
+Park Ball
+Photo Album
+GB Sounds
+Tidal Bell
+RageCandyBar
+Data Card 01
+Data Card 02
+Data Card 03
+Data Card 04
+Data Card 05
+Data Card 06
+Data Card 07
+Data Card 08
+Data Card 09
+Data Card 10
+Data Card 11
+Data Card 12
+Data Card 13
+Data Card 14
+Data Card 15
+Data Card 16
+Data Card 17
+Data Card 18
+Data Card 19
+Data Card 20
+Data Card 21
+Data Card 22
+Data Card 23
+Data Card 24
+Data Card 25
+Data Card 26
+Data Card 27
+Jade Orb
+Lock Capsule
+Red Orb
+Blue Orb
+Enigma Stone

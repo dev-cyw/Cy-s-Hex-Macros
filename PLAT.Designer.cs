@@ -1,6 +1,6 @@
 ﻿namespace Cy_s_Hex_Macros
 {
-    partial class HGSSHEX
+    partial class PlatinumHex
     {
         /// <summary>
         /// Required designer variable.
@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HGSSHEX));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlatinumHex));
+            this.Trainer_Names = new System.Windows.Forms.Button();
+            this.PlatTabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.Trainer_Names = new System.Windows.Forms.Button();
+            this.SkipRivalName = new System.Windows.Forms.Button();
             this.SpeedHP = new System.Windows.Forms.Button();
-            this.DefaultTextSpeed = new System.Windows.Forms.Button();
             this.DefaultSetMode = new System.Windows.Forms.Button();
+            this.DefaultTextSpeed = new System.Windows.Forms.Button();
+            this.RemoveOWpoison = new System.Windows.Forms.Button();
+            this.PickupEdit = new System.Windows.Forms.Button();
+            this.ShayminCheck = new System.Windows.Forms.Button();
+            this.RemoveMarshStep = new System.Windows.Forms.Button();
             this.KadabEverstone = new System.Windows.Forms.Button();
             this.ShinyNumBox = new System.Windows.Forms.NumericUpDown();
             this.ShinyApply = new System.Windows.Forms.Button();
-            this.MartTab = new System.Windows.Forms.TabPage();
-            this.StartersTab = new System.Windows.Forms.TabPage();
-            this.NewFile = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.ApplyStarters = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Slot1Box = new System.Windows.Forms.ComboBox();
-            this.Slot2Box = new System.Windows.Forms.ComboBox();
-            this.Slot3Box = new System.Windows.Forms.ComboBox();
+            this.critRate = new System.Windows.Forms.ComboBox();
+            this.ApplyCrits = new System.Windows.Forms.Button();
+            this.MartsTab = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.MartPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ItemLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -92,12 +92,24 @@
             this.MartBox19 = new System.Windows.Forms.ComboBox();
             this.MartBadge19 = new System.Windows.Forms.NumericUpDown();
             this.Apply_Mart = new System.Windows.Forms.Button();
-            this.tabControl1.SuspendLayout();
+            this.StartersTab = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ApplyStarters = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Slot1Box = new System.Windows.Forms.ComboBox();
+            this.Slot2Box = new System.Windows.Forms.ComboBox();
+            this.Slot3Box = new System.Windows.Forms.ComboBox();
+            this.NewFile = new System.Windows.Forms.Button();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.PlatTabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShinyNumBox)).BeginInit();
-            this.MartTab.SuspendLayout();
-            this.StartersTab.SuspendLayout();
+            this.MartsTab.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.MartPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge2)).BeginInit();
@@ -118,18 +130,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge19)).BeginInit();
+            this.StartersTab.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // Trainer_Names
             // 
-            this.tabControl1.Controls.Add(this.MainTab);
-            this.tabControl1.Controls.Add(this.MartTab);
-            this.tabControl1.Controls.Add(this.StartersTab);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(415, 426);
-            this.tabControl1.TabIndex = 0;
+            this.Trainer_Names.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Trainer_Names.Location = new System.Drawing.Point(3, 3);
+            this.Trainer_Names.Name = "Trainer_Names";
+            this.Trainer_Names.Size = new System.Drawing.Size(172, 23);
+            this.Trainer_Names.TabIndex = 0;
+            this.Trainer_Names.Text = "DSPRE Trainer Names";
+            this.Trainer_Names.UseVisualStyleBackColor = true;
+            this.Trainer_Names.Click += new System.EventHandler(this.Trainer_Names_Click);
+            // 
+            // PlatTabs
+            // 
+            this.PlatTabs.Controls.Add(this.MainTab);
+            this.PlatTabs.Controls.Add(this.MartsTab);
+            this.PlatTabs.Controls.Add(this.StartersTab);
+            this.PlatTabs.Location = new System.Drawing.Point(12, 12);
+            this.PlatTabs.Multiline = true;
+            this.PlatTabs.Name = "PlatTabs";
+            this.PlatTabs.SelectedIndex = 0;
+            this.PlatTabs.Size = new System.Drawing.Size(415, 426);
+            this.PlatTabs.TabIndex = 1;
             // 
             // MainTab
             // 
@@ -145,47 +170,43 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.Trainer_Names);
+            this.flowLayoutPanel2.Controls.Add(this.SkipRivalName);
             this.flowLayoutPanel2.Controls.Add(this.SpeedHP);
-            this.flowLayoutPanel2.Controls.Add(this.DefaultTextSpeed);
             this.flowLayoutPanel2.Controls.Add(this.DefaultSetMode);
+            this.flowLayoutPanel2.Controls.Add(this.DefaultTextSpeed);
+            this.flowLayoutPanel2.Controls.Add(this.RemoveOWpoison);
+            this.flowLayoutPanel2.Controls.Add(this.PickupEdit);
+            this.flowLayoutPanel2.Controls.Add(this.ShayminCheck);
+            this.flowLayoutPanel2.Controls.Add(this.RemoveMarshStep);
             this.flowLayoutPanel2.Controls.Add(this.KadabEverstone);
             this.flowLayoutPanel2.Controls.Add(this.ShinyNumBox);
             this.flowLayoutPanel2.Controls.Add(this.ShinyApply);
+            this.flowLayoutPanel2.Controls.Add(this.critRate);
+            this.flowLayoutPanel2.Controls.Add(this.ApplyCrits);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 7);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(180, 393);
-            this.flowLayoutPanel2.TabIndex = 11;
+            this.flowLayoutPanel2.TabIndex = 10;
             // 
-            // Trainer_Names
+            // SkipRivalName
             // 
-            this.Trainer_Names.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Trainer_Names.Location = new System.Drawing.Point(3, 3);
-            this.Trainer_Names.Name = "Trainer_Names";
-            this.Trainer_Names.Size = new System.Drawing.Size(172, 23);
-            this.Trainer_Names.TabIndex = 0;
-            this.Trainer_Names.Text = "DSPRE Trainer Names";
-            this.Trainer_Names.UseVisualStyleBackColor = true;
-            this.Trainer_Names.Click += new System.EventHandler(this.Trainer_Names_Click);
+            this.SkipRivalName.Location = new System.Drawing.Point(3, 32);
+            this.SkipRivalName.Name = "SkipRivalName";
+            this.SkipRivalName.Size = new System.Drawing.Size(172, 23);
+            this.SkipRivalName.TabIndex = 13;
+            this.SkipRivalName.Text = "Skip Rival Naming";
+            this.SkipRivalName.UseVisualStyleBackColor = true;
+            this.SkipRivalName.Click += new System.EventHandler(this.SkipRivalName_Click);
             // 
             // SpeedHP
             // 
-            this.SpeedHP.Location = new System.Drawing.Point(3, 32);
+            this.SpeedHP.Location = new System.Drawing.Point(3, 61);
             this.SpeedHP.Name = "SpeedHP";
             this.SpeedHP.Size = new System.Drawing.Size(172, 23);
             this.SpeedHP.TabIndex = 12;
             this.SpeedHP.Text = "Increase HP Bar Speed (2x)";
             this.SpeedHP.UseVisualStyleBackColor = true;
             this.SpeedHP.Click += new System.EventHandler(this.SpeedHP_Click);
-            // 
-            // DefaultTextSpeed
-            // 
-            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 61);
-            this.DefaultTextSpeed.Name = "DefaultTextSpeed";
-            this.DefaultTextSpeed.Size = new System.Drawing.Size(172, 23);
-            this.DefaultTextSpeed.TabIndex = 10;
-            this.DefaultTextSpeed.Text = "Default Fast Text Speed";
-            this.DefaultTextSpeed.UseVisualStyleBackColor = true;
-            this.DefaultTextSpeed.Click += new System.EventHandler(this.DefaultTextSpeed_Click);
             // 
             // DefaultSetMode
             // 
@@ -197,19 +218,70 @@
             this.DefaultSetMode.UseVisualStyleBackColor = true;
             this.DefaultSetMode.Click += new System.EventHandler(this.DefaultSetMode_Click);
             // 
+            // DefaultTextSpeed
+            // 
+            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 119);
+            this.DefaultTextSpeed.Name = "DefaultTextSpeed";
+            this.DefaultTextSpeed.Size = new System.Drawing.Size(172, 23);
+            this.DefaultTextSpeed.TabIndex = 10;
+            this.DefaultTextSpeed.Text = "Default Fast Text Speed";
+            this.DefaultTextSpeed.UseVisualStyleBackColor = true;
+            this.DefaultTextSpeed.Click += new System.EventHandler(this.DefaultTextSpeed_Click);
+            // 
+            // RemoveOWpoison
+            // 
+            this.RemoveOWpoison.Location = new System.Drawing.Point(3, 148);
+            this.RemoveOWpoison.Name = "RemoveOWpoison";
+            this.RemoveOWpoison.Size = new System.Drawing.Size(172, 23);
+            this.RemoveOWpoison.TabIndex = 14;
+            this.RemoveOWpoison.Text = "Remove Overworld Poison";
+            this.RemoveOWpoison.UseVisualStyleBackColor = true;
+            this.RemoveOWpoison.Click += new System.EventHandler(this.RemoveOWpoison_Click);
+            // 
+            // PickupEdit
+            // 
+            this.PickupEdit.Location = new System.Drawing.Point(3, 177);
+            this.PickupEdit.Name = "PickupEdit";
+            this.PickupEdit.Size = new System.Drawing.Size(172, 23);
+            this.PickupEdit.TabIndex = 17;
+            this.PickupEdit.Text = "Pickup Table Editor";
+            this.PickupEdit.UseVisualStyleBackColor = true;
+            this.PickupEdit.Click += new System.EventHandler(this.PickupEdit_Click);
+            // 
+            // ShayminCheck
+            // 
+            this.ShayminCheck.Location = new System.Drawing.Point(3, 206);
+            this.ShayminCheck.Name = "ShayminCheck";
+            this.ShayminCheck.Size = new System.Drawing.Size(172, 23);
+            this.ShayminCheck.TabIndex = 16;
+            this.ShayminCheck.Text = "Shaymin Gracidea Check";
+            this.ShayminCheck.UseVisualStyleBackColor = true;
+            this.ShayminCheck.Click += new System.EventHandler(this.ShayminCheck_Click);
+            // 
+            // RemoveMarshStep
+            // 
+            this.RemoveMarshStep.Location = new System.Drawing.Point(3, 235);
+            this.RemoveMarshStep.Name = "RemoveMarshStep";
+            this.RemoveMarshStep.Size = new System.Drawing.Size(172, 23);
+            this.RemoveMarshStep.TabIndex = 15;
+            this.RemoveMarshStep.Text = "Remove Marsh Step Counter";
+            this.RemoveMarshStep.UseVisualStyleBackColor = true;
+            this.RemoveMarshStep.Click += new System.EventHandler(this.RemoveMarshStep_Click);
+            // 
             // KadabEverstone
             // 
-            this.KadabEverstone.Location = new System.Drawing.Point(3, 119);
+            this.KadabEverstone.Location = new System.Drawing.Point(3, 264);
             this.KadabEverstone.Name = "KadabEverstone";
             this.KadabEverstone.Size = new System.Drawing.Size(172, 23);
             this.KadabEverstone.TabIndex = 7;
             this.KadabEverstone.Text = "Kadabra Everstone";
+            this.ToolTip.SetToolTip(this.KadabEverstone, "Credit to Critchy From Kingdom of DS Hacking");
             this.KadabEverstone.UseVisualStyleBackColor = true;
             this.KadabEverstone.Click += new System.EventHandler(this.KadabEverstone_Click);
             // 
             // ShinyNumBox
             // 
-            this.ShinyNumBox.Location = new System.Drawing.Point(3, 148);
+            this.ShinyNumBox.Location = new System.Drawing.Point(3, 293);
             this.ShinyNumBox.Maximum = new decimal(new int[] {
             255,
             0,
@@ -226,128 +298,66 @@
             // 
             // ShinyApply
             // 
-            this.ShinyApply.Location = new System.Drawing.Point(100, 148);
+            this.ShinyApply.Location = new System.Drawing.Point(100, 293);
             this.ShinyApply.Name = "ShinyApply";
             this.ShinyApply.Size = new System.Drawing.Size(75, 21);
             this.ShinyApply.TabIndex = 5;
             this.ShinyApply.Text = "Apply";
+            this.ToolTip.SetToolTip(this.ShinyApply, "To calculate The shiny rate you can do *Your number* / 65535");
             this.ShinyApply.UseVisualStyleBackColor = true;
             this.ShinyApply.Click += new System.EventHandler(this.ShinyApply_Click);
             // 
-            // MartTab
+            // critRate
             // 
-            this.MartTab.Controls.Add(this.MartPanel);
-            this.MartTab.Location = new System.Drawing.Point(4, 22);
-            this.MartTab.Name = "MartTab";
-            this.MartTab.Padding = new System.Windows.Forms.Padding(3);
-            this.MartTab.Size = new System.Drawing.Size(407, 400);
-            this.MartTab.TabIndex = 1;
-            this.MartTab.Text = "Mart";
-            this.MartTab.UseVisualStyleBackColor = true;
+            this.critRate.FormattingEnabled = true;
+            this.critRate.Location = new System.Drawing.Point(3, 320);
+            this.critRate.Name = "critRate";
+            this.critRate.Size = new System.Drawing.Size(91, 21);
+            this.critRate.TabIndex = 8;
+            this.critRate.Text = "Crit Rate";
             // 
-            // StartersTab
+            // ApplyCrits
             // 
-            this.StartersTab.Controls.Add(this.label7);
-            this.StartersTab.Controls.Add(this.ApplyStarters);
-            this.StartersTab.Controls.Add(this.label4);
-            this.StartersTab.Controls.Add(this.label3);
-            this.StartersTab.Controls.Add(this.label2);
-            this.StartersTab.Controls.Add(this.Slot1Box);
-            this.StartersTab.Controls.Add(this.Slot2Box);
-            this.StartersTab.Controls.Add(this.Slot3Box);
-            this.StartersTab.Location = new System.Drawing.Point(4, 22);
-            this.StartersTab.Name = "StartersTab";
-            this.StartersTab.Size = new System.Drawing.Size(407, 400);
-            this.StartersTab.TabIndex = 2;
-            this.StartersTab.Text = "Starters";
-            this.StartersTab.UseVisualStyleBackColor = true;
+            this.ApplyCrits.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ApplyCrits.Location = new System.Drawing.Point(100, 320);
+            this.ApplyCrits.Name = "ApplyCrits";
+            this.ApplyCrits.Size = new System.Drawing.Size(75, 21);
+            this.ApplyCrits.TabIndex = 9;
+            this.ApplyCrits.Text = "Apply";
+            this.ToolTip.SetToolTip(this.ApplyCrits, "Credit to Lhea From Kingdom of DS Hacking");
+            this.ApplyCrits.UseVisualStyleBackColor = true;
+            this.ApplyCrits.Click += new System.EventHandler(this.ApplyCrits_Click);
             // 
-            // NewFile
+            // MartsTab
             // 
-            this.NewFile.Location = new System.Drawing.Point(336, 7);
-            this.NewFile.Name = "NewFile";
-            this.NewFile.Size = new System.Drawing.Size(90, 27);
-            this.NewFile.TabIndex = 3;
-            this.NewFile.Text = "Open New File";
-            this.NewFile.UseVisualStyleBackColor = true;
-            this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
+            this.MartsTab.Controls.Add(this.groupBox1);
+            this.MartsTab.Location = new System.Drawing.Point(4, 22);
+            this.MartsTab.Name = "MartsTab";
+            this.MartsTab.Size = new System.Drawing.Size(407, 400);
+            this.MartsTab.TabIndex = 2;
+            this.MartsTab.Text = "Marts";
+            this.MartsTab.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // groupBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(143, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 20);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Starter Editor";
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.MartPanel);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(401, 394);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Main Mart";
             // 
-            // ApplyStarters
+            // label6
             // 
-            this.ApplyStarters.Location = new System.Drawing.Point(141, 161);
-            this.ApplyStarters.Name = "ApplyStarters";
-            this.ApplyStarters.Size = new System.Drawing.Size(121, 25);
-            this.ApplyStarters.TabIndex = 15;
-            this.ApplyStarters.Text = "Apply";
-            this.ApplyStarters.UseVisualStyleBackColor = true;
-            this.ApplyStarters.Click += new System.EventHandler(this.ApplyStarters_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(307, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 18);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Slot3";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(179, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 18);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Slot 2";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(51, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 18);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Slot 1";
-            // 
-            // Slot1Box
-            // 
-            this.Slot1Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Slot1Box.FormattingEnabled = true;
-            this.Slot1Box.Location = new System.Drawing.Point(14, 101);
-            this.Slot1Box.Name = "Slot1Box";
-            this.Slot1Box.Size = new System.Drawing.Size(121, 21);
-            this.Slot1Box.TabIndex = 11;
-            // 
-            // Slot2Box
-            // 
-            this.Slot2Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Slot2Box.FormattingEnabled = true;
-            this.Slot2Box.Location = new System.Drawing.Point(141, 101);
-            this.Slot2Box.Name = "Slot2Box";
-            this.Slot2Box.Size = new System.Drawing.Size(121, 21);
-            this.Slot2Box.TabIndex = 10;
-            // 
-            // Slot3Box
-            // 
-            this.Slot3Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Slot3Box.FormattingEnabled = true;
-            this.Slot3Box.Location = new System.Drawing.Point(268, 101);
-            this.Slot3Box.Name = "Slot3Box";
-            this.Slot3Box.Size = new System.Drawing.Size(121, 21);
-            this.Slot3Box.TabIndex = 9;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(168, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(178, 54);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "The mart level starts at 1\r\n and goes up after badges\r\n1, 3, 5, 7, and 8";
             // 
             // MartPanel
             // 
@@ -393,10 +403,10 @@
             this.MartPanel.Controls.Add(this.MartBox19);
             this.MartPanel.Controls.Add(this.MartBadge19);
             this.MartPanel.Controls.Add(this.Apply_Mart);
-            this.MartPanel.Location = new System.Drawing.Point(9, 22);
+            this.MartPanel.Location = new System.Drawing.Point(6, 19);
             this.MartPanel.Name = "MartPanel";
             this.MartPanel.Size = new System.Drawing.Size(156, 369);
-            this.MartPanel.TabIndex = 3;
+            this.MartPanel.TabIndex = 2;
             // 
             // ItemLabel
             // 
@@ -1015,27 +1025,148 @@
             this.Apply_Mart.TabIndex = 3;
             this.Apply_Mart.Text = "Apply";
             this.Apply_Mart.UseVisualStyleBackColor = true;
+            this.Apply_Mart.Click += new System.EventHandler(this.Apply_Mart_Click);
             // 
-            // HGSSHEX
+            // StartersTab
+            // 
+            this.StartersTab.Controls.Add(this.label7);
+            this.StartersTab.Controls.Add(this.label5);
+            this.StartersTab.Controls.Add(this.ApplyStarters);
+            this.StartersTab.Controls.Add(this.label4);
+            this.StartersTab.Controls.Add(this.label3);
+            this.StartersTab.Controls.Add(this.label2);
+            this.StartersTab.Controls.Add(this.Slot1Box);
+            this.StartersTab.Controls.Add(this.Slot2Box);
+            this.StartersTab.Controls.Add(this.Slot3Box);
+            this.StartersTab.Location = new System.Drawing.Point(4, 22);
+            this.StartersTab.Name = "StartersTab";
+            this.StartersTab.Size = new System.Drawing.Size(407, 400);
+            this.StartersTab.TabIndex = 3;
+            this.StartersTab.Text = "Starters";
+            this.StartersTab.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(143, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 20);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Starter Editor";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(11, 220);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(368, 54);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Reminder: If you change the Starter mons, your Rival\r\nwill always pick Turtwig (a" +
+    "nd its evolutions) in all battles\r\nunless you edit each Rival battle script.";
+            // 
+            // ApplyStarters
+            // 
+            this.ApplyStarters.Location = new System.Drawing.Point(141, 161);
+            this.ApplyStarters.Name = "ApplyStarters";
+            this.ApplyStarters.Size = new System.Drawing.Size(121, 25);
+            this.ApplyStarters.TabIndex = 6;
+            this.ApplyStarters.Text = "Apply";
+            this.ApplyStarters.UseVisualStyleBackColor = true;
+            this.ApplyStarters.Click += new System.EventHandler(this.ApplyStarters_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(307, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 18);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Slot3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(179, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 18);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Slot 2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(51, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Slot 1";
+            // 
+            // Slot1Box
+            // 
+            this.Slot1Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Slot1Box.FormattingEnabled = true;
+            this.Slot1Box.Location = new System.Drawing.Point(14, 101);
+            this.Slot1Box.Name = "Slot1Box";
+            this.Slot1Box.Size = new System.Drawing.Size(121, 21);
+            this.Slot1Box.TabIndex = 2;
+            // 
+            // Slot2Box
+            // 
+            this.Slot2Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Slot2Box.FormattingEnabled = true;
+            this.Slot2Box.Location = new System.Drawing.Point(141, 101);
+            this.Slot2Box.Name = "Slot2Box";
+            this.Slot2Box.Size = new System.Drawing.Size(121, 21);
+            this.Slot2Box.TabIndex = 1;
+            // 
+            // Slot3Box
+            // 
+            this.Slot3Box.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Slot3Box.FormattingEnabled = true;
+            this.Slot3Box.Location = new System.Drawing.Point(268, 101);
+            this.Slot3Box.Name = "Slot3Box";
+            this.Slot3Box.Size = new System.Drawing.Size(121, 21);
+            this.Slot3Box.TabIndex = 0;
+            // 
+            // NewFile
+            // 
+            this.NewFile.Location = new System.Drawing.Point(336, 7);
+            this.NewFile.Name = "NewFile";
+            this.NewFile.Size = new System.Drawing.Size(90, 27);
+            this.NewFile.TabIndex = 2;
+            this.NewFile.Text = "Open New File";
+            this.NewFile.UseVisualStyleBackColor = true;
+            this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
+            // 
+            // PlatinumHex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(439, 450);
             this.Controls.Add(this.NewFile);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.PlatTabs);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "HGSSHEX";
-            this.Text = "Heartgold/SoulSilver CHM";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HGSSHEX_FormClosing);
-            this.Load += new System.EventHandler(this.Form4_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "PlatinumHex";
+            this.Text = "CHM Platinum";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PlatinumHex_FormClosing);
+            this.Load += new System.EventHandler(this.PlatinumHex_Load);
+            this.PlatTabs.ResumeLayout(false);
             this.MainTab.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ShinyNumBox)).EndInit();
-            this.MartTab.ResumeLayout(false);
-            this.StartersTab.ResumeLayout(false);
-            this.StartersTab.PerformLayout();
+            this.MartsTab.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.MartPanel.ResumeLayout(false);
             this.MartPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge1)).EndInit();
@@ -1057,36 +1188,29 @@
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MartBadge19)).EndInit();
+            this.StartersTab.ResumeLayout(false);
+            this.StartersTab.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage MainTab;
-        private System.Windows.Forms.TabPage MartTab;
-        private System.Windows.Forms.TabPage StartersTab;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button Trainer_Names;
-        private System.Windows.Forms.Button SpeedHP;
-        private System.Windows.Forms.Button DefaultSetMode;
-        private System.Windows.Forms.Button DefaultTextSpeed;
-        private System.Windows.Forms.Button KadabEverstone;
+        private System.Windows.Forms.TabControl PlatTabs;
+        private System.Windows.Forms.TabPage MainTab;
+        private System.Windows.Forms.Button NewFile;
         private System.Windows.Forms.NumericUpDown ShinyNumBox;
         private System.Windows.Forms.Button ShinyApply;
-        private System.Windows.Forms.Button NewFile;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button ApplyStarters;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox Slot1Box;
-        private System.Windows.Forms.ComboBox Slot2Box;
-        private System.Windows.Forms.ComboBox Slot3Box;
+        private System.Windows.Forms.ToolTip ToolTip;
+        private System.Windows.Forms.TabPage MartsTab;
+        private System.Windows.Forms.Button KadabEverstone;
+        private System.Windows.Forms.TabPage StartersTab;
+        private System.Windows.Forms.Button ApplyCrits;
+        private System.Windows.Forms.ComboBox critRate;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.FlowLayoutPanel MartPanel;
-        private System.Windows.Forms.Label ItemLabel;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox MartBox1;
         private System.Windows.Forms.NumericUpDown MartBadge1;
         private System.Windows.Forms.ComboBox MartBox2;
@@ -1125,6 +1249,26 @@
         private System.Windows.Forms.NumericUpDown MartBadge18;
         private System.Windows.Forms.ComboBox MartBox19;
         private System.Windows.Forms.NumericUpDown MartBadge19;
+        private System.Windows.Forms.Label ItemLabel;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Apply_Mart;
+        private System.Windows.Forms.ComboBox Slot1Box;
+        private System.Windows.Forms.ComboBox Slot2Box;
+        private System.Windows.Forms.ComboBox Slot3Box;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button ApplyStarters;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button DefaultTextSpeed;
+        private System.Windows.Forms.Button DefaultSetMode;
+        private System.Windows.Forms.Button SpeedHP;
+        private System.Windows.Forms.Button RemoveOWpoison;
+        private System.Windows.Forms.Button SkipRivalName;
+        private System.Windows.Forms.Button PickupEdit;
+        private System.Windows.Forms.Button ShayminCheck;
+        private System.Windows.Forms.Button RemoveMarshStep;
     }
 }
