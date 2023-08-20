@@ -8,12 +8,11 @@ Join The [The Kingdom Of DS Hacking!](https://discord.gg/zAtqJDW2jC) Discord for
 (@C y (Gigalith)[GB]) On this Discord
 
 # Usage And Explanation
-![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/009e7c1d-53de-4533-ab69-f8172a65c51f)
+![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/7011901a-2531-4d28-a3c4-9b902cae0661)
 
 This is the main menu where you can choose what game you are editing. **If you do not pick the right game it could seriouslly destroy your rom/arm9**
 
 This Program Relies on the fact that you select the arm9 within your unpacked [DSPRE](https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor) folder if not, the program will not work
-# Platinum
 ## Main
 - DSPRE Trainer Names, This fixes when the names have many ?'s in them
 - Skip Rival Naming, This Makes is soYour rival will now receive a default name as specified from Text Archive 389, entry 37.
@@ -81,8 +80,10 @@ Reminder: If you change the Starter mons, your Rival will always pick Turtwig (a
 - Slot 1: ID'S 256-260
 - Slot 2: ID'S 256-264
 - Slot 3: ID'S 256-269
-## Misc Info
 
+HGSS starters wont have the correct cry's.
+## Misc Info
+it boots up kinda slow
 ## Special Thanks
 
 Lhea - For alot of the Research
