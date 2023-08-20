@@ -316,6 +316,7 @@
             // 
             // MartBox1
             // 
+            this.MartBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.MartBox1.FormattingEnabled = true;
             this.MartBox1.Location = new System.Drawing.Point(3, 16);
             this.MartBox1.Name = "MartBox1";
