@@ -138,7 +138,7 @@ namespace Cy_s_Hex_Macros
 
         private void Populate()
         {
-            Pokemon = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\Pokemon.txt", Encoding.UTF8);
+            Pokemon = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\Pokemons.txt", Encoding.UTF8);
             ItemsHG = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\ItemsHG.txt", Encoding.UTF8);
             MartBox1.Update();
             MartBox1.Items.AddRange(ItemsHG);

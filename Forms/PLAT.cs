@@ -188,7 +188,7 @@ namespace Cy_s_Hex_Macros
         private void PopulateComboBoxes()
         {
             ItemsPlat = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\ItemsPlat.txt", Encoding.UTF8);
-            Pokemon = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\Pokemon.txt", Encoding.UTF8);
+            Pokemon = File.ReadAllLines(Directory.GetCurrentDirectory() + @"\Other\Pokemons.txt", Encoding.UTF8);
             BackgroundWorker worker = new BackgroundWorker();
             worker.RunWorkerAsync();
             while (worker.IsBusy == true)

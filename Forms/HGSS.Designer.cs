@@ -33,13 +33,13 @@
             this.MainTab = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Trainer_Names = new System.Windows.Forms.Button();
-            this.SpeedHP = new System.Windows.Forms.Button();
             this.DefaultTextSpeed = new System.Windows.Forms.Button();
             this.DefaultSetMode = new System.Windows.Forms.Button();
             this.KadabEverstone = new System.Windows.Forms.Button();
             this.ShinyNumBox = new System.Windows.Forms.NumericUpDown();
             this.ShinyApply = new System.Windows.Forms.Button();
             this.MartTab = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
             this.MartPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ItemLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,6 +83,7 @@
             this.MartBadge19 = new System.Windows.Forms.NumericUpDown();
             this.Apply_Mart = new System.Windows.Forms.Button();
             this.StartersTab = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ApplyStarters = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -92,8 +93,6 @@
             this.Slot2Box = new System.Windows.Forms.ComboBox();
             this.Slot3Box = new System.Windows.Forms.ComboBox();
             this.NewFile = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.Tabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -147,7 +146,6 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.Trainer_Names);
-            this.flowLayoutPanel2.Controls.Add(this.SpeedHP);
             this.flowLayoutPanel2.Controls.Add(this.DefaultTextSpeed);
             this.flowLayoutPanel2.Controls.Add(this.DefaultSetMode);
             this.flowLayoutPanel2.Controls.Add(this.KadabEverstone);
@@ -169,19 +167,9 @@
             this.Trainer_Names.UseVisualStyleBackColor = true;
             this.Trainer_Names.Click += new System.EventHandler(this.Trainer_Names_Click);
             // 
-            // SpeedHP
-            // 
-            this.SpeedHP.Location = new System.Drawing.Point(3, 32);
-            this.SpeedHP.Name = "SpeedHP";
-            this.SpeedHP.Size = new System.Drawing.Size(172, 23);
-            this.SpeedHP.TabIndex = 12;
-            this.SpeedHP.Text = "Increase HP Bar Speed (2x)";
-            this.SpeedHP.UseVisualStyleBackColor = true;
-            this.SpeedHP.Click += new System.EventHandler(this.SpeedHP_Click);
-            // 
             // DefaultTextSpeed
             // 
-            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 61);
+            this.DefaultTextSpeed.Location = new System.Drawing.Point(3, 32);
             this.DefaultTextSpeed.Name = "DefaultTextSpeed";
             this.DefaultTextSpeed.Size = new System.Drawing.Size(172, 23);
             this.DefaultTextSpeed.TabIndex = 10;
@@ -191,7 +179,7 @@
             // 
             // DefaultSetMode
             // 
-            this.DefaultSetMode.Location = new System.Drawing.Point(3, 90);
+            this.DefaultSetMode.Location = new System.Drawing.Point(3, 61);
             this.DefaultSetMode.Name = "DefaultSetMode";
             this.DefaultSetMode.Size = new System.Drawing.Size(172, 23);
             this.DefaultSetMode.TabIndex = 11;
@@ -201,7 +189,7 @@
             // 
             // KadabEverstone
             // 
-            this.KadabEverstone.Location = new System.Drawing.Point(3, 119);
+            this.KadabEverstone.Location = new System.Drawing.Point(3, 90);
             this.KadabEverstone.Name = "KadabEverstone";
             this.KadabEverstone.Size = new System.Drawing.Size(172, 23);
             this.KadabEverstone.TabIndex = 7;
@@ -211,7 +199,7 @@
             // 
             // ShinyNumBox
             // 
-            this.ShinyNumBox.Location = new System.Drawing.Point(3, 148);
+            this.ShinyNumBox.Location = new System.Drawing.Point(3, 119);
             this.ShinyNumBox.Maximum = new decimal(new int[] {
             255,
             0,
@@ -228,7 +216,7 @@
             // 
             // ShinyApply
             // 
-            this.ShinyApply.Location = new System.Drawing.Point(100, 148);
+            this.ShinyApply.Location = new System.Drawing.Point(100, 119);
             this.ShinyApply.Name = "ShinyApply";
             this.ShinyApply.Size = new System.Drawing.Size(75, 21);
             this.ShinyApply.TabIndex = 5;
@@ -247,6 +235,16 @@
             this.MartTab.TabIndex = 1;
             this.MartTab.Text = "Mart";
             this.MartTab.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(171, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(178, 54);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "The mart level starts at 1\r\n and goes up after badges\r\n1, 3, 5, 7, and 8";
             // 
             // MartPanel
             // 
@@ -318,7 +316,6 @@
             // 
             // MartBox1
             // 
-            this.MartBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.MartBox1.FormattingEnabled = true;
             this.MartBox1.Location = new System.Drawing.Point(3, 16);
             this.MartBox1.Name = "MartBox1";
@@ -934,6 +931,18 @@
             this.StartersTab.Text = "Starters";
             this.StartersTab.UseVisualStyleBackColor = true;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(21, 223);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label5.Size = new System.Drawing.Size(379, 54);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Reminder: If you change the Starter mons, your Rival\r\nwill always pick Chikorita " +
+    "(and its evolutions) in all battles\r\nunless you edit each Rival battle script.";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -1021,28 +1030,6 @@
             this.NewFile.UseVisualStyleBackColor = true;
             this.NewFile.Click += new System.EventHandler(this.NewFile_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(171, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 54);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "The mart level starts at 1\r\n and goes up after badges\r\n1, 3, 5, 7, and 8";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 223);
-            this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(368, 54);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Reminder: If you change the Starter mons, your Rival\r\nwill always pick Chikorita (a" +
-    "nd its evolutions) in all battles\r\nunless you edit each Rival battle script.";
-            // 
             // HGSSHEX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1097,7 +1084,6 @@
         private System.Windows.Forms.TabPage StartersTab;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Button Trainer_Names;
-        private System.Windows.Forms.Button SpeedHP;
         private System.Windows.Forms.Button DefaultSetMode;
         private System.Windows.Forms.Button DefaultTextSpeed;
         private System.Windows.Forms.Button KadabEverstone;

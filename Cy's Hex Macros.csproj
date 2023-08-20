@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{18B2A0CA-512F-4B41-B099-4D63C6DA9CE1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>Cy_s_Hex_Macros</RootNamespace>
     <AssemblyName>Cy%27s Hex Macros</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
