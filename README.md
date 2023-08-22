@@ -10,7 +10,8 @@ Join The [The Kingdom Of DS Hacking!](https://discord.gg/zAtqJDW2jC) Discord for
 # Usage And Explanation
 ![image](https://github.com/dev-cyw/Cy-s-Hex-Macros/assets/98186075/7011901a-2531-4d28-a3c4-9b902cae0661)
 
-This Program Relies on the fact that you select the arm9 within your unpacked [DSPRE](https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor) folder if not, the program will not work
+This Program Relies on the fact that you select the arm9 within your unpacked [DSPRE](https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor) folder created from the rom called *name*_DSPRE_unpacked
+if not, the program will not work
 ## Main
 - DSPRE Trainer Names, This fixes when the names have many ?'s in them
 - Skip Rival Naming, This Makes is soYour rival will now receive a default name as specified from Text Archive 389, entry 37.
