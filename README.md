@@ -13,6 +13,7 @@ Join The [The Kingdom Of DS Hacking!](https://discord.gg/zAtqJDW2jC) Discord for
 This Program Relies on the fact that you select the arm9 within your unpacked [DSPRE](https://github.com/AdAstra-LD/DS-Pokemon-Rom-Editor) folder created from the rom called *name*_DSPRE_unpacked
 if not, the program will not work
 ## Main
+- Main mart editor
 - DSPRE Trainer Names, This fixes when the names have many ?'s in them
 - Skip Rival Naming, This Makes is soYour rival will now receive a default name as specified from Text Archive 389, entry 37.
 - Increase HP Bar Speed, This increases the infamously slow hp bar 2x
